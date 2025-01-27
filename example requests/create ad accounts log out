@@ -1,0 +1,66 @@
+https://nooklz.com/api/tasks/create
+POST
+{
+    "task" : "create_bm_ad_account",
+    "data" : [
+        {
+            "account_id" : 17359310,
+            "bm_ids" : [
+                {"bm_id": "1351587042946448", "currency": "USD", "timezone": "137", "name": "Absolute Irresponsible 0"},
+                {"bm_id": "2653432592056843", "currency": "USD", "timezone": "137", "name": "Absolute Irresponsible 1"}
+            ]
+        }
+    ]
+}
+Response (137 timezone is Kyiv):
+{
+    "success": true,
+    "task": "create_bm_ad_account",
+    "task_ids": [
+        {
+            "task_id": "e698b856-16c9-42b5-b239-fd8ec05d8607",
+            "task": "create_bm_ad_account",
+            "account_id": 17359310,
+            "ids": [
+                []
+            ],
+            "bm_ids": [
+                [
+                    {
+                        "bm_id": "1351587042946448",
+                        "currency": "USD",
+                        "timezone": "137",
+                        "name": "Absolute Irresponsible 0"
+                    },
+                    {
+                        "bm_id": "2653432592056843",
+                        "currency": "USD",
+                        "timezone": "137",
+                        "name": "Absolute Irresponsible 1"
+                    }
+                ]
+            ]
+        }
+    ]
+}
+followed by:
+https://nooklz.com/api/accounts/result?exclude=bms
+{
+    "success" : "true",
+    "task" : "create_bm_ad_account",
+    "task_ids" : [
+        {
+            "task_id" : "e698b856-16c9-42b5-b239-fd8ec05d8607",
+            "task" : "create_bm_ad_account",
+            "account_id" : 17359310,
+            "ids": [
+                []
+            ],
+            "bm_id" : [[
+                {"bm_id": "1351587042946448", "currency": "USD", "timezone": "137", "name": "Absolute Irresponsible 0"},
+                {"bm_id": "2653432592056843", "currency": "USD", "timezone": "137", "name": "Absolute Irresponsible 1"}
+            ]]
+        }
+    ]
+}
+Response:

@@ -18,16 +18,32 @@ class NooklzInterface:
             ids[element["id"]] = [element["id"]]
         return ids
 
-    def get_accounts(self, nooklz_profile_ids : {T} = None, groups : {T} = None) -> Collection:
+    # additional filters: credit cards, created at, statu, BM ids, can create ad account, page count, users, pending users,
+    # invite count, main page, information filled
+    def get_ad_accounts(self, nooklz_profile_ids : {T} = None, groups : {T} = None) -> Collection:
+        bms = self.get_bms(nooklz_profile_ids, groups)  
+        ad_accounts = [ad_account for bm in bms for ad_account in bm["acts"]]
+        return ad_accounts
+
+    # additional filters: credit cards, created at, statu, BM ids, can create ad account, page count, users, pending users,
+    # invite count, main page, information filled
+    def get_bms(self, nooklz_profile_ids : {T} = None, groups : {T} = None) -> Collection:
+        profiles = self.get_profiles(nooklz_profile_ids, groups)  
+        bms = [bm for profile in profiles for bm in profile["bms"]]
+        return bms
+
+    # additional filters: main ad account status, appeal status, status, added date, proffesional mode, page count, BM count,
+    # email
+    def get_profiles(self, nooklz_profile_ids : {T} = None, groups : {T} = None) -> Collection:
         url = "https://nooklz.com/api/accounts?format=json"
         request_data = {"format" : "json"}
-        accounts = requests.get(url, json=request_data, headers=self.headers).json()
+        profiles = requests.get(url, json=request_data, headers=self.headers).json()
         if nooklz_profile_ids != None:
-            accounts = [account for account in accounts if account["id"] in nooklz_profile_ids]
+            profiles = [profile for profile in profiles if profile["id"] in nooklz_profile_ids]
         if groups:
-            accounts = [account for account in accounts if account["label"] is not None and account["label"]["id"] in groups
-                        or account["label"] is None and None in groups]    
-        return accounts
+            profiles = [profile for profile in profiles if profile["label"] is not None and profile["label"]["id"] in groups
+                        or profile["label"] is None and None in groups]    
+        return profiles
 
     def update(self):
         self.update_accounts()
