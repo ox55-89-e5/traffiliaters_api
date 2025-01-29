@@ -1,2 +1,4 @@
 __pycache__/
 *.pyc
+requests_log.txt
+output.json

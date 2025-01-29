@@ -71,7 +71,7 @@ PAYLOAD:
         }
     ],
 }
-Response:
+x3 times Response:
 {"success":true,"task_result":[]}
 
 {
