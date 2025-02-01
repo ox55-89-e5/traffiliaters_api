@@ -1,36 +1,24 @@
 import json
-import requests
 from nooklz_api import NooklzInterface
-import os
+import re
+
 class MoneyButton:
     def __init__(self, NooklzInterface : NooklzInterface):
         self.nooklz = NooklzInterface
+
+    def export_extra_bms(self, BM_limit : int = 20):
         pass
     
-    def test_bms(self, BM_limit : int = 20):
-        profiles = self.nooklz.get_profiles(groups = {258598 : self.nooklz.groups[258598]}) # money button
-        # filter profiles which have not more BMs than BM_limit
-        profiles = [profile for profile in profiles if len(profile["bms"]) <= BM_limit]
-        response = []
-        for profile in profiles:
-            bm_invites = self.eat_bm_invites(how_many=1)       
-            print(f"facebook profile: {profile['account_name']} profile id: {profile['id']} tries to accept invites:")
-            print(bm_invites)
-            self.nooklz.accept_bm_invites(profile_id=profile["id"], invite_links=bm_invites)
-            print(f"facebook profile: {profile['account_name']} profile id: {profile['id']} trying to check profile:")
-            self.nooklz.check_profiles(profile_ids={profile['id'] : profile['id']})
-            print(f"facebook profile: {profile['account_name']} profile id: {profile['id']} searching for a BM to creat ad account:")
-            bms = self.nooklz.get_bms(nooklz_profile_ids={profile['id'] : profile['id']}, can_create_ad_account=True, is_disabled=False)
-            if len(bms) < 1:
-                print(f"Not enough active BMs that could create an ad account")
-            else:
-                print(f"Actives BMs that can create an ad account: {len(bms)}, BM chosen: {bms[0]['bm_name']} ({bms[0]['business_id']})")
-                print(f"Creating an ad account for BM chosen: {bms[0]['bm_name']} ({bms[0]['business_id']})")
-                self.nooklz.create_ad_accounts(profile['id'], [bms[0]['business_id']], "BarShopBM")
-            
-        # self.write_debug_json(response)
+    def export_trash_bms(self):
+        pass
 
-    def eat_bm_invites(self, how_many : int, input_file : str = r"BM_invites.txt", output_file : str = r"UsedBM_invites.txt"):
+    def test_bms(self, BM_limit : int = 20):
+        pass
+
+    def link_bms(self, BM_limit : int = 20):
+        pass
+
+    def __eat_bm_invites(self, how_many : int, input_file : str = r"BM_invites.txt", output_file : str = r"UsedBM_invites.txt"):
         lines_to_transfer = []
         try:
             # Open the input file in read mode
@@ -42,6 +30,7 @@ class MoneyButton:
             lines_to_transfer = all_lines[:how_many]
             if how_many > len(lines_to_transfer):
                 print(f"requested {how_many} bm invite links, but received only {len(lines_to_transfer)}, buy BMs")
+                return None
 
             # Open the output file in append mode to write the lines
             with open(output_file, 'a', encoding='utf-8') as outfile:
@@ -63,7 +52,21 @@ class MoneyButton:
         
         return [line.strip() for line in lines_to_transfer]
     
-    def write_debug_json(self, json_code, file_path : str = "output.json"):
+    def __write_debug_json(self, json_code, file_path : str = "output.json"):
         # Write JSON data to a file with UTF-8 encoding
         with open(file_path, "w", encoding="utf-8") as file:
             json.dump(json_code, file, indent=4, ensure_ascii=False)
+
+    def __remove_tags(self, text : str):
+        return re.sub(r'<.*?>', '', text)
+
+    def __write_cleaned_invites(self, result_with_tags : str, file : str = "./BM_invites/trash_invites.txt"):
+        with open(file, "a", encoding="utf-8") as f:
+            f.write(self.__remove_tags(result_with_tags) +"\n")
+
+    def _update_profiles(self, group_id : int = 259151): # 259151 Ready to link
+        profiles = self.nooklz.get_profiles(groups = {group_id : self.nooklz.groups[group_id]})
+        print("Updating profiles:")
+        for profile in profiles:
+            self.nooklz.check_profiles(profile_ids={profile['id'] : profile['id']})
+        return profiles

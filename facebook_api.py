@@ -1,3 +1,15 @@
+account_status = {
+    "ACTIVE": 1,
+    "DISABLED": 2
+}
+
+disable_reason = {
+    "ACCOUNT_ENABLED": 0,
+    "ADS_INTEGRITY_POLICY": 1,
+    "IHAVENTSEENTET": 2,
+    "RISK_PAYMENT": 3
+}
+
 facebook_timezones = {
     "TZ_UNKNOWN": 0,
     "TZ_AMERICA_LOS_ANGELES": 1,

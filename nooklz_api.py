@@ -16,11 +16,17 @@ class NooklzInterface:
         }
         self.update()
     
+    def get_results(self, json_response) -> list[str]:
+        results = []
+        for log in json_response["log"]:
+            for result in log["result"]:
+                results.append(result)
+        return results
     
     def __wait_result(self, url, json_payload):
          # Track start time
         start_time = time.time()
-        timeout = 25  # Timeout in seconds
+        timeout = 145  # Timeout in seconds
         attempts = 0
         response = json_payload
         while "log" not in response:
@@ -30,7 +36,7 @@ class NooklzInterface:
                 print(f"Timeout reached. Exiting loop. Attempts:{attempts}")
                 return response
             response = make_post_request(url, json=json_payload, headers=self.headers).json()
-            time.sleep(1)
+            time.sleep(3)
             
         for task in response["log"]:
             print(task["result"])
@@ -44,6 +50,34 @@ class NooklzInterface:
         }
         response = make_post_request(url, json=request_data, headers=self.headers).json()
         response = self.__wait_result(url="https://nooklz.com/api/accounts/result?exclude=profiles", json_payload=response)      
+        return response
+
+    def leave_bms(self, profile_id : int, bm_ids: Collection[int]) -> Collection[T]:
+        url = "https://nooklz.com/api/tasks/create"
+        request_data = {
+            "format" : "json",
+            "task": "leave_bm",
+            "data": [{"account_id": profile_id, "bm_id" : bm_id} for bm_id in bm_ids]
+        }
+        response = make_post_request(url, json=request_data, headers=self.headers).json()
+        response = self.__wait_result(url="https://nooklz.com/api/accounts/result?exclude=bms", json_payload=response)    
+        return response
+
+    def export_bm_invites(self, profile_id : int, bm_ids: Collection[int]) -> Collection[T]:
+        url = "https://nooklz.com/api/tasks/create"
+        request_data = {
+            "format" : "json",
+            "task": "share_bm_access",
+            "data": [
+                {
+                "account_id": profile_id,
+                "sharePage" : False,
+                "bm_ids" : [{"bm_id" : bm_id, "email" : "auto"} for bm_id in bm_ids]
+                }
+            ]
+        }
+        response = make_post_request(url, json=request_data, headers=self.headers).json()
+        response = self.__wait_result(url="https://nooklz.com/api/accounts/result?exclude=bms", json_payload=response)    
         return response
 
     def create_ad_accounts(self, profile_id : int, bm_ids: Collection[int],
@@ -84,6 +118,12 @@ class NooklzInterface:
         response = make_post_request(url, json=request_data, headers=self.headers).json()
         response = self.__wait_result(url="https://nooklz.com/api/accounts/result?exclude=profiles", json_payload=response)    
         return response
+
+    def get_business_ids_from_json(self, json_collection : Collection[T]) -> {int}:
+        ids = {}
+        for element in json_collection:
+            ids[element["business_id"]] = element["business_id"]
+        return ids
 
     def get_ids_from_json(self, json_collection : Collection[T]) -> {int}:
         ids = {}
