@@ -11,13 +11,5 @@ lines = money_button.test_bms()
 # money_button.export_extra_bms()
 # money_button.crete_add_accounts(how_many_to_create=2)
 # money_button.link_cards()
-# result =  [
-#                 "<p><span style=\"color: green;\"><b>[2025-01-27 07:49:27]</b> [Profile:Marharyta Shchur] [Bm:1351587042946448] Створено рекламний акаунт: 591239073700926</span></p>",
-#                 "<p><span style=\"color: green;\"><b>[2025-01-27 07:49:31]</b> [Profile:Marharyta Shchur] [Bm:1351587042946448] Надано користувачеві права адміністратора</span></p>",
-#                 "<p><span style=\"color: green;\"><b>[2025-01-27 07:49:33]</b> [Profile:Marharyta Shchur] [Bm:1059072242897438] Створено рекламний акаунт: 615262017893186</span></p>",
-#                 "<p><span style=\"color: green;\"><b>[2025-01-27 07:49:37]</b> [Profile:Marharyta Shchur] [Bm:1059072242897438] Надано користувачеві права адміністратора</span></p>"
-#             ]
-# print(money_button._parse_djekxa_invites("https://fb.me/1TUVtzEw9JpwteX|business_id=9272230242854133"))
-# print(money_button._extract_ad_account_ids(result))
 
 # money_button._write_debug_json(money_button._update_profiles())

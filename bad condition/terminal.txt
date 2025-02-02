@@ -1,0 +1,52 @@
+PS E:\src\nooklz api> & "E:/src/nooklz api/python310venv/Scripts/python.exe" "e:/src/nooklz api/nooklzscript .py"
+Name: None                      Id:None       Accounts: 0
+Name: Money Button              Id:258598     Accounts: 8
+Name: BM Trash                  Id:259225     Accounts: 1
+Name: Ads launched              Id:259698     Accounts: 2
+Name: Ready to link USA         Id:259552     Accounts: 1
+Name: darkstore poland          Id:255318     Accounts: 3
+Name: autoregs                  Id:253520     Accounts: 18
+Name: Used autoregs             Id:254271     Accounts: 40
+Name: Agency accounts           Id:255025     Accounts: 1
+Name: farmsmustage              Id:253443     Accounts: 6
+Updating profiles:
+<p><span style="color: green;"><b>[2025-02-02 10:06:36]</b> [Malvina Reynolds] account is valid</span></p>
+<p><span style="color: green;"><b>[2025-02-02 10:06:48]</b> [Melody Evans] account is valid</span></p>
+<p><span style="color: green;"><b>[2025-02-02 10:07:01]</b> [Zelda Bradberry] account is valid</span></p>
+<p><span style="color: green;"><b>[2025-02-02 10:07:10]</b> [Jess Neal] account is valid</span></p>
+<p><span style="color: green;"><b>[2025-02-02 10:07:21]</b> [Arlene Hoggarth] account is valid</span></p>
+<p><span style="color: green;"><b>[2025-02-02 10:07:31]</b> [Dina Clifford] account is valid</span></p>
+<p><span style="color: green;"><b>[2025-02-02 10:07:43]</b> [Libby Thornton] account is valid</span></p>
+<p><span style="color: green;"><b>[2025-02-02 10:07:55]</b> [Eliza Gilson] account is valid</span></p>
+facebook profile: Malvina Reynolds profile id: 18326415 tries to accept invites:
+{'invite': 'https://fb.me/1X0nCvAuJWAu5Cr', 'business_id': '814046234210812'}
+['<p><span style="color: green;"><b>[2025-02-02 10:08:07]</b> [Malvina Reynolds] Bm accepted. Link: https://fb.me/1X0nCvAuJWAu5Cr</span></p>']
+facebook profile: Malvina Reynolds profile id: 18326415 trying to check the profile:
+<p><span style="color: green;"><b>[2025-02-02 10:08:20]</b> [Malvina Reynolds] account is valid</span></p>
+facebook profile: Malvina Reynolds profile id: 18326415 searching for the BM to create an ad account:
+Creating an ad account for a BM fulmubultu 814046234210812:
+['<p><span style="color: red;"><b>[2025-02-02 10:08:29]</b> [61567746542544] Cant create ad account :( Error: {\'data\': {\'business_settings_create_ad_account\': None}, \'errors\': [{\'message\': \'A server error field_exception occured. Check server logs for details.\', \'severity\': \'CRITICAL\', \'mids\': [\'5c617b73e54149ea3db51272f0dedc55\'], \'code\': 1752004, \'api_error_code\': 3980, \'summary\': \'Invalid Existing Account State\', \'description\': \'One or more of the ad accounts in your business manager are currently in bad standing or in review.  All of your accounts must be in good standing in order to create or add new ad accounts.\', \'description_raw\': \'One or more of the ad accounts in your business manager are currently in bad standing or in review.  All of your accounts must be in good standing in order to create or add new ad accounts.\', \'is_silent\': False, \'is_transient\': False, \'is_not_critical\': True, \'requires_reauth\': False, \'allow_user_retry\': False, \'debug_info\': None, \'query_path\': None, \'fbtrace_id\': \'HgmRzKHympO\', \'www_request_id\': \'Ab_CJkyBqSTNkEmUOpk-Cun\', \'path\': [\'business_settings_create_ad_account\']}], \'extensions\': {\'is_final\': True}}</span></p>']
+\'business_settings_create_ad_account\']}], \'extensions\': {\'is_final\': True}}</span></p>']
+facebook profile: Malvina Reynolds profile id: 18326415 trying to check the profile:
+<p><span style="color: green;"><b>[2025-02-02 10:08:42]</b> [Malvina Reynolds] account is valid</span></p>
+Traceback (most recent call last):
+\'business_settings_create_ad_account\']}], \'extensions\': {\'is_final\': True}}</span></p>']
+facebook profile: Malvina Reynolds profile id: 18326415 trying to check the profile:
+<p><span style="color: green;"><b>[2025-02-02 10:08:42]</b> [Malvina Reynolds] account is valid</span></p>
+\'business_settings_create_ad_account\']}], \'extensions\': {\'is_final\': True}}</span></p>']
+facebook profile: Malvina Reynolds profile id: 18326415 trying to check the profile:
+\'business_settings_create_ad_account\']}], \'extensions\': {\'is_final\': True}}</span></p>']
+\'business_settings_create_ad_account\']}], \'extensions\': {\'is_final\': True}}</span></p>']
+\'business_settings_create_ad_account\']}], \'extensions\': {\'is_final\': True}}</span></p>']
+facebook profile: Malvina Reynolds profile id: 18326415 trying to check the profile:
+\'business_settings_create_ad_account\']}], \'extensions\': {\'is_final\': True}}</span></p>']
+\'business_settings_create_ad_account\']}], \'extensions\': {\'is_final\': True}}</span></p>']
+facebook profile: Malvina Reynolds profile id: 18326415 trying to check the profile:
+<p><span style="color: green;"><b>[2025-02-02 10:08:42]</b> [Malvina Reynolds] account is valid</span></p>
+Traceback (most recent call last):
+  File "e:\src\nooklz api\nooklzscript .py", line 8, in <module>
+    lines = money_button.test_bms()
+  File "e:\src\nooklz api\secret_money_button.py", line 159, in test_bms
+    if act["disable_reason"] == disable_reason["ACCOUNT_ENABLED"]:
+TypeError: 'NoneType' object is not subscriptable
+PS E:\src\nooklz api>
