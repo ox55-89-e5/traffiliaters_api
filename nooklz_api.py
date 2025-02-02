@@ -5,6 +5,8 @@ from typing import List, Optional
 import time
 from functools import wraps
 from facebook_api import facebook_timezones
+from random_word import RandomWords
+import random
 
 T = TypeVar("T")  # Generic type  
 
@@ -40,6 +42,68 @@ class NooklzInterface:
             
         for task in response["log"]:
             print(task["result"])
+        return response
+    
+    # card format: e.g "4288030270151006;01;29;730"
+    def link_pudge_for_UA_farms(self, profile_id : int, acts: Collection[T],
+                                card : str):
+        response = self.link_card(profile_id=profile_id, acts=acts, card = card,
+                                   country="UA", current_timezone = "Europe/Sofia", timezone="TZ_EUROPE_SOFIA")
+        return response
+        
+
+    def link_card(self, profile_id : int, acts: Collection[T],
+                  card : str,# card format: e.g "4288030270151006;01;29;730"
+                  country : str, # e.g. "UA"
+                  current_timezone : str,#e.g. "Europe/Sofia"
+                  timezone : str, # e.g TZ_AMERICA_LOS_ANGELES
+                  automaticBilling : bool = False,
+                  currency : str = None,
+                  delay : float = None,
+                  delayCard : float = None,
+                  init_currency : str = "USD",
+                  legalVat : bool = False,
+                  linkInvalidCard : bool = False,
+                  link_type : str = "type_1",
+                  makePrimary : bool = False,
+                  needVat : bool = False,
+                  skipDataFill : bool = False,
+                  verify3ds : bool = False) -> Collection[T]:     
+        url = "https://nooklz.com/api/tasks/create"
+        request_data = {
+            "format" : "json",
+            "task" : "link_card",
+            "data" : [
+                {
+                    "account_id" : profile_id,
+                    "act_ids" : [
+                                {
+                                    "act_db_id" : act["id"],
+                                    "act_id" : act["act_id"],
+                                    "automaticBilling" : automaticBilling,
+                                    "card" : card,
+                                    "country" : country,
+                                    "currency" : currency,
+                                    "current_timezone" : current_timezone,
+                                    "delay" :  f"{random.uniform(3.0, 7.0):.2f}",#delay
+                                    "delayCard" : delayCard,
+                                    "init_currency" : init_currency,
+                                    "legalVat" : legalVat,
+                                    "linkInvalidCard" : linkInvalidCard,
+                                    "link_type" : link_type,
+                                    "makePrimary" : makePrimary,
+                                    "needVat" : needVat,
+                                    "skipDataFill" : skipDataFill,
+                                    "timezone" : str(facebook_timezones[timezone]),
+                                    "verify3ds" : verify3ds
+                                }
+                                for act in acts
+                            ]
+                }
+            ]
+        }
+        response = make_post_request(url, json=request_data, headers=self.headers).json()
+        response = self.__wait_result(url="https://nooklz.com/api/accounts/result?exclude=acts", json_payload=response)      
         return response
 
     def check_profiles(self, profile_ids : {int}) -> Collection[T]:
@@ -84,6 +148,8 @@ class NooklzInterface:
                            name_pattern : str, 
                            currency : str = "USD",
                            timezone : str = "TZ_AMERICA_LOS_ANGELES") -> Collection[T]:
+        r = RandomWords()
+        
         url = "https://nooklz.com/api/tasks/create"
         request_data = {
             "format" : "json",
@@ -96,7 +162,7 @@ class NooklzInterface:
                                     "bm_id": bm_id,
                                     "currency": currency,
                                     "timezone": str(facebook_timezones[timezone]),
-                                    "name": f"{name_pattern} {index}"
+                                    "name": f"{r.get_random_word()} {name_pattern} {r.get_random_word()}" #{index}
                                 }
                                 for index, bm_id in enumerate(bm_ids)
                             ]

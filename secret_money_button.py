@@ -8,6 +8,18 @@ from facebook_api import disable_reason
 
 
 class SecretMoneyButton(MoneyButton):
+    def link_cards(self):
+        profiles = self._update_profiles()
+        # find accounts without any attached card 
+        for profile in profiles:
+            acts = []
+            bms = self.nooklz.get_bms(nooklz_profile_ids={profile['id'] : profile['id']}, can_create_ad_account=False, is_disabled=False)
+            for bm in bms:
+                acts.extend(bm['acts'])
+            acts = [act for act in acts if act["funding_sources"] == None and act["disable_reason"] == disable_reason["ACCOUNT_ENABLED"]]
+            self.nooklz.link_pudge_for_UA_farms(profile_id=profile['id'], card="4288030270151006;01;29;730", acts=acts[:1])
+            return
+
     # exports all active bms without locked ad accounts if BM count exceeds the limit
     # accepts invites with other profiles not to exceed the limit
     # leaves from previous accounts
@@ -24,7 +36,7 @@ class SecretMoneyButton(MoneyButton):
                 response = self.nooklz.export_bm_invites(profile_id=profile["id"], bm_ids=[bm["business_id"]])
                 results = self.nooklz.get_results(response)
                 for result in results:
-                    self.__write_cleaned_invites(f'{{"link":"{result}", "business_id":{bm["business_id"]}, "nooklz_profile_id": {profile["id"]}}}', file = "./BM_invites/Internal.txt")
+                    self._write_cleaned_invites(f'{{"link":"{result}", "business_id":{bm["business_id"]}, "nooklz_profile_id": {profile["id"]}}}', file = "./BM_invites/Internal.txt")
 
         # Accept invites
         print("Accepting invites:")
@@ -35,7 +47,7 @@ class SecretMoneyButton(MoneyButton):
         for profile in profiles:
             print(f"{BM_limit - len(profile['bms'])}, {len(profile['bms'])}")
             for n in range (BM_limit - len(profile["bms"])):
-                bm_invites = self.__eat_bm_invites(how_many=1, input_file=r"./BM_invites/Internal.txt", output_file=r"./BM_invites/Internal_used.txt")
+                bm_invites = self._eat_bm_invites(how_many=1, input_file=r"./BM_invites/Internal.txt", output_file=r"./BM_invites/Internal_used.txt")
                 if bm_invites == None:
                     break 
                 bm_invite = json.loads(bm_invites[0])["link"]
@@ -45,11 +57,11 @@ class SecretMoneyButton(MoneyButton):
 
         # Leave business managers
         print("Leaving BMs:")
-        bm_invites = self.__eat_bm_invites(how_many=1, input_file=r"./BM_invites/Internal_used.txt", output_file=r"./BM_invites/Internal_released.txt")
+        bm_invites = self._eat_bm_invites(how_many=1, input_file=r"./BM_invites/Internal_used.txt", output_file=r"./BM_invites/Internal_released.txt")
         while bm_invites != None:
             invite_json = json.loads(bm_invites[0])
             self.nooklz.leave_bms(profile_id=invite_json["nooklz_profile_id"], bm_ids=[invite_json["business_id"]])
-            bm_invites = self.__eat_bm_invites(how_many=1, input_file=r"./BM_invites/Internal_used.txt", output_file=r"./BM_invites/Internal_released.txt")
+            bm_invites = self._eat_bm_invites(how_many=1, input_file=r"./BM_invites/Internal_used.txt", output_file=r"./BM_invites/Internal_released.txt")
 
         self._update_profiles()
 
@@ -68,17 +80,17 @@ class SecretMoneyButton(MoneyButton):
                 response = self.nooklz.export_bm_invites(profile_id=profile["id"], bm_ids=[bm["business_id"]])
                 results = self.nooklz.get_results(response)
                 for result in results:
-                    self.__write_cleaned_invites(result)
+                    self._write_cleaned_invites(result)
 
         # Accept invites
         print("Accepting invites:")
-        profile = self._update_profiles(group_id=259225) # BM Trash 259225
-        trash_bm_invites = self.__eat_bm_invites(how_many=1, input_file=r"./BM_invites/trash_invites.txt", output_file=r"./BM_invites/trash_invites_used.txt")
+        profile = self._update_profiles(group_id=259225)[0] # BM Trash 259225
+        trash_bm_invites = self._eat_bm_invites(how_many=1, input_file=r"./BM_invites/trash_invites.txt", output_file=r"./BM_invites/trash_invites_used.txt")
         while trash_bm_invites != None:
             print(f"facebook profile: {profile['account_name']} profile id: {profile['id']} tries to accept invites:")
             print(trash_bm_invites)
             self.nooklz.accept_bm_invites(profile_id=profile["id"], invite_links=trash_bm_invites)
-            trash_bm_invites = self.__eat_bm_invites(how_many=1, input_file=r"./BM_invites/trash_invites.txt", output_file=r"./BM_invites/trash_invites_used.txt")
+            trash_bm_invites = self._eat_bm_invites(how_many=1, input_file=r"./BM_invites/trash_invites.txt", output_file=r"./BM_invites/trash_invites_used.txt")
             
         # Leave business managers
         print("Leaving BMs:")
@@ -99,21 +111,82 @@ class SecretMoneyButton(MoneyButton):
 
         # filter profiles which have not more BMs than BM_limit
         profiles = [profile for profile in profiles if len(profile["bms"]) <= BM_limit]
+        total_samples = 0
+        succesful_samples = 0
         for profile in profiles:
-            bm_invites = self.__eat_bm_invites(how_many=1, input_file=r"./BM_invites/djekxa.txt", output_file=r"./BM_invites/djekxa_used.txt")       
+            total_samples = total_samples + 1
+            bm_invites = self._eat_bm_invites(how_many=1, input_file=r"./BM_invites/djekxa.txt", output_file=r"./BM_invites/djekxa_used.txt")
+            invite = self._parse_djekxa_invites(bm_invites[0])
             print(f"facebook profile: {profile['account_name']} profile id: {profile['id']} tries to accept invites:")
-            print(bm_invites)
-            self.nooklz.accept_bm_invites(profile_id=profile["id"], invite_links=bm_invites)
-            print(f"facebook profile: {profile['account_name']} profile id: {profile['id']} trying to check profile:")
+            print(invite)
+            business_id = invite["business_id"]
+            invite = invite["invite"]
+            self.nooklz.accept_bm_invites(profile_id=profile["id"], invite_links=[invite])
+
+            print(f"facebook profile: {profile['account_name']} profile id: {profile['id']} trying to check the profile:")
             self.nooklz.check_profiles(profile_ids={profile['id'] : profile['id']})
-            print(f"facebook profile: {profile['account_name']} profile id: {profile['id']} searching for a BM to creat ad account:")
-            bms = self.nooklz.get_bms(nooklz_profile_ids={profile['id'] : profile['id']}, can_create_ad_account=True, is_disabled=False)
-            if len(bms) < 1:
-                print(f"Not enough active BMs that could create an ad account")
+
+            print(f"facebook profile: {profile['account_name']} profile id: {profile['id']} searching for the BM to create an ad account:")
+            bms = self.nooklz.get_bms(nooklz_profile_ids={profile['id'] : profile['id']})
+            # business_id = "3873900086203922"
+            bm = next((bm for bm in bms if bm["business_id"] == business_id), None)
+            if bm != None:
+                # Check BM status
+                invalid = False
+                if bm["is_disabled_for_integrity_reasons"] == True:
+                    print(f"A BM {['bm_name']} {business_id} is disabled")
+                    invalid = True
+                if bm["can_create_ad_account"] == False:
+                    print(f"A BM {['bm_name']} {business_id} can't create ad accounts")
+                    invalid = True
+                if invalid:
+                    return
+                print(f"Creating an ad account for a BM {bm['bm_name']} {business_id}:")
+                response = self.nooklz.create_ad_accounts(profile['id'], [business_id], "Djekxa")
+                # result = [
+                #     "<p><span style=\"color: green;\"><b>[2025-02-02 07:19:49]</b> [Profile:Malvina Reynolds] [Bm:3873900086203922] Created ad account: 973078117514152</span></p>",
+                #     "<p><span style=\"color: green;\"><b>[2025-02-02 07:19:55]</b> [Profile:Malvina Reynolds] [Bm:3873900086203922] Granted user permissions to admin</span></p>"
+                # ]
+                accounts_created = self._extract_ad_account_ids(self.nooklz.get_results(response))
+                # accounts_created = self._extract_ad_account_ids(result)
+                if accounts_created != None:
+                    # check ad account status
+                    print(f"facebook profile: {profile['account_name']} profile id: {profile['id']} trying to check the profile:")
+                    self.nooklz.check_profiles(profile_ids={profile['id'] : profile['id']})
+                    bms = self.nooklz.get_bms(nooklz_profile_ids={profile['id'] : profile['id']})
+                    bm = next((bm for bm in bms if bm["business_id"] == business_id), None)
+                    act = next((act for act in bm['acts'] if act["act_id"] == accounts_created[business_id][0]), None)
+                    if act["disable_reason"] == disable_reason["ACCOUNT_ENABLED"]:
+                        succesful_samples = succesful_samples + 1
+                        print(f"act {act['act_name']} {accounts_created[business_id][0]} created on BM {bm['bm_name']} {business_id} is alive")
+                    elif act["disable_reason"] == disable_reason["ADS_INTEGRITY_POLICY"]:
+                        print("Policy")
+                    elif act["disable_reason"] == disable_reason["RISK_PAYMENT"]:
+                        print("Risk")
+                    else:
+                        print("Something is wrong with ad account")
+                else:
+                    print(f"Can't access account information")
+                    
             else:
-                print(f"Actives BMs that can create an ad account: {len(bms)}, BM chosen: {bms[0]['bm_name']} ({bms[0]['business_id']})")
-                print(f"Creating an ad account for BM chosen: {bms[0]['bm_name']} ({bms[0]['business_id']})")
-                self.nooklz.create_ad_accounts(profile['id'], [bms[0]['business_id']], "Premiumpro arm")
+                print(f"Couldn't get access to BM with id {business_id}")
+
+        print(f"\n Bm check finished: {succesful_samples} out of {total_samples} were successful")
+                
+
+    def crete_add_accounts(self, BM_limit : int = 20, how_many_to_create : int = 2):
+        profiles = self._update_profiles()
+        profiles = [profile for profile in profiles if len(profile["bms"]) <= BM_limit]
+        for profile in profiles:                        
+            print(f"facebook profile: {profile['account_name']} profile id: {profile['id']} searching for BMs to creat ad accounts:")    
+            bms = self.nooklz.get_bms(nooklz_profile_ids={profile['id'] : profile['id']}, can_create_ad_account=True, is_disabled=False)
+            if len(bms) < how_many_to_create:
+                print(f"Not enough active BMs that could create {how_many_to_create} ad accounts")
+            else:
+                bms = bms[:how_many_to_create]
+                print(f"Active BMs that can create an ad account: {len(bms)}.")
+                print(f"Creating ad accounts:")
+                self.nooklz.create_ad_accounts(profile['id'], self.nooklz.get_business_ids_from_json(bms),name_pattern = "Djekxa", timezone="TZ_EUROPE_SOFIA")
 
     def link_bms(self, BM_limit : int = 20):
         profiles = self.nooklz.get_profiles(groups = {259151 : self.nooklz.groups[259151]}) # Ready to link
@@ -125,7 +198,7 @@ class SecretMoneyButton(MoneyButton):
         for profile in profiles:
             print(f"{BM_limit - len(profile['bms'])}, {len(profile['bms'])}")
             for n in range (BM_limit - len(profile["bms"])):
-                bm_invites = self.__eat_bm_invites(how_many=1, input_file=r"./BM_invites/djekxa.txt", output_file=r"./BM_invites/djekxa_used.txt")       
+                bm_invites = self._eat_bm_invites(how_many=1, input_file=r"./BM_invites/djekxa.txt", output_file=r"./BM_invites/djekxa_used.txt")       
                 print(f"facebook profile: {profile['account_name']} profile id: {profile['id']} tries to accept invites:")
                 print(bm_invites)
                 self.nooklz.accept_bm_invites(profile_id=profile["id"], invite_links=bm_invites)
@@ -136,17 +209,3 @@ class SecretMoneyButton(MoneyButton):
         for index in range(int(time_to_sleep/5)):
             print(f"{time_to_sleep - index * 5} min left to sleep.")
             time.sleep(60 * 5)
-                
-            
-        for profile in profiles:
-            print(f"facebook profile: {profile['account_name']} profile id: {profile['id']} trying to check profile:")
-            self.nooklz.check_profiles(profile_ids={profile['id'] : profile['id']})              
-                        
-            print(f"facebook profile: {profile['account_name']} profile id: {profile['id']} searching for a BM to creat ad account:")    
-            bms = self.nooklz.get_bms(nooklz_profile_ids={profile['id'] : profile['id']}, can_create_ad_account=True, is_disabled=False)
-            if len(bms) < 1:
-                print(f"Not enough active BMs that could create an ad account")
-            else:
-                print(f"Actives BMs that can create an ad account: {len(bms)}.")
-                print(f"Creating ad accounts:")
-                self.nooklz.create_ad_accounts(profile['id'], self.nooklz.get_business_ids_from_json(bms), "Djekxa")

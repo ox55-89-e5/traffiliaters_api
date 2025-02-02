@@ -18,7 +18,68 @@ class MoneyButton:
     def link_bms(self, BM_limit : int = 20):
         pass
 
-    def __eat_bm_invites(self, how_many : int, input_file : str = r"BM_invites.txt", output_file : str = r"UsedBM_invites.txt"):
+    def _extract_ad_account_ids(self, data):#returns a dictionary with {bm_id :[act_id, act_id2], bm_id2 : [act_id3]} pattern
+        business_ad_account_dict = {}
+        # Regular expression to find business ID and ad account IDs in both Ukrainian and English versions
+        pattern = r"(Bm:(\d+)).*(?:Створено рекламний акаунт:|Created ad account:)\s*(\d+)"
+        try:
+            # Iterate over each entry in the data
+            for entry in data:
+                match = re.search(pattern, entry)               
+                if match:
+                    business_id = match.group(2)  # Extract the business ID
+                    ad_account_id = match.group(3)  # Extract the ad account ID                
+                    # If the business ID already exists in the dictionary, append the ad account ID
+                    if business_id in business_ad_account_dict:
+                        business_ad_account_dict[business_id].append(ad_account_id)
+                    else:
+                        # Otherwise, create a new list for this business ID
+                        business_ad_account_dict[business_id] = [ad_account_id]    
+            return business_ad_account_dict
+        except Exception as e:
+            print(f"Error: {e}")
+            return None
+
+    def __extract_ad_account_id_list(self, data):
+        ad_account_ids = []
+        # Regular expression to find ad account IDs in both Ukrainian and English versions
+        pattern = r"(?:Створено рекламний акаунт:|Ad account created:)\s*(\d+)"  
+        try:
+            # Iterate over each entry in the data
+            for entry in data:
+                match = re.search(pattern, entry)   
+                if match:
+                    ad_account_ids.append(match.group(1))  # Add the extracted ID to the list                 
+            return ad_account_ids
+        except Exception as e:
+            print(f"Error: {e}")
+            return None
+
+    def _parse_djekxa_invites(self, invite_string):
+        try:
+            pattern = r"(.+)\|business_id=(\d+)"
+            match = re.match(pattern, invite_string)
+            if not match:
+                raise ValueError("Invalid input format")
+            return {"invite": match.group(1), "business_id": match.group(2)}
+        except Exception as e:
+            print(f"Error: {e}")
+
+    def __parse_djekxa_invites_regex(self, invite_string : str):
+        try:
+            # Regex pattern to match 'invite' and 'business_id'
+            pattern = r"(.+)\|business_id=(\d+)"
+            match = re.match(pattern, invite_string)
+            if not match:
+                raise ValueError("Invalid input format")  # Raise an exception if format is incorrect
+            # Extract values
+            invite = match.group(1)
+            business_id = match.group(2)
+            return {"invite": invite, "business_id": business_id}
+        except Exception as e:
+            print(f"Error: {e}")
+
+    def _eat_bm_invites(self, how_many : int, input_file : str = r"BM_invites.txt", output_file : str = r"UsedBM_invites.txt"):
         lines_to_transfer = []
         try:
             # Open the input file in read mode
@@ -52,7 +113,7 @@ class MoneyButton:
         
         return [line.strip() for line in lines_to_transfer]
     
-    def __write_debug_json(self, json_code, file_path : str = "output.json"):
+    def _write_debug_json(self, json_code, file_path : str = "output.json"):
         # Write JSON data to a file with UTF-8 encoding
         with open(file_path, "w", encoding="utf-8") as file:
             json.dump(json_code, file, indent=4, ensure_ascii=False)
@@ -60,7 +121,7 @@ class MoneyButton:
     def __remove_tags(self, text : str):
         return re.sub(r'<.*?>', '', text)
 
-    def __write_cleaned_invites(self, result_with_tags : str, file : str = "./BM_invites/trash_invites.txt"):
+    def _write_cleaned_invites(self, result_with_tags : str, file : str = "./BM_invites/trash_invites.txt"):
         with open(file, "a", encoding="utf-8") as f:
             f.write(self.__remove_tags(result_with_tags) +"\n")
 
