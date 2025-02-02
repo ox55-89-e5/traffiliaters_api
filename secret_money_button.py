@@ -106,72 +106,71 @@ class SecretMoneyButton(MoneyButton):
         self._update_profiles()
 
     def test_bms(self, BM_limit : int = 20):
-        profiles = self._update_profiles(258598) #258598 money button
-        # profiles = self._update_profiles() #258598 money 
+        try:
+            profiles = self._update_profiles(258598) #258598 money button
 
-        # filter profiles which have not more BMs than BM_limit
-        profiles = [profile for profile in profiles if len(profile["bms"]) <= BM_limit]
-        total_samples = 0
-        succesful_samples = 0
-        for profile in profiles:
-            total_samples = total_samples + 1
-            bm_invites = self._eat_bm_invites(how_many=1, input_file=r"./BM_invites/djekxa.txt", output_file=r"./BM_invites/djekxa_used.txt")
-            invite = self._parse_djekxa_invites(bm_invites[0])
-            print(f"facebook profile: {profile['account_name']} profile id: {profile['id']} tries to accept invites:")
-            print(invite)
-            business_id = invite["business_id"]
-            invite = invite["invite"]
-            self.nooklz.accept_bm_invites(profile_id=profile["id"], invite_links=[invite])
+            # filter profiles which have not more BMs than BM_limit
+            profiles = [profile for profile in profiles if len(profile["bms"]) <= BM_limit]
+            total_samples = 0
+            succesful_samples = 0
+            for profile in profiles:
+                try:
+                    total_samples = total_samples + 1
+                    bm_invites = self._eat_bm_invites(how_many=1, input_file=r"./BM_invites/djekxa.txt", output_file=r"./BM_invites/djekxa_used.txt")
+                    invite = self._parse_djekxa_invites(bm_invites[0])
+                    print(f"facebook profile: {profile['account_name']} profile id: {profile['id']} tries to accept invites:")
+                    print(invite)
+                    business_id = invite["business_id"]
+                    invite = invite["invite"]
+                    self.nooklz.accept_bm_invites(profile_id=profile["id"], invite_links=[invite])
 
-            print(f"facebook profile: {profile['account_name']} profile id: {profile['id']} trying to check the profile:")
-            self.nooklz.check_profiles(profile_ids={profile['id'] : profile['id']})
-
-            print(f"facebook profile: {profile['account_name']} profile id: {profile['id']} searching for the BM to create an ad account:")
-            bms = self.nooklz.get_bms(nooklz_profile_ids={profile['id'] : profile['id']})
-            # business_id = "3873900086203922"
-            bm = next((bm for bm in bms if bm["business_id"] == business_id), None)
-            if bm != None:
-                # Check BM status
-                invalid = False
-                if bm["is_disabled_for_integrity_reasons"] == True:
-                    print(f"A BM {['bm_name']} {business_id} is disabled")
-                    invalid = True
-                if bm["can_create_ad_account"] == False:
-                    print(f"A BM {['bm_name']} {business_id} can't create ad accounts")
-                    invalid = True
-                if invalid:
-                    return
-                print(f"Creating an ad account for a BM {bm['bm_name']} {business_id}:")
-                response = self.nooklz.create_ad_accounts(profile['id'], [business_id], "Djekxa")
-                # result = [
-                #     "<p><span style=\"color: green;\"><b>[2025-02-02 07:19:49]</b> [Profile:Malvina Reynolds] [Bm:3873900086203922] Created ad account: 973078117514152</span></p>",
-                #     "<p><span style=\"color: green;\"><b>[2025-02-02 07:19:55]</b> [Profile:Malvina Reynolds] [Bm:3873900086203922] Granted user permissions to admin</span></p>"
-                # ]
-                accounts_created = self._extract_ad_account_ids(self.nooklz.get_results(response))
-                # accounts_created = self._extract_ad_account_ids(result)
-                if accounts_created != None:
-                    # check ad account status
                     print(f"facebook profile: {profile['account_name']} profile id: {profile['id']} trying to check the profile:")
                     self.nooklz.check_profiles(profile_ids={profile['id'] : profile['id']})
+
+                    print(f"facebook profile: {profile['account_name']} profile id: {profile['id']} searching for the BM to create an ad account:")
                     bms = self.nooklz.get_bms(nooklz_profile_ids={profile['id'] : profile['id']})
                     bm = next((bm for bm in bms if bm["business_id"] == business_id), None)
-                    act = next((act for act in bm['acts'] if act["act_id"] == accounts_created[business_id][0]), None)
-                    if act["disable_reason"] == disable_reason["ACCOUNT_ENABLED"]:
-                        succesful_samples = succesful_samples + 1
-                        print(f"act {act['act_name']} {accounts_created[business_id][0]} created on BM {bm['bm_name']} {business_id} is alive")
-                    elif act["disable_reason"] == disable_reason["ADS_INTEGRITY_POLICY"]:
-                        print("Policy")
-                    elif act["disable_reason"] == disable_reason["RISK_PAYMENT"]:
-                        print("Risk")
+                    if bm != None:
+                        # Check BM status
+                        invalid = False
+                        if bm["is_disabled_for_integrity_reasons"] == True:
+                            print(f"A BM {['bm_name']} {business_id} is disabled")
+                            invalid = True
+                        if bm["can_create_ad_account"] == False:
+                            print(f"A BM {['bm_name']} {business_id} can't create ad accounts")
+                            invalid = True
+                        if invalid:
+                            return
+                        print(f"Creating an ad account for a BM {bm['bm_name']} {business_id}:")
+                        response = self.nooklz.create_ad_accounts(profile_id=profile['id'],bm_ids= [business_id],name_pattern= "Djekxa", timezone="TZ_EUROPE_SOFIA")
+                        accounts_created = self._extract_ad_account_ids(self.nooklz.get_results(response))
+                        if accounts_created != None and accounts_created: #also checke whether accounts_created!={} 
+                            # check ad account status
+                            print(f"facebook profile: {profile['account_name']} profile id: {profile['id']} trying to check the profile:")
+                            self.nooklz.check_profiles(profile_ids={profile['id'] : profile['id']})
+                            bms = self.nooklz.get_bms(nooklz_profile_ids={profile['id'] : profile['id']})
+                            bm = next((bm for bm in bms if bm["business_id"] == business_id), None)
+                            act = next((act for act in bm['acts'] if act["act_id"] == accounts_created[business_id][0]), None)
+                            if act["disable_reason"] == disable_reason["ACCOUNT_ENABLED"]:
+                                succesful_samples = succesful_samples + 1
+                                print(f"act {act['act_name']} {accounts_created[business_id][0]} created on BM {bm['bm_name']} {business_id} is alive")
+                            elif act["disable_reason"] == disable_reason["ADS_INTEGRITY_POLICY"]:
+                                print("Policy")
+                            elif act["disable_reason"] == disable_reason["RISK_PAYMENT"]:
+                                print("Risk")
+                            else:
+                                print("Something is wrong with ad account")
+                        else:
+                            print(f"Can't access account information")
+                            
                     else:
-                        print("Something is wrong with ad account")
-                else:
-                    print(f"Can't access account information")
-                    
-            else:
-                print(f"Couldn't get access to BM with id {business_id}")
+                        print(f"Couldn't get access to BM with id {business_id}")
+                except Exception as e:
+                    print(f"Error: {e}")
 
-        print(f"\n Bm check finished: {succesful_samples} out of {total_samples} were successful")
+            print(f"\n Bm check finished: {succesful_samples} out of {total_samples} were successful")
+        except Exception as e:
+                print(f"Error: {e}")
                 
 
     def crete_add_accounts(self, BM_limit : int = 20, how_many_to_create : int = 2):
