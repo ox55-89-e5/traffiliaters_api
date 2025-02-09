@@ -1,0 +1,3864 @@
+URL: https://nooklz.com/api/tasks/create
+Payload: {
+  "format": "json",
+  "task": "link_card",
+  "data": [
+    {
+      "account_id": 18326414,
+      "act_ids": [
+        {
+          "act_db_id": 27801942,
+          "act_id": "2720154018374506",
+          "automaticBilling": false,
+          "card": "4288030279231114;01;29;790",
+          "country": "UA",
+          "currency": null,
+          "current_timezone": "Europe/Sofia",
+          "delay": "4.30",
+          "delayCard": null,
+          "init_currency": "USD",
+          "legalVat": false,
+          "linkInvalidCard": false,
+          "link_type": "type_1",
+          "makePrimary": false,
+          "needVat": false,
+          "skipDataFill": false,
+          "timezone": "19",
+          "verify3ds": false
+        }
+      ]
+    }
+  ]
+}
+Response Code: 200
+Response Content (JSON): {
+  "success": true,
+  "task": "link_card",
+  "task_ids": [
+    {
+      "task_id": "75e43768-d5f0-4931-94e2-c84648947b96",
+      "task": "link_card",
+      "account_id": 18326414,
+      "ids": [
+        []
+      ],
+      "bm_ids": [
+        []
+      ],
+      "act_ids": [
+        {
+          "act_db_id": 27801942,
+          "act_id": "2720154018374506",
+          "automaticBilling": false,
+          "card": "4288030279231114;01;29;790",
+          "country": "UA",
+          "currency": null,
+          "current_timezone": "Europe/Sofia",
+          "delay": "4.30",
+          "delayCard": null,
+          "init_currency": "USD",
+          "legalVat": false,
+          "linkInvalidCard": false,
+          "link_type": "type_1",
+          "makePrimary": false,
+          "needVat": false,
+          "skipDataFill": false,
+          "timezone": "19",
+          "verify3ds": false
+        }
+      ]
+    }
+  ]
+}
+==================================================
+URL: https://nooklz.com/api/accounts/result?exclude=acts
+Payload: {
+  "success": true,
+  "task": "link_card",
+  "task_ids": [
+    {
+      "task_id": "75e43768-d5f0-4931-94e2-c84648947b96",
+      "task": "link_card",
+      "account_id": 18326414,
+      "ids": [
+        []
+      ],
+      "bm_ids": [
+        []
+      ],
+      "act_ids": [
+        {
+          "act_db_id": 27801942,
+          "act_id": "2720154018374506",
+          "automaticBilling": false,
+          "card": "4288030279231114;01;29;790",
+          "country": "UA",
+          "currency": null,
+          "current_timezone": "Europe/Sofia",
+          "delay": "4.30",
+          "delayCard": null,
+          "init_currency": "USD",
+          "legalVat": false,
+          "linkInvalidCard": false,
+          "link_type": "type_1",
+          "makePrimary": false,
+          "needVat": false,
+          "skipDataFill": false,
+          "timezone": "19",
+          "verify3ds": false
+        }
+      ]
+    }
+  ]
+}
+Response Code: 200
+Response Content (JSON): {
+  "success": true,
+  "task_result": []
+}
+==================================================
+URL: https://nooklz.com/api/accounts/result?exclude=acts
+Payload: {
+  "success": true,
+  "task": "link_card",
+  "task_ids": [
+    {
+      "task_id": "75e43768-d5f0-4931-94e2-c84648947b96",
+      "task": "link_card",
+      "account_id": 18326414,
+      "ids": [
+        []
+      ],
+      "bm_ids": [
+        []
+      ],
+      "act_ids": [
+        {
+          "act_db_id": 27801942,
+          "act_id": "2720154018374506",
+          "automaticBilling": false,
+          "card": "4288030279231114;01;29;790",
+          "country": "UA",
+          "currency": null,
+          "current_timezone": "Europe/Sofia",
+          "delay": "4.30",
+          "delayCard": null,
+          "init_currency": "USD",
+          "legalVat": false,
+          "linkInvalidCard": false,
+          "link_type": "type_1",
+          "makePrimary": false,
+          "needVat": false,
+          "skipDataFill": false,
+          "timezone": "19",
+          "verify3ds": false
+        }
+      ]
+    }
+  ]
+}
+Response Code: 200
+Response Content (JSON): {
+  "success": true,
+  "task_result": []
+}
+==================================================
+URL: https://nooklz.com/api/accounts/result?exclude=acts
+Payload: {
+  "success": true,
+  "task": "link_card",
+  "task_ids": [
+    {
+      "task_id": "75e43768-d5f0-4931-94e2-c84648947b96",
+      "task": "link_card",
+      "account_id": 18326414,
+      "ids": [
+        []
+      ],
+      "bm_ids": [
+        []
+      ],
+      "act_ids": [
+        {
+          "act_db_id": 27801942,
+          "act_id": "2720154018374506",
+          "automaticBilling": false,
+          "card": "4288030279231114;01;29;790",
+          "country": "UA",
+          "currency": null,
+          "current_timezone": "Europe/Sofia",
+          "delay": "4.30",
+          "delayCard": null,
+          "init_currency": "USD",
+          "legalVat": false,
+          "linkInvalidCard": false,
+          "link_type": "type_1",
+          "makePrimary": false,
+          "needVat": false,
+          "skipDataFill": false,
+          "timezone": "19",
+          "verify3ds": false
+        }
+      ]
+    }
+  ]
+}
+Response Code: 200
+Response Content (JSON): {
+  "success": true,
+  "task_result": []
+}
+==================================================
+URL: https://nooklz.com/api/accounts/result?exclude=acts
+Payload: {
+  "success": true,
+  "task": "link_card",
+  "task_ids": [
+    {
+      "task_id": "75e43768-d5f0-4931-94e2-c84648947b96",
+      "task": "link_card",
+      "account_id": 18326414,
+      "ids": [
+        []
+      ],
+      "bm_ids": [
+        []
+      ],
+      "act_ids": [
+        {
+          "act_db_id": 27801942,
+          "act_id": "2720154018374506",
+          "automaticBilling": false,
+          "card": "4288030279231114;01;29;790",
+          "country": "UA",
+          "currency": null,
+          "current_timezone": "Europe/Sofia",
+          "delay": "4.30",
+          "delayCard": null,
+          "init_currency": "USD",
+          "legalVat": false,
+          "linkInvalidCard": false,
+          "link_type": "type_1",
+          "makePrimary": false,
+          "needVat": false,
+          "skipDataFill": false,
+          "timezone": "19",
+          "verify3ds": false
+        }
+      ]
+    }
+  ]
+}
+Response Code: 200
+Response Content (JSON): {
+  "success": true,
+  "task_result": []
+}
+==================================================
+URL: https://nooklz.com/api/accounts/result?exclude=acts
+Payload: {
+  "success": true,
+  "task": "link_card",
+  "task_ids": [
+    {
+      "task_id": "75e43768-d5f0-4931-94e2-c84648947b96",
+      "task": "link_card",
+      "account_id": 18326414,
+      "ids": [
+        []
+      ],
+      "bm_ids": [
+        []
+      ],
+      "act_ids": [
+        {
+          "act_db_id": 27801942,
+          "act_id": "2720154018374506",
+          "automaticBilling": false,
+          "card": "4288030279231114;01;29;790",
+          "country": "UA",
+          "currency": null,
+          "current_timezone": "Europe/Sofia",
+          "delay": "4.30",
+          "delayCard": null,
+          "init_currency": "USD",
+          "legalVat": false,
+          "linkInvalidCard": false,
+          "link_type": "type_1",
+          "makePrimary": false,
+          "needVat": false,
+          "skipDataFill": false,
+          "timezone": "19",
+          "verify3ds": false
+        }
+      ]
+    }
+  ]
+}
+Response Code: 200
+Response Content (JSON): {
+  "success": true,
+  "task_result": [
+    {
+      "id": 18326414,
+      "account_name": "Melody Evans",
+      "time_added": "02/02/2025",
+      "time_updated": "03.02 07:47",
+      "proxy": {
+        "id": 2641321,
+        "proxy_name": "Zelda Bradberry",
+        "proxy_type": "http",
+        "ip_address": "176.103.50.114",
+        "port": 15549,
+        "username": "modeler_eki8Nr",
+        "password": "QgQxuVpRaYg3",
+        "ip_version": "ipv4",
+        "country": "ua",
+        "white_ip": "176.103.50.114",
+        "created_at": "2025-02-02T02:59:25.907439+02:00",
+        "status": 1,
+        "update_url": "",
+        "last_checked_at": "2025-02-02T03:00:35.777749+02:00",
+        "linked_accounts": 3,
+        "user": 9416
+      },
+      "label": {
+        "id": 259151,
+        "label_name": "Ready to link",
+        "linked_accounts": 5
+      },
+      "pages": [
+        {
+          "id": 25626008,
+          "page_id": "501603186363379",
+          "filled_info": false,
+          "has_whatsapp_business_number": null,
+          "page_access_token": "EAABsbCS1iHgBOZB3EodW2ZC8VGBPvWCyYImcC7rxwcD1ZBj5wDVhB06S1yfe0v7kkPoVHhElDiPGw7SXwFWnFPKw77IeD2ux7JuIkxMmkNIs8hbyowml4NmKMOtkmDTZBt8ta3xT9bjWCgrCZAutnK1ECIm52ek5Uh3Wjqch4KMEq6TnT9iKDGnojZBZCB8OfZCR4AZDZD",
+          "business": null,
+          "connected_instagram_account": null,
+          "instagram_bm_created": false,
+          "connected_page_backed_instagram_account": "{'id': '17841470527788643'}",
+          "fan_count": 0,
+          "followers_count": 0,
+          "page_name": "Capitol Technology",
+          "ava": "https://scontent-iev1-1.xx.fbcdn.net/v/t39.30808-1/470580212_122114357012609161_8864321285281388567_n.jpg?stp=c0.75.491.490a_cp0_dst-jpg_s50x50_tt6&_nc_cat=108&ccb=1-7&_nc_sid=fe756c&_nc_ohc=g1286E5Ui64Q7kNvgGNEpul&_nc_zt=24&_nc_ht=scontent-iev1-1.xx&_nc_gid=A9kruxFO7l5doRUmfseeQam&oh=00_AYB_-CedHjKqVbEIi4si1eDWIXryfoTS0hICA6Xzg731zA&oe=67A62700",
+          "is_published": true,
+          "is_restricted": false,
+          "has_transitioned_to_new_page_experience": true,
+          "additional_profile_id": "61568274848435",
+          "restriction_date": null,
+          "restriction_type": null,
+          "notifications": null,
+          "appeal_ban_sent": null,
+          "page_created_time": "2024-11-09",
+          "time_updated": "03.02 07:47",
+          "is_primary": false,
+          "ads_posts": null
+        }
+      ],
+      "bms": [
+        {
+          "id": 11391812,
+          "primary_page": null,
+          "created_time": "2025-02-01 09:49",
+          "acts": [
+            {
+              "id": 27791599,
+              "act_id": "885980166817173",
+              "tax_exempt": false,
+              "adrules_library": null,
+              "is_tier_0": false,
+              "is_tier_1": true,
+              "is_tier_0_full": false,
+              "is_tier_restricted": false,
+              "profile": null,
+              "act_name": "mochras Djekxa thresherman",
+              "pixel": [
+                {
+                  "id": "936110168611350",
+                  "name": "Pixel_cf4046"
+                }
+              ],
+              "currency": "USD",
+              "appeal_sent": null,
+              "linked_apps": [
+                {
+                  "id": "8588041834583878",
+                  "name": "Crazy Time Rewards",
+                  "picture": {
+                    "data": {
+                      "url": "https://scontent-iev1-1.xx.fbcdn.net/v/t39.2081-6/475530639_9049332541788136_2964011406311032446_n.jpg?stp=c0.0.76.76a_dst-jpg_p75x75_tt6&_nc_cat=104&ccb=1-7&_nc_sid=ed3f67&_nc_ohc=kwgvGP-yTgMQ7kNvgEByUtJ&_nc_zt=14&_nc_ht=scontent-iev1-1.xx&_nc_gid=AIj2BzeXm638Cu7CmuH_gVZ&oh=00_AYAT8GfCua_Ji46nXI9OWRkbVeV1ijwGM4YfHVMk3Y49zg&oe=67A628C7",
+                      "is_silhouette": false
+                    }
+                  },
+                  "object_store_urls": {
+                    "google_play": "http://play.google.com/store/apps/details?id=com.margelo.rewards",
+                    "instant_game": "http://www.facebook.com/gaming/play/8588041834583878/"
+                  },
+                  "supported_platforms": [
+                    "ANDROID"
+                  ]
+                }
+              ],
+              "business_country_code": "UA",
+              "try_hold_again": false,
+              "tax_id": null,
+              "account_status": 1,
+              "disable_reason": 0,
+              "is_certified": null,
+              "is_main_act": false,
+              "need_phone_verification": null,
+              "is_new_advertiser": true,
+              "is_user_allowed_to_advertise": true,
+              "requested_billing_threshold": null,
+              "spend_limit": null,
+              "created_time": "2025-02-02",
+              "timezone_name": "Europe/Sofia",
+              "timezone_offset_hours_utc": 2.0,
+              "balance": 0.0,
+              "account_currency_ratio_to_usd": 1.0,
+              "adtrust_dsl": 50,
+              "next_bill_date": "2025-02-03T00:00:00+02:00",
+              "is_prepay_account": false,
+              "funding_sources": "[{\"is_primary\": true, \"usability\": \"USABLE\", \"credential_id\": \"9243261049120873\", \"needs_verification\": false, \"full_str\": \"Visa *7557\"}]",
+              "restriction_status": null,
+              "is_notifications_enabled": true,
+              "time_added": "2025-02-02T22:13:34.083675+02:00",
+              "time_updated": "2025-02-03 07:47",
+              "threshold_amount": 2.0,
+              "billing_status": null,
+              "amount_spent": 0.0,
+              "campaigns": 1,
+              "ads": null,
+              "transactions": null,
+              "linked_profile": null
+            }
+          ],
+          "pages": [],
+          "business_id": "1356216772042082",
+          "payment_account_id": "1001553808481905",
+          "owner_id": null,
+          "bm_name": "fyrixi2",
+          "funding_sources": null,
+          "email_verified": null,
+          "can_use_extended_credit": true,
+          "can_create_ad_account": false,
+          "is_disabled_for_integrity_reasons": false,
+          "business_users": [
+            {
+              "id": "61567481464445",
+              "role": "ADMIN",
+              "email": "kazandina2012@mailonon.online",
+              "business": {
+                "id": "1356216772042082",
+                "name": "fyrixi2"
+              }
+            }
+          ],
+          "pending_users": null,
+          "owned_whatsapp_business_accounts": null,
+          "filled_info": false,
+          "shared_link": [],
+          "verification_status": "not_verified",
+          "time_added": "2025-02-02T22:13:15.883358+02:00",
+          "time_updated": "2025-02-03T07:47:41.020800+02:00"
+        },
+        {
+          "id": 11394629,
+          "primary_page": null,
+          "created_time": "2025-02-01 09:49",
+          "acts": [
+            {
+              "id": 27796643,
+              "act_id": "1329301478409745",
+              "tax_exempt": false,
+              "adrules_library": null,
+              "is_tier_0": false,
+              "is_tier_1": true,
+              "is_tier_0_full": false,
+              "is_tier_restricted": false,
+              "profile": null,
+              "act_name": "autofrettage Djekxa liman",
+              "pixel": [
+                {
+                  "id": "585677474454939",
+                  "name": "Pixel_406f58"
+                }
+              ],
+              "currency": "USD",
+              "appeal_sent": null,
+              "linked_apps": [
+                {
+                  "id": "8588041834583878",
+                  "name": "Crazy Time Rewards",
+                  "picture": {
+                    "data": {
+                      "url": "https://scontent-iev1-1.xx.fbcdn.net/v/t39.2081-6/475530639_9049332541788136_2964011406311032446_n.jpg?stp=c0.0.76.76a_dst-jpg_p75x75_tt6&_nc_cat=104&ccb=1-7&_nc_sid=ed3f67&_nc_ohc=kwgvGP-yTgMQ7kNvgEByUtJ&_nc_zt=14&_nc_ht=scontent-iev1-1.xx&_nc_gid=AIj2BzeXm638Cu7CmuH_gVZ&oh=00_AYAT8GfCua_Ji46nXI9OWRkbVeV1ijwGM4YfHVMk3Y49zg&oe=67A628C7",
+                      "is_silhouette": false
+                    }
+                  },
+                  "object_store_urls": {
+                    "google_play": "http://play.google.com/store/apps/details?id=com.margelo.rewards",
+                    "instant_game": "http://www.facebook.com/gaming/play/8588041834583878/"
+                  },
+                  "supported_platforms": [
+                    "ANDROID"
+                  ]
+                }
+              ],
+              "business_country_code": "UA",
+              "try_hold_again": false,
+              "tax_id": null,
+              "account_status": 1,
+              "disable_reason": 0,
+              "is_certified": null,
+              "is_main_act": false,
+              "need_phone_verification": null,
+              "is_new_advertiser": true,
+              "is_user_allowed_to_advertise": true,
+              "requested_billing_threshold": null,
+              "spend_limit": null,
+              "created_time": "2025-02-02",
+              "timezone_name": "Europe/Sofia",
+              "timezone_offset_hours_utc": 2.0,
+              "balance": 0.0,
+              "account_currency_ratio_to_usd": 1.0,
+              "adtrust_dsl": 100,
+              "next_bill_date": "2025-02-03T00:00:00+02:00",
+              "is_prepay_account": false,
+              "funding_sources": "[{\"is_primary\": true, \"usability\": \"USABLE\", \"credential_id\": \"8946469388797764\", \"needs_verification\": false, \"full_str\": \"Visa *5667\"}]",
+              "restriction_status": null,
+              "is_notifications_enabled": true,
+              "time_added": "2025-02-02T23:31:16.992090+02:00",
+              "time_updated": "2025-02-03 07:47",
+              "threshold_amount": 2.0,
+              "billing_status": null,
+              "amount_spent": 0.0,
+              "campaigns": 1,
+              "ads": null,
+              "transactions": null,
+              "linked_profile": null
+            }
+          ],
+          "pages": [],
+          "business_id": "1361677491675630",
+          "payment_account_id": "636924868841132",
+          "owner_id": null,
+          "bm_name": "girzorapsu2025",
+          "funding_sources": null,
+          "email_verified": null,
+          "can_use_extended_credit": true,
+          "can_create_ad_account": false,
+          "is_disabled_for_integrity_reasons": false,
+          "business_users": [
+            {
+              "id": "61567118536233",
+              "role": "ADMIN",
+              "email": "ossperihin2012@mailonon.online",
+              "business": {
+                "id": "1361677491675630",
+                "name": "girzorapsu2025"
+              }
+            }
+          ],
+          "pending_users": null,
+          "owned_whatsapp_business_accounts": null,
+          "filled_info": false,
+          "shared_link": [],
+          "verification_status": "not_verified",
+          "time_added": "2025-02-02T23:30:56.235708+02:00",
+          "time_updated": "2025-02-03T07:47:41.013349+02:00"
+        },
+        {
+          "id": 11399515,
+          "primary_page": null,
+          "created_time": "2025-02-01 09:51",
+          "acts": [
+            {
+              "id": 27801942,
+              "act_id": "2720154018374506",
+              "tax_exempt": false,
+              "adrules_library": null,
+              "is_tier_0": false,
+              "is_tier_1": true,
+              "is_tier_0_full": false,
+              "is_tier_restricted": false,
+              "profile": null,
+              "act_name": "oblongitude Djekxa rippermen",
+              "pixel": null,
+              "currency": "USD",
+              "appeal_sent": null,
+              "linked_apps": [
+                {
+                  "id": "8588041834583878",
+                  "name": "Crazy Time Rewards",
+                  "picture": {
+                    "data": {
+                      "url": "https://scontent-iev1-1.xx.fbcdn.net/v/t39.2081-6/475530639_9049332541788136_2964011406311032446_n.jpg?stp=c0.0.76.76a_dst-jpg_p75x75_tt6&_nc_cat=104&ccb=1-7&_nc_sid=ed3f67&_nc_ohc=kwgvGP-yTgMQ7kNvgEByUtJ&_nc_zt=14&_nc_ht=scontent-iev1-1.xx&_nc_gid=AIj2BzeXm638Cu7CmuH_gVZ&oh=00_AYAT8GfCua_Ji46nXI9OWRkbVeV1ijwGM4YfHVMk3Y49zg&oe=67A628C7",
+                      "is_silhouette": false
+                    }
+                  },
+                  "object_store_urls": {
+                    "google_play": "http://play.google.com/store/apps/details?id=com.margelo.rewards",
+                    "instant_game": "http://www.facebook.com/gaming/play/8588041834583878/"
+                  },
+                  "supported_platforms": [
+                    "ANDROID"
+                  ]
+                }
+              ],
+              "business_country_code": "UA",
+              "try_hold_again": false,
+              "tax_id": null,
+              "account_status": 2,
+              "disable_reason": 3,
+              "is_certified": null,
+              "is_main_act": false,
+              "need_phone_verification": true,
+              "is_new_advertiser": true,
+              "is_user_allowed_to_advertise": true,
+              "requested_billing_threshold": null,
+              "spend_limit": null,
+              "created_time": "2025-02-03",
+              "timezone_name": "Europe/Sofia",
+              "timezone_offset_hours_utc": 2.0,
+              "balance": 0.0,
+              "account_currency_ratio_to_usd": 1.0,
+              "adtrust_dsl": 100,
+              "next_bill_date": "2025-02-03T00:00:00+02:00",
+              "is_prepay_account": false,
+              "funding_sources": "[]",
+              "restriction_status": null,
+              "is_notifications_enabled": true,
+              "time_added": "2025-02-03T04:02:07.457829+02:00",
+              "time_updated": "2025-02-03 07:47",
+              "threshold_amount": null,
+              "billing_status": null,
+              "amount_spent": 0.0,
+              "campaigns": 0,
+              "ads": null,
+              "transactions": null,
+              "linked_profile": null
+            }
+          ],
+          "pages": [],
+          "business_id": "9272230242854133",
+          "payment_account_id": "2028557530996368",
+          "owner_id": null,
+          "bm_name": "gokkolufyu",
+          "funding_sources": null,
+          "email_verified": null,
+          "can_use_extended_credit": true,
+          "can_create_ad_account": false,
+          "is_disabled_for_integrity_reasons": false,
+          "business_users": [
+            {
+              "id": "61567120546358",
+              "role": "ADMIN",
+              "email": "hamasacif@mailonon.online",
+              "business": {
+                "id": "9272230242854133",
+                "name": "gokkolufyu"
+              }
+            }
+          ],
+          "pending_users": null,
+          "owned_whatsapp_business_accounts": null,
+          "filled_info": false,
+          "shared_link": [],
+          "verification_status": "not_verified",
+          "time_added": "2025-02-03T03:59:52.315943+02:00",
+          "time_updated": "2025-02-03T07:47:40.953101+02:00"
+        },
+        {
+          "id": 11399516,
+          "primary_page": null,
+          "created_time": "2025-02-01 09:53",
+          "acts": [
+            {
+              "id": 27801943,
+              "act_id": "580673864988416",
+              "tax_exempt": false,
+              "adrules_library": null,
+              "is_tier_0": false,
+              "is_tier_1": true,
+              "is_tier_0_full": false,
+              "is_tier_restricted": false,
+              "profile": null,
+              "act_name": "btl Djekxa nonprescriptive",
+              "pixel": null,
+              "currency": "USD",
+              "appeal_sent": null,
+              "linked_apps": [
+                {
+                  "id": "8588041834583878",
+                  "name": "Crazy Time Rewards",
+                  "picture": {
+                    "data": {
+                      "url": "https://scontent-iev1-1.xx.fbcdn.net/v/t39.2081-6/475530639_9049332541788136_2964011406311032446_n.jpg?stp=c0.0.76.76a_dst-jpg_p75x75_tt6&_nc_cat=104&ccb=1-7&_nc_sid=ed3f67&_nc_ohc=kwgvGP-yTgMQ7kNvgEByUtJ&_nc_zt=14&_nc_ht=scontent-iev1-1.xx&_nc_gid=AIj2BzeXm638Cu7CmuH_gVZ&oh=00_AYAT8GfCua_Ji46nXI9OWRkbVeV1ijwGM4YfHVMk3Y49zg&oe=67A628C7",
+                      "is_silhouette": false
+                    }
+                  },
+                  "object_store_urls": {
+                    "google_play": "http://play.google.com/store/apps/details?id=com.margelo.rewards",
+                    "instant_game": "http://www.facebook.com/gaming/play/8588041834583878/"
+                  },
+                  "supported_platforms": [
+                    "ANDROID"
+                  ]
+                }
+              ],
+              "business_country_code": null,
+              "try_hold_again": false,
+              "tax_id": null,
+              "account_status": 1,
+              "disable_reason": 0,
+              "is_certified": null,
+              "is_main_act": false,
+              "need_phone_verification": false,
+              "is_new_advertiser": true,
+              "is_user_allowed_to_advertise": true,
+              "requested_billing_threshold": null,
+              "spend_limit": null,
+              "created_time": "2025-02-03",
+              "timezone_name": "Europe/Sofia",
+              "timezone_offset_hours_utc": 2.0,
+              "balance": 0.0,
+              "account_currency_ratio_to_usd": 1.0,
+              "adtrust_dsl": 100,
+              "next_bill_date": "2025-02-03T00:00:00+02:00",
+              "is_prepay_account": false,
+              "funding_sources": "[]",
+              "restriction_status": null,
+              "is_notifications_enabled": true,
+              "time_added": "2025-02-03T04:02:08.467599+02:00",
+              "time_updated": "2025-02-03 07:47",
+              "threshold_amount": null,
+              "billing_status": null,
+              "amount_spent": 0.0,
+              "campaigns": 0,
+              "ads": null,
+              "transactions": null,
+              "linked_profile": null
+            }
+          ],
+          "pages": [],
+          "business_id": "3470212236456341",
+          "payment_account_id": "2073217423122722",
+          "owner_id": null,
+          "bm_name": "gulmepirtu",
+          "funding_sources": null,
+          "email_verified": null,
+          "can_use_extended_credit": true,
+          "can_create_ad_account": false,
+          "is_disabled_for_integrity_reasons": false,
+          "business_users": [
+            {
+              "id": "61567095257299",
+              "role": "ADMIN",
+              "email": "hizutad1995@mailonon.online",
+              "business": {
+                "id": "3470212236456341",
+                "name": "gulmepirtu"
+              }
+            }
+          ],
+          "pending_users": null,
+          "owned_whatsapp_business_accounts": null,
+          "filled_info": false,
+          "shared_link": [],
+          "verification_status": "not_verified",
+          "time_added": "2025-02-03T03:59:52.322961+02:00",
+          "time_updated": "2025-02-03T07:47:40.967653+02:00"
+        },
+        {
+          "id": 11399517,
+          "primary_page": null,
+          "created_time": "2025-02-01 09:56",
+          "acts": [
+            {
+              "id": 27801944,
+              "act_id": "586224424180478",
+              "tax_exempt": false,
+              "adrules_library": null,
+              "is_tier_0": false,
+              "is_tier_1": true,
+              "is_tier_0_full": false,
+              "is_tier_restricted": false,
+              "profile": null,
+              "act_name": "settsman Djekxa excern",
+              "pixel": null,
+              "currency": "USD",
+              "appeal_sent": null,
+              "linked_apps": [
+                {
+                  "id": "8588041834583878",
+                  "name": "Crazy Time Rewards",
+                  "picture": {
+                    "data": {
+                      "url": "https://scontent-iev1-1.xx.fbcdn.net/v/t39.2081-6/475530639_9049332541788136_2964011406311032446_n.jpg?stp=c0.0.76.76a_dst-jpg_p75x75_tt6&_nc_cat=104&ccb=1-7&_nc_sid=ed3f67&_nc_ohc=kwgvGP-yTgMQ7kNvgEByUtJ&_nc_zt=14&_nc_ht=scontent-iev1-1.xx&_nc_gid=AIj2BzeXm638Cu7CmuH_gVZ&oh=00_AYAT8GfCua_Ji46nXI9OWRkbVeV1ijwGM4YfHVMk3Y49zg&oe=67A628C7",
+                      "is_silhouette": false
+                    }
+                  },
+                  "object_store_urls": {
+                    "google_play": "http://play.google.com/store/apps/details?id=com.margelo.rewards",
+                    "instant_game": "http://www.facebook.com/gaming/play/8588041834583878/"
+                  },
+                  "supported_platforms": [
+                    "ANDROID"
+                  ]
+                }
+              ],
+              "business_country_code": null,
+              "try_hold_again": false,
+              "tax_id": null,
+              "account_status": 1,
+              "disable_reason": 0,
+              "is_certified": null,
+              "is_main_act": false,
+              "need_phone_verification": true,
+              "is_new_advertiser": true,
+              "is_user_allowed_to_advertise": true,
+              "requested_billing_threshold": null,
+              "spend_limit": null,
+              "created_time": "2025-02-03",
+              "timezone_name": "Europe/Sofia",
+              "timezone_offset_hours_utc": 2.0,
+              "balance": 0.0,
+              "account_currency_ratio_to_usd": 1.0,
+              "adtrust_dsl": 100,
+              "next_bill_date": "2025-02-03T00:00:00+02:00",
+              "is_prepay_account": false,
+              "funding_sources": "[]",
+              "restriction_status": null,
+              "is_notifications_enabled": true,
+              "time_added": "2025-02-03T04:02:09.681801+02:00",
+              "time_updated": "2025-02-03 07:47",
+              "threshold_amount": null,
+              "billing_status": null,
+              "amount_spent": 0.0,
+              "campaigns": 0,
+              "ads": null,
+              "transactions": null,
+              "linked_profile": null
+            }
+          ],
+          "pages": [],
+          "business_id": "2323912444631275",
+          "payment_account_id": "4066554897000107",
+          "owner_id": null,
+          "bm_name": "haganuti",
+          "funding_sources": null,
+          "email_verified": null,
+          "can_use_extended_credit": true,
+          "can_create_ad_account": false,
+          "is_disabled_for_integrity_reasons": false,
+          "business_users": [
+            {
+              "id": "61567288300076",
+              "role": "ADMIN",
+              "email": "utunemir1385@mailonon.online",
+              "business": {
+                "id": "2323912444631275",
+                "name": "haganuti"
+              }
+            }
+          ],
+          "pending_users": null,
+          "owned_whatsapp_business_accounts": null,
+          "filled_info": false,
+          "shared_link": [],
+          "verification_status": "not_verified",
+          "time_added": "2025-02-03T03:59:52.328575+02:00",
+          "time_updated": "2025-02-03T07:47:40.978188+02:00"
+        },
+        {
+          "id": 11399518,
+          "primary_page": null,
+          "created_time": "2025-02-01 09:57",
+          "acts": [
+            {
+              "id": 27801945,
+              "act_id": "656400926734233",
+              "tax_exempt": false,
+              "adrules_library": null,
+              "is_tier_0": false,
+              "is_tier_1": true,
+              "is_tier_0_full": false,
+              "is_tier_restricted": false,
+              "profile": null,
+              "act_name": "mitoses Djekxa revealer",
+              "pixel": null,
+              "currency": "USD",
+              "appeal_sent": null,
+              "linked_apps": [
+                {
+                  "id": "8588041834583878",
+                  "name": "Crazy Time Rewards",
+                  "picture": {
+                    "data": {
+                      "url": "https://scontent-iev1-1.xx.fbcdn.net/v/t39.2081-6/475530639_9049332541788136_2964011406311032446_n.jpg?stp=c0.0.76.76a_dst-jpg_p75x75_tt6&_nc_cat=104&ccb=1-7&_nc_sid=ed3f67&_nc_ohc=kwgvGP-yTgMQ7kNvgEByUtJ&_nc_zt=14&_nc_ht=scontent-iev1-1.xx&_nc_gid=AIj2BzeXm638Cu7CmuH_gVZ&oh=00_AYAT8GfCua_Ji46nXI9OWRkbVeV1ijwGM4YfHVMk3Y49zg&oe=67A628C7",
+                      "is_silhouette": false
+                    }
+                  },
+                  "object_store_urls": {
+                    "google_play": "http://play.google.com/store/apps/details?id=com.margelo.rewards",
+                    "instant_game": "http://www.facebook.com/gaming/play/8588041834583878/"
+                  },
+                  "supported_platforms": [
+                    "ANDROID"
+                  ]
+                }
+              ],
+              "business_country_code": null,
+              "try_hold_again": false,
+              "tax_id": null,
+              "account_status": 1,
+              "disable_reason": 0,
+              "is_certified": null,
+              "is_main_act": false,
+              "need_phone_verification": true,
+              "is_new_advertiser": true,
+              "is_user_allowed_to_advertise": true,
+              "requested_billing_threshold": null,
+              "spend_limit": null,
+              "created_time": "2025-02-03",
+              "timezone_name": "Europe/Sofia",
+              "timezone_offset_hours_utc": 2.0,
+              "balance": 0.0,
+              "account_currency_ratio_to_usd": 1.0,
+              "adtrust_dsl": 100,
+              "next_bill_date": "2025-02-03T00:00:00+02:00",
+              "is_prepay_account": false,
+              "funding_sources": "[]",
+              "restriction_status": null,
+              "is_notifications_enabled": true,
+              "time_added": "2025-02-03T04:02:11.240159+02:00",
+              "time_updated": "2025-02-03 07:47",
+              "threshold_amount": null,
+              "billing_status": null,
+              "amount_spent": 0.0,
+              "campaigns": 0,
+              "ads": null,
+              "transactions": null,
+              "linked_profile": null
+            }
+          ],
+          "pages": [],
+          "business_id": "1992103207933921",
+          "payment_account_id": "1397820087853435",
+          "owner_id": null,
+          "bm_name": "hr5zrewnxd",
+          "funding_sources": null,
+          "email_verified": null,
+          "can_use_extended_credit": true,
+          "can_create_ad_account": false,
+          "is_disabled_for_integrity_reasons": false,
+          "business_users": [
+            {
+              "id": "61567840914309",
+              "role": "ADMIN",
+              "email": "stereotip6210@mailonon.online",
+              "business": {
+                "id": "1992103207933921",
+                "name": "hr5zrewnxd"
+              }
+            }
+          ],
+          "pending_users": null,
+          "owned_whatsapp_business_accounts": null,
+          "filled_info": false,
+          "shared_link": [],
+          "verification_status": "not_verified",
+          "time_added": "2025-02-03T03:59:52.334120+02:00",
+          "time_updated": "2025-02-03T07:47:40.985181+02:00"
+        },
+        {
+          "id": 11399519,
+          "primary_page": null,
+          "created_time": "2025-02-01 09:51",
+          "acts": [
+            {
+              "id": 27801946,
+              "act_id": "1523493291652883",
+              "tax_exempt": false,
+              "adrules_library": null,
+              "is_tier_0": false,
+              "is_tier_1": true,
+              "is_tier_0_full": false,
+              "is_tier_restricted": false,
+              "profile": null,
+              "act_name": "rediffuse Djekxa gluttonish",
+              "pixel": null,
+              "currency": "USD",
+              "appeal_sent": null,
+              "linked_apps": [
+                {
+                  "id": "8588041834583878",
+                  "name": "Crazy Time Rewards",
+                  "picture": {
+                    "data": {
+                      "url": "https://scontent-iev1-1.xx.fbcdn.net/v/t39.2081-6/475530639_9049332541788136_2964011406311032446_n.jpg?stp=c0.0.76.76a_dst-jpg_p75x75_tt6&_nc_cat=104&ccb=1-7&_nc_sid=ed3f67&_nc_ohc=kwgvGP-yTgMQ7kNvgEByUtJ&_nc_zt=14&_nc_ht=scontent-iev1-1.xx&_nc_gid=AIj2BzeXm638Cu7CmuH_gVZ&oh=00_AYAT8GfCua_Ji46nXI9OWRkbVeV1ijwGM4YfHVMk3Y49zg&oe=67A628C7",
+                      "is_silhouette": false
+                    }
+                  },
+                  "object_store_urls": {
+                    "google_play": "http://play.google.com/store/apps/details?id=com.margelo.rewards",
+                    "instant_game": "http://www.facebook.com/gaming/play/8588041834583878/"
+                  },
+                  "supported_platforms": [
+                    "ANDROID"
+                  ]
+                }
+              ],
+              "business_country_code": null,
+              "try_hold_again": false,
+              "tax_id": null,
+              "account_status": 1,
+              "disable_reason": 0,
+              "is_certified": null,
+              "is_main_act": false,
+              "need_phone_verification": false,
+              "is_new_advertiser": true,
+              "is_user_allowed_to_advertise": true,
+              "requested_billing_threshold": null,
+              "spend_limit": null,
+              "created_time": "2025-02-03",
+              "timezone_name": "Europe/Sofia",
+              "timezone_offset_hours_utc": 2.0,
+              "balance": 0.0,
+              "account_currency_ratio_to_usd": 1.0,
+              "adtrust_dsl": 100,
+              "next_bill_date": "2025-02-03T00:00:00+02:00",
+              "is_prepay_account": false,
+              "funding_sources": "[]",
+              "restriction_status": null,
+              "is_notifications_enabled": true,
+              "time_added": "2025-02-03T04:02:12.583602+02:00",
+              "time_updated": "2025-02-03 07:47",
+              "threshold_amount": null,
+              "billing_status": null,
+              "amount_spent": 0.0,
+              "campaigns": 0,
+              "ads": null,
+              "transactions": null,
+              "linked_profile": null
+            }
+          ],
+          "pages": [],
+          "business_id": "1809836456440174",
+          "payment_account_id": "1458987105060400",
+          "owner_id": null,
+          "bm_name": "gsbjpaxjv",
+          "funding_sources": null,
+          "email_verified": null,
+          "can_use_extended_credit": true,
+          "can_create_ad_account": false,
+          "is_disabled_for_integrity_reasons": false,
+          "business_users": [
+            {
+              "id": "61567336658315",
+              "role": "ADMIN",
+              "email": "skshushan727@mailonon.online",
+              "business": {
+                "id": "1809836456440174",
+                "name": "gsbjpaxjv"
+              }
+            }
+          ],
+          "pending_users": null,
+          "owned_whatsapp_business_accounts": null,
+          "filled_info": false,
+          "shared_link": [],
+          "verification_status": "not_verified",
+          "time_added": "2025-02-03T03:59:52.339554+02:00",
+          "time_updated": "2025-02-03T07:47:40.992174+02:00"
+        },
+        {
+          "id": 11399520,
+          "primary_page": null,
+          "created_time": "2025-02-01 09:56",
+          "acts": [
+            {
+              "id": 27802068,
+              "act_id": "2114982038938719",
+              "tax_exempt": false,
+              "adrules_library": null,
+              "is_tier_0": false,
+              "is_tier_1": true,
+              "is_tier_0_full": false,
+              "is_tier_restricted": false,
+              "profile": null,
+              "act_name": "showjumping Djekxa dartle",
+              "pixel": null,
+              "currency": "USD",
+              "appeal_sent": null,
+              "linked_apps": [
+                {
+                  "id": "8588041834583878",
+                  "name": "Crazy Time Rewards",
+                  "picture": {
+                    "data": {
+                      "url": "https://scontent-iev1-1.xx.fbcdn.net/v/t39.2081-6/475530639_9049332541788136_2964011406311032446_n.jpg?stp=c0.0.76.76a_dst-jpg_p75x75_tt6&_nc_cat=104&ccb=1-7&_nc_sid=ed3f67&_nc_ohc=kwgvGP-yTgMQ7kNvgEByUtJ&_nc_zt=14&_nc_ht=scontent-iev1-1.xx&_nc_gid=AIj2BzeXm638Cu7CmuH_gVZ&oh=00_AYAT8GfCua_Ji46nXI9OWRkbVeV1ijwGM4YfHVMk3Y49zg&oe=67A628C7",
+                      "is_silhouette": false
+                    }
+                  },
+                  "object_store_urls": {
+                    "google_play": "http://play.google.com/store/apps/details?id=com.margelo.rewards",
+                    "instant_game": "http://www.facebook.com/gaming/play/8588041834583878/"
+                  },
+                  "supported_platforms": [
+                    "ANDROID"
+                  ]
+                }
+              ],
+              "business_country_code": null,
+              "try_hold_again": false,
+              "tax_id": null,
+              "account_status": 1,
+              "disable_reason": 0,
+              "is_certified": null,
+              "is_main_act": false,
+              "need_phone_verification": true,
+              "is_new_advertiser": true,
+              "is_user_allowed_to_advertise": true,
+              "requested_billing_threshold": null,
+              "spend_limit": null,
+              "created_time": "2025-02-03",
+              "timezone_name": "Europe/Sofia",
+              "timezone_offset_hours_utc": 2.0,
+              "balance": 0.0,
+              "account_currency_ratio_to_usd": 1.0,
+              "adtrust_dsl": 100,
+              "next_bill_date": "2025-02-03T00:00:00+02:00",
+              "is_prepay_account": false,
+              "funding_sources": "[]",
+              "restriction_status": null,
+              "is_notifications_enabled": true,
+              "time_added": "2025-02-03T04:13:38.268029+02:00",
+              "time_updated": "2025-02-03 07:47",
+              "threshold_amount": null,
+              "billing_status": null,
+              "amount_spent": 0.0,
+              "campaigns": 0,
+              "ads": null,
+              "transactions": null,
+              "linked_profile": null
+            }
+          ],
+          "pages": [],
+          "business_id": "1611180452833977",
+          "payment_account_id": "630468566323054",
+          "owner_id": null,
+          "bm_name": "hagen68410",
+          "funding_sources": null,
+          "email_verified": null,
+          "can_use_extended_credit": true,
+          "can_create_ad_account": false,
+          "is_disabled_for_integrity_reasons": false,
+          "business_users": [
+            {
+              "id": "61567285180251",
+              "role": "ADMIN",
+              "email": "tasfeliksa@mailonon.online",
+              "business": {
+                "id": "1611180452833977",
+                "name": "hagen68410"
+              }
+            }
+          ],
+          "pending_users": null,
+          "owned_whatsapp_business_accounts": null,
+          "filled_info": false,
+          "shared_link": [],
+          "verification_status": "not_verified",
+          "time_added": "2025-02-03T03:59:52.345047+02:00",
+          "time_updated": "2025-02-03T07:47:40.999240+02:00"
+        },
+        {
+          "id": 11399521,
+          "primary_page": null,
+          "created_time": "2025-02-01 09:56",
+          "acts": [
+            {
+              "id": 27802069,
+              "act_id": "1613439642879444",
+              "tax_exempt": false,
+              "adrules_library": null,
+              "is_tier_0": false,
+              "is_tier_1": true,
+              "is_tier_0_full": false,
+              "is_tier_restricted": false,
+              "profile": null,
+              "act_name": "sussexite Djekxa coronations",
+              "pixel": null,
+              "currency": "USD",
+              "appeal_sent": null,
+              "linked_apps": [
+                {
+                  "id": "8588041834583878",
+                  "name": "Crazy Time Rewards",
+                  "picture": {
+                    "data": {
+                      "url": "https://scontent-iev1-1.xx.fbcdn.net/v/t39.2081-6/475530639_9049332541788136_2964011406311032446_n.jpg?stp=c0.0.76.76a_dst-jpg_p75x75_tt6&_nc_cat=104&ccb=1-7&_nc_sid=ed3f67&_nc_ohc=kwgvGP-yTgMQ7kNvgEByUtJ&_nc_zt=14&_nc_ht=scontent-iev1-1.xx&_nc_gid=AIj2BzeXm638Cu7CmuH_gVZ&oh=00_AYAT8GfCua_Ji46nXI9OWRkbVeV1ijwGM4YfHVMk3Y49zg&oe=67A628C7",
+                      "is_silhouette": false
+                    }
+                  },
+                  "object_store_urls": {
+                    "google_play": "http://play.google.com/store/apps/details?id=com.margelo.rewards",
+                    "instant_game": "http://www.facebook.com/gaming/play/8588041834583878/"
+                  },
+                  "supported_platforms": [
+                    "ANDROID"
+                  ]
+                }
+              ],
+              "business_country_code": null,
+              "try_hold_again": false,
+              "tax_id": null,
+              "account_status": 1,
+              "disable_reason": 0,
+              "is_certified": null,
+              "is_main_act": false,
+              "need_phone_verification": true,
+              "is_new_advertiser": true,
+              "is_user_allowed_to_advertise": true,
+              "requested_billing_threshold": null,
+              "spend_limit": null,
+              "created_time": "2025-02-03",
+              "timezone_name": "Europe/Sofia",
+              "timezone_offset_hours_utc": 2.0,
+              "balance": 0.0,
+              "account_currency_ratio_to_usd": 1.0,
+              "adtrust_dsl": 100,
+              "next_bill_date": "2025-02-03T00:00:00+02:00",
+              "is_prepay_account": false,
+              "funding_sources": "[]",
+              "restriction_status": null,
+              "is_notifications_enabled": true,
+              "time_added": "2025-02-03T04:13:40.017383+02:00",
+              "time_updated": "2025-02-03 07:47",
+              "threshold_amount": null,
+              "billing_status": null,
+              "amount_spent": 0.0,
+              "campaigns": 0,
+              "ads": null,
+              "transactions": null,
+              "linked_profile": null
+            }
+          ],
+          "pages": [],
+          "business_id": "1392029428839690",
+          "payment_account_id": "2129191307552487",
+          "owner_id": null,
+          "bm_name": "hajijowo",
+          "funding_sources": null,
+          "email_verified": null,
+          "can_use_extended_credit": true,
+          "can_create_ad_account": false,
+          "is_disabled_for_integrity_reasons": false,
+          "business_users": [
+            {
+              "id": "61567830744466",
+              "role": "ADMIN",
+              "email": "ufivynyni@mailonon.online",
+              "business": {
+                "id": "1392029428839690",
+                "name": "hajijowo"
+              }
+            }
+          ],
+          "pending_users": null,
+          "owned_whatsapp_business_accounts": null,
+          "filled_info": false,
+          "shared_link": [],
+          "verification_status": "not_verified",
+          "time_added": "2025-02-03T03:59:52.350550+02:00",
+          "time_updated": "2025-02-03T07:47:41.006252+02:00"
+        },
+        {
+          "id": 11399522,
+          "primary_page": null,
+          "created_time": "2025-02-01 09:57",
+          "acts": [
+            {
+              "id": 27802070,
+              "act_id": "1403281354374816",
+              "tax_exempt": false,
+              "adrules_library": null,
+              "is_tier_0": true,
+              "is_tier_1": false,
+              "is_tier_0_full": true,
+              "is_tier_restricted": false,
+              "profile": null,
+              "act_name": "romero Djekxa reduccion",
+              "pixel": null,
+              "currency": "USD",
+              "appeal_sent": null,
+              "linked_apps": [
+                {
+                  "id": "8588041834583878",
+                  "name": "Crazy Time Rewards",
+                  "picture": {
+                    "data": {
+                      "url": "https://scontent-iev1-1.xx.fbcdn.net/v/t39.2081-6/475530639_9049332541788136_2964011406311032446_n.jpg?stp=c0.0.76.76a_dst-jpg_p75x75_tt6&_nc_cat=104&ccb=1-7&_nc_sid=ed3f67&_nc_ohc=kwgvGP-yTgMQ7kNvgEByUtJ&_nc_zt=14&_nc_ht=scontent-iev1-1.xx&_nc_gid=AIj2BzeXm638Cu7CmuH_gVZ&oh=00_AYAT8GfCua_Ji46nXI9OWRkbVeV1ijwGM4YfHVMk3Y49zg&oe=67A628C7",
+                      "is_silhouette": false
+                    }
+                  },
+                  "object_store_urls": {
+                    "google_play": "http://play.google.com/store/apps/details?id=com.margelo.rewards",
+                    "instant_game": "http://www.facebook.com/gaming/play/8588041834583878/"
+                  },
+                  "supported_platforms": [
+                    "ANDROID"
+                  ]
+                }
+              ],
+              "business_country_code": null,
+              "try_hold_again": false,
+              "tax_id": null,
+              "account_status": 1,
+              "disable_reason": 0,
+              "is_certified": null,
+              "is_main_act": false,
+              "need_phone_verification": true,
+              "is_new_advertiser": true,
+              "is_user_allowed_to_advertise": true,
+              "requested_billing_threshold": null,
+              "spend_limit": null,
+              "created_time": "2025-02-03",
+              "timezone_name": "Europe/Sofia",
+              "timezone_offset_hours_utc": 2.0,
+              "balance": 0.0,
+              "account_currency_ratio_to_usd": 1.0,
+              "adtrust_dsl": 100,
+              "next_bill_date": "2025-02-03T00:00:00+02:00",
+              "is_prepay_account": false,
+              "funding_sources": "[]",
+              "restriction_status": null,
+              "is_notifications_enabled": true,
+              "time_added": "2025-02-03T04:13:41.971349+02:00",
+              "time_updated": "2025-02-03 07:47",
+              "threshold_amount": null,
+              "billing_status": null,
+              "amount_spent": 0.0,
+              "campaigns": 0,
+              "ads": null,
+              "transactions": null,
+              "linked_profile": null
+            }
+          ],
+          "pages": [],
+          "business_id": "1353714606061926",
+          "payment_account_id": "580773314797385",
+          "owner_id": null,
+          "bm_name": "hinajequ",
+          "funding_sources": null,
+          "email_verified": null,
+          "can_use_extended_credit": false,
+          "can_create_ad_account": false,
+          "is_disabled_for_integrity_reasons": false,
+          "business_users": [
+            {
+              "id": "61567654740557",
+              "role": "ADMIN",
+              "email": "ygarygizy1992@mailonon.online",
+              "business": {
+                "id": "1353714606061926",
+                "name": "hinajequ"
+              }
+            }
+          ],
+          "pending_users": null,
+          "owned_whatsapp_business_accounts": null,
+          "filled_info": false,
+          "shared_link": [],
+          "verification_status": "not_verified",
+          "time_added": "2025-02-03T03:59:52.375790+02:00",
+          "time_updated": "2025-02-03T07:47:41.030748+02:00"
+        },
+        {
+          "id": 11399523,
+          "primary_page": null,
+          "created_time": "2025-02-01 09:57",
+          "acts": [
+            {
+              "id": 27802071,
+              "act_id": "931404252517645",
+              "tax_exempt": false,
+              "adrules_library": null,
+              "is_tier_0": false,
+              "is_tier_1": true,
+              "is_tier_0_full": false,
+              "is_tier_restricted": false,
+              "profile": null,
+              "act_name": "goen Djekxa macrocentrinae",
+              "pixel": null,
+              "currency": "USD",
+              "appeal_sent": null,
+              "linked_apps": [
+                {
+                  "id": "8588041834583878",
+                  "name": "Crazy Time Rewards",
+                  "picture": {
+                    "data": {
+                      "url": "https://scontent-iev1-1.xx.fbcdn.net/v/t39.2081-6/475530639_9049332541788136_2964011406311032446_n.jpg?stp=c0.0.76.76a_dst-jpg_p75x75_tt6&_nc_cat=104&ccb=1-7&_nc_sid=ed3f67&_nc_ohc=kwgvGP-yTgMQ7kNvgEByUtJ&_nc_zt=14&_nc_ht=scontent-iev1-1.xx&_nc_gid=AIj2BzeXm638Cu7CmuH_gVZ&oh=00_AYAT8GfCua_Ji46nXI9OWRkbVeV1ijwGM4YfHVMk3Y49zg&oe=67A628C7",
+                      "is_silhouette": false
+                    }
+                  },
+                  "object_store_urls": {
+                    "google_play": "http://play.google.com/store/apps/details?id=com.margelo.rewards",
+                    "instant_game": "http://www.facebook.com/gaming/play/8588041834583878/"
+                  },
+                  "supported_platforms": [
+                    "ANDROID"
+                  ]
+                }
+              ],
+              "business_country_code": null,
+              "try_hold_again": false,
+              "tax_id": null,
+              "account_status": 1,
+              "disable_reason": 0,
+              "is_certified": null,
+              "is_main_act": false,
+              "need_phone_verification": true,
+              "is_new_advertiser": true,
+              "is_user_allowed_to_advertise": true,
+              "requested_billing_threshold": null,
+              "spend_limit": null,
+              "created_time": "2025-02-03",
+              "timezone_name": "Europe/Sofia",
+              "timezone_offset_hours_utc": 2.0,
+              "balance": 0.0,
+              "account_currency_ratio_to_usd": 1.0,
+              "adtrust_dsl": 50,
+              "next_bill_date": "2025-02-03T00:00:00+02:00",
+              "is_prepay_account": false,
+              "funding_sources": "[]",
+              "restriction_status": null,
+              "is_notifications_enabled": true,
+              "time_added": "2025-02-03T04:13:43.582122+02:00",
+              "time_updated": "2025-02-03 07:47",
+              "threshold_amount": null,
+              "billing_status": null,
+              "amount_spent": 0.0,
+              "campaigns": 0,
+              "ads": null,
+              "transactions": null,
+              "linked_profile": null
+            }
+          ],
+          "pages": [],
+          "business_id": "1327035151670277",
+          "payment_account_id": "1792611771572560",
+          "owner_id": null,
+          "bm_name": "hcvircysp",
+          "funding_sources": null,
+          "email_verified": null,
+          "can_use_extended_credit": true,
+          "can_create_ad_account": false,
+          "is_disabled_for_integrity_reasons": false,
+          "business_users": [
+            {
+              "id": "61567778576682",
+              "role": "ADMIN",
+              "email": "usunedamyp@mailonon.online",
+              "business": {
+                "id": "1327035151670277",
+                "name": "hcvircysp"
+              }
+            }
+          ],
+          "pending_users": null,
+          "owned_whatsapp_business_accounts": null,
+          "filled_info": false,
+          "shared_link": [],
+          "verification_status": "not_verified",
+          "time_added": "2025-02-03T03:59:52.381240+02:00",
+          "time_updated": "2025-02-03T07:47:41.038216+02:00"
+        },
+        {
+          "id": 11399524,
+          "primary_page": null,
+          "created_time": "2025-02-01 09:56",
+          "acts": [
+            {
+              "id": 27802072,
+              "act_id": "460642690313961",
+              "tax_exempt": false,
+              "adrules_library": null,
+              "is_tier_0": false,
+              "is_tier_1": true,
+              "is_tier_0_full": false,
+              "is_tier_restricted": false,
+              "profile": null,
+              "act_name": "aotus Djekxa regarrison",
+              "pixel": null,
+              "currency": "USD",
+              "appeal_sent": null,
+              "linked_apps": [
+                {
+                  "id": "8588041834583878",
+                  "name": "Crazy Time Rewards",
+                  "picture": {
+                    "data": {
+                      "url": "https://scontent-iev1-1.xx.fbcdn.net/v/t39.2081-6/475530639_9049332541788136_2964011406311032446_n.jpg?stp=c0.0.76.76a_dst-jpg_p75x75_tt6&_nc_cat=104&ccb=1-7&_nc_sid=ed3f67&_nc_ohc=kwgvGP-yTgMQ7kNvgEByUtJ&_nc_zt=14&_nc_ht=scontent-iev1-1.xx&_nc_gid=AIj2BzeXm638Cu7CmuH_gVZ&oh=00_AYAT8GfCua_Ji46nXI9OWRkbVeV1ijwGM4YfHVMk3Y49zg&oe=67A628C7",
+                      "is_silhouette": false
+                    }
+                  },
+                  "object_store_urls": {
+                    "google_play": "http://play.google.com/store/apps/details?id=com.margelo.rewards",
+                    "instant_game": "http://www.facebook.com/gaming/play/8588041834583878/"
+                  },
+                  "supported_platforms": [
+                    "ANDROID"
+                  ]
+                }
+              ],
+              "business_country_code": null,
+              "try_hold_again": false,
+              "tax_id": null,
+              "account_status": 1,
+              "disable_reason": 0,
+              "is_certified": null,
+              "is_main_act": false,
+              "need_phone_verification": true,
+              "is_new_advertiser": true,
+              "is_user_allowed_to_advertise": true,
+              "requested_billing_threshold": null,
+              "spend_limit": null,
+              "created_time": "2025-02-03",
+              "timezone_name": "Europe/Sofia",
+              "timezone_offset_hours_utc": 2.0,
+              "balance": 0.0,
+              "account_currency_ratio_to_usd": 1.0,
+              "adtrust_dsl": 100,
+              "next_bill_date": "2025-02-03T00:00:00+02:00",
+              "is_prepay_account": false,
+              "funding_sources": "[]",
+              "restriction_status": null,
+              "is_notifications_enabled": true,
+              "time_added": "2025-02-03T04:13:45.096449+02:00",
+              "time_updated": "2025-02-03 07:47",
+              "threshold_amount": null,
+              "billing_status": null,
+              "amount_spent": 0.0,
+              "campaigns": 0,
+              "ads": null,
+              "transactions": null,
+              "linked_profile": null
+            }
+          ],
+          "pages": [],
+          "business_id": "1145545923770059",
+          "payment_account_id": "589217027273042",
+          "owner_id": null,
+          "bm_name": "hezoluka",
+          "funding_sources": null,
+          "email_verified": null,
+          "can_use_extended_credit": true,
+          "can_create_ad_account": false,
+          "is_disabled_for_integrity_reasons": false,
+          "business_users": [
+            {
+              "id": "61567927701002",
+              "role": "ADMIN",
+              "email": "kreruslam1994@mailonon.online",
+              "business": {
+                "id": "1145545923770059",
+                "name": "hezoluka"
+              }
+            }
+          ],
+          "pending_users": null,
+          "owned_whatsapp_business_accounts": null,
+          "filled_info": false,
+          "shared_link": [],
+          "verification_status": "not_verified",
+          "time_added": "2025-02-03T03:59:52.386657+02:00",
+          "time_updated": "2025-02-03T07:47:41.045129+02:00"
+        },
+        {
+          "id": 11399525,
+          "primary_page": null,
+          "created_time": "2025-02-01 09:57",
+          "acts": [
+            {
+              "id": 27802073,
+              "act_id": "1299823361313983",
+              "tax_exempt": false,
+              "adrules_library": null,
+              "is_tier_0": false,
+              "is_tier_1": true,
+              "is_tier_0_full": false,
+              "is_tier_restricted": false,
+              "profile": null,
+              "act_name": "uploads Djekxa asmoke",
+              "pixel": null,
+              "currency": "USD",
+              "appeal_sent": null,
+              "linked_apps": [
+                {
+                  "id": "8588041834583878",
+                  "name": "Crazy Time Rewards",
+                  "picture": {
+                    "data": {
+                      "url": "https://scontent-iev1-1.xx.fbcdn.net/v/t39.2081-6/475530639_9049332541788136_2964011406311032446_n.jpg?stp=c0.0.76.76a_dst-jpg_p75x75_tt6&_nc_cat=104&ccb=1-7&_nc_sid=ed3f67&_nc_ohc=kwgvGP-yTgMQ7kNvgEByUtJ&_nc_zt=14&_nc_ht=scontent-iev1-1.xx&_nc_gid=AIj2BzeXm638Cu7CmuH_gVZ&oh=00_AYAT8GfCua_Ji46nXI9OWRkbVeV1ijwGM4YfHVMk3Y49zg&oe=67A628C7",
+                      "is_silhouette": false
+                    }
+                  },
+                  "object_store_urls": {
+                    "google_play": "http://play.google.com/store/apps/details?id=com.margelo.rewards",
+                    "instant_game": "http://www.facebook.com/gaming/play/8588041834583878/"
+                  },
+                  "supported_platforms": [
+                    "ANDROID"
+                  ]
+                }
+              ],
+              "business_country_code": null,
+              "try_hold_again": false,
+              "tax_id": null,
+              "account_status": 1,
+              "disable_reason": 0,
+              "is_certified": null,
+              "is_main_act": false,
+              "need_phone_verification": true,
+              "is_new_advertiser": true,
+              "is_user_allowed_to_advertise": true,
+              "requested_billing_threshold": null,
+              "spend_limit": null,
+              "created_time": "2025-02-03",
+              "timezone_name": "Europe/Sofia",
+              "timezone_offset_hours_utc": 2.0,
+              "balance": 0.0,
+              "account_currency_ratio_to_usd": 1.0,
+              "adtrust_dsl": 50,
+              "next_bill_date": "2025-02-03T00:00:00+02:00",
+              "is_prepay_account": false,
+              "funding_sources": "[]",
+              "restriction_status": null,
+              "is_notifications_enabled": true,
+              "time_added": "2025-02-03T04:13:46.539211+02:00",
+              "time_updated": "2025-02-03 07:47",
+              "threshold_amount": null,
+              "billing_status": null,
+              "amount_spent": 0.0,
+              "campaigns": 0,
+              "ads": null,
+              "transactions": null,
+              "linked_profile": null
+            }
+          ],
+          "pages": [],
+          "business_id": "982489597065244",
+          "payment_account_id": "1869342993807657",
+          "owner_id": null,
+          "bm_name": "higoxuqe",
+          "funding_sources": null,
+          "email_verified": null,
+          "can_use_extended_credit": true,
+          "can_create_ad_account": false,
+          "is_disabled_for_integrity_reasons": false,
+          "business_users": [
+            {
+              "id": "61567451945615",
+              "role": "ADMIN",
+              "email": "axybunodi1984@mailonon.online",
+              "business": {
+                "id": "982489597065244",
+                "name": "higoxuqe"
+              }
+            }
+          ],
+          "pending_users": null,
+          "owned_whatsapp_business_accounts": null,
+          "filled_info": false,
+          "shared_link": [],
+          "verification_status": "not_verified",
+          "time_added": "2025-02-03T03:59:52.392065+02:00",
+          "time_updated": "2025-02-03T07:47:41.052147+02:00"
+        },
+        {
+          "id": 11399526,
+          "primary_page": null,
+          "created_time": "2025-02-01 09:56",
+          "acts": [
+            {
+              "id": 27802074,
+              "act_id": "1154725942991275",
+              "tax_exempt": false,
+              "adrules_library": null,
+              "is_tier_0": false,
+              "is_tier_1": true,
+              "is_tier_0_full": false,
+              "is_tier_restricted": false,
+              "profile": null,
+              "act_name": "preadmit Djekxa reassurances",
+              "pixel": null,
+              "currency": "USD",
+              "appeal_sent": null,
+              "linked_apps": [
+                {
+                  "id": "8588041834583878",
+                  "name": "Crazy Time Rewards",
+                  "picture": {
+                    "data": {
+                      "url": "https://scontent-iev1-1.xx.fbcdn.net/v/t39.2081-6/475530639_9049332541788136_2964011406311032446_n.jpg?stp=c0.0.76.76a_dst-jpg_p75x75_tt6&_nc_cat=104&ccb=1-7&_nc_sid=ed3f67&_nc_ohc=kwgvGP-yTgMQ7kNvgEByUtJ&_nc_zt=14&_nc_ht=scontent-iev1-1.xx&_nc_gid=AIj2BzeXm638Cu7CmuH_gVZ&oh=00_AYAT8GfCua_Ji46nXI9OWRkbVeV1ijwGM4YfHVMk3Y49zg&oe=67A628C7",
+                      "is_silhouette": false
+                    }
+                  },
+                  "object_store_urls": {
+                    "google_play": "http://play.google.com/store/apps/details?id=com.margelo.rewards",
+                    "instant_game": "http://www.facebook.com/gaming/play/8588041834583878/"
+                  },
+                  "supported_platforms": [
+                    "ANDROID"
+                  ]
+                }
+              ],
+              "business_country_code": null,
+              "try_hold_again": false,
+              "tax_id": null,
+              "account_status": 1,
+              "disable_reason": 0,
+              "is_certified": null,
+              "is_main_act": false,
+              "need_phone_verification": true,
+              "is_new_advertiser": true,
+              "is_user_allowed_to_advertise": true,
+              "requested_billing_threshold": null,
+              "spend_limit": null,
+              "created_time": "2025-02-03",
+              "timezone_name": "Europe/Sofia",
+              "timezone_offset_hours_utc": 2.0,
+              "balance": 0.0,
+              "account_currency_ratio_to_usd": 1.0,
+              "adtrust_dsl": 100,
+              "next_bill_date": "2025-02-03T00:00:00+02:00",
+              "is_prepay_account": false,
+              "funding_sources": "[]",
+              "restriction_status": null,
+              "is_notifications_enabled": true,
+              "time_added": "2025-02-03T04:13:48.356298+02:00",
+              "time_updated": "2025-02-03 07:47",
+              "threshold_amount": null,
+              "billing_status": null,
+              "amount_spent": 0.0,
+              "campaigns": 0,
+              "ads": null,
+              "transactions": null,
+              "linked_profile": null
+            }
+          ],
+          "pages": [],
+          "business_id": "968463351890436",
+          "payment_account_id": "1076159181011161",
+          "owner_id": null,
+          "bm_name": "halarealmadridronal",
+          "funding_sources": null,
+          "email_verified": null,
+          "can_use_extended_credit": true,
+          "can_create_ad_account": false,
+          "is_disabled_for_integrity_reasons": false,
+          "business_users": [
+            {
+              "id": "61567135665690",
+              "role": "ADMIN",
+              "email": "vbvejs619@mailonon.online",
+              "business": {
+                "id": "968463351890436",
+                "name": "halarealmadridronal"
+              }
+            }
+          ],
+          "pending_users": null,
+          "owned_whatsapp_business_accounts": null,
+          "filled_info": false,
+          "shared_link": [],
+          "verification_status": "not_verified",
+          "time_added": "2025-02-03T03:59:52.397474+02:00",
+          "time_updated": "2025-02-03T07:47:41.059150+02:00"
+        },
+        {
+          "id": 11399527,
+          "primary_page": null,
+          "created_time": "2025-02-01 09:52",
+          "acts": [
+            {
+              "id": 27802075,
+              "act_id": "1690012325280005",
+              "tax_exempt": false,
+              "adrules_library": null,
+              "is_tier_0": false,
+              "is_tier_1": true,
+              "is_tier_0_full": false,
+              "is_tier_restricted": false,
+              "profile": null,
+              "act_name": "sucuri Djekxa sportsman",
+              "pixel": null,
+              "currency": "USD",
+              "appeal_sent": null,
+              "linked_apps": [
+                {
+                  "id": "8588041834583878",
+                  "name": "Crazy Time Rewards",
+                  "picture": {
+                    "data": {
+                      "url": "https://scontent-iev1-1.xx.fbcdn.net/v/t39.2081-6/475530639_9049332541788136_2964011406311032446_n.jpg?stp=c0.0.76.76a_dst-jpg_p75x75_tt6&_nc_cat=104&ccb=1-7&_nc_sid=ed3f67&_nc_ohc=kwgvGP-yTgMQ7kNvgEByUtJ&_nc_zt=14&_nc_ht=scontent-iev1-1.xx&_nc_gid=AIj2BzeXm638Cu7CmuH_gVZ&oh=00_AYAT8GfCua_Ji46nXI9OWRkbVeV1ijwGM4YfHVMk3Y49zg&oe=67A628C7",
+                      "is_silhouette": false
+                    }
+                  },
+                  "object_store_urls": {
+                    "google_play": "http://play.google.com/store/apps/details?id=com.margelo.rewards",
+                    "instant_game": "http://www.facebook.com/gaming/play/8588041834583878/"
+                  },
+                  "supported_platforms": [
+                    "ANDROID"
+                  ]
+                }
+              ],
+              "business_country_code": null,
+              "try_hold_again": false,
+              "tax_id": null,
+              "account_status": 1,
+              "disable_reason": 0,
+              "is_certified": null,
+              "is_main_act": false,
+              "need_phone_verification": true,
+              "is_new_advertiser": true,
+              "is_user_allowed_to_advertise": true,
+              "requested_billing_threshold": null,
+              "spend_limit": null,
+              "created_time": "2025-02-03",
+              "timezone_name": "Europe/Sofia",
+              "timezone_offset_hours_utc": 2.0,
+              "balance": 0.0,
+              "account_currency_ratio_to_usd": 1.0,
+              "adtrust_dsl": 100,
+              "next_bill_date": "2025-02-03T00:00:00+02:00",
+              "is_prepay_account": false,
+              "funding_sources": "[]",
+              "restriction_status": null,
+              "is_notifications_enabled": true,
+              "time_added": "2025-02-03T04:13:50.271168+02:00",
+              "time_updated": "2025-02-03 07:47",
+              "threshold_amount": null,
+              "billing_status": null,
+              "amount_spent": 0.0,
+              "campaigns": 0,
+              "ads": null,
+              "transactions": null,
+              "linked_profile": null
+            }
+          ],
+          "pages": [],
+          "business_id": "648685670815515",
+          "payment_account_id": "1337698477403704",
+          "owner_id": null,
+          "bm_name": "gotakaga2025",
+          "funding_sources": null,
+          "email_verified": null,
+          "can_use_extended_credit": true,
+          "can_create_ad_account": false,
+          "is_disabled_for_integrity_reasons": false,
+          "business_users": [
+            {
+              "id": "61567804645456",
+              "role": "ADMIN",
+              "email": "epobib@mailonon.online",
+              "business": {
+                "id": "648685670815515",
+                "name": "gotakaga2025"
+              }
+            }
+          ],
+          "pending_users": null,
+          "owned_whatsapp_business_accounts": null,
+          "filled_info": false,
+          "shared_link": [],
+          "verification_status": "not_verified",
+          "time_added": "2025-02-03T03:59:52.402884+02:00",
+          "time_updated": "2025-02-03T07:47:41.065973+02:00"
+        },
+        {
+          "id": 11399528,
+          "primary_page": null,
+          "created_time": "2025-02-01 09:56",
+          "acts": [
+            {
+              "id": 27802076,
+              "act_id": "1340247360730175",
+              "tax_exempt": false,
+              "adrules_library": null,
+              "is_tier_0": false,
+              "is_tier_1": true,
+              "is_tier_0_full": false,
+              "is_tier_restricted": false,
+              "profile": null,
+              "act_name": "pearter Djekxa lophotriaene",
+              "pixel": null,
+              "currency": "USD",
+              "appeal_sent": null,
+              "linked_apps": [
+                {
+                  "id": "8588041834583878",
+                  "name": "Crazy Time Rewards",
+                  "picture": {
+                    "data": {
+                      "url": "https://scontent-iev1-1.xx.fbcdn.net/v/t39.2081-6/475530639_9049332541788136_2964011406311032446_n.jpg?stp=c0.0.76.76a_dst-jpg_p75x75_tt6&_nc_cat=104&ccb=1-7&_nc_sid=ed3f67&_nc_ohc=kwgvGP-yTgMQ7kNvgEByUtJ&_nc_zt=14&_nc_ht=scontent-iev1-1.xx&_nc_gid=AIj2BzeXm638Cu7CmuH_gVZ&oh=00_AYAT8GfCua_Ji46nXI9OWRkbVeV1ijwGM4YfHVMk3Y49zg&oe=67A628C7",
+                      "is_silhouette": false
+                    }
+                  },
+                  "object_store_urls": {
+                    "google_play": "http://play.google.com/store/apps/details?id=com.margelo.rewards",
+                    "instant_game": "http://www.facebook.com/gaming/play/8588041834583878/"
+                  },
+                  "supported_platforms": [
+                    "ANDROID"
+                  ]
+                }
+              ],
+              "business_country_code": null,
+              "try_hold_again": false,
+              "tax_id": null,
+              "account_status": 1,
+              "disable_reason": 0,
+              "is_certified": null,
+              "is_main_act": false,
+              "need_phone_verification": true,
+              "is_new_advertiser": true,
+              "is_user_allowed_to_advertise": true,
+              "requested_billing_threshold": null,
+              "spend_limit": null,
+              "created_time": "2025-02-03",
+              "timezone_name": "Europe/Sofia",
+              "timezone_offset_hours_utc": 2.0,
+              "balance": 0.0,
+              "account_currency_ratio_to_usd": 1.0,
+              "adtrust_dsl": 100,
+              "next_bill_date": "2025-02-03T00:00:00+02:00",
+              "is_prepay_account": false,
+              "funding_sources": "[]",
+              "restriction_status": null,
+              "is_notifications_enabled": true,
+              "time_added": "2025-02-03T04:13:51.848318+02:00",
+              "time_updated": "2025-02-03 07:47",
+              "threshold_amount": null,
+              "billing_status": null,
+              "amount_spent": 0.0,
+              "campaigns": 0,
+              "ads": null,
+              "transactions": null,
+              "linked_profile": null
+            }
+          ],
+          "pages": [],
+          "business_id": "627726769642253",
+          "payment_account_id": "1606030116685373",
+          "owner_id": null,
+          "bm_name": "hiwula2025",
+          "funding_sources": null,
+          "email_verified": null,
+          "can_use_extended_credit": true,
+          "can_create_ad_account": false,
+          "is_disabled_for_integrity_reasons": false,
+          "business_users": [
+            {
+              "id": "61567058597671",
+              "role": "ADMIN",
+              "email": "lebuhe2003@mailonon.online",
+              "business": {
+                "id": "627726769642253",
+                "name": "hiwula2025"
+              }
+            }
+          ],
+          "pending_users": null,
+          "owned_whatsapp_business_accounts": null,
+          "filled_info": false,
+          "shared_link": [],
+          "verification_status": "not_verified",
+          "time_added": "2025-02-03T03:59:52.408267+02:00",
+          "time_updated": "2025-02-03T07:47:41.071370+02:00"
+        },
+        {
+          "id": 11399529,
+          "primary_page": null,
+          "created_time": "2025-02-01 09:56",
+          "acts": [
+            {
+              "id": 27802077,
+              "act_id": "4037750709879173",
+              "tax_exempt": false,
+              "adrules_library": null,
+              "is_tier_0": false,
+              "is_tier_1": true,
+              "is_tier_0_full": false,
+              "is_tier_restricted": false,
+              "profile": null,
+              "act_name": "zoanthid Djekxa tonsure",
+              "pixel": null,
+              "currency": "USD",
+              "appeal_sent": null,
+              "linked_apps": [
+                {
+                  "id": "8588041834583878",
+                  "name": "Crazy Time Rewards",
+                  "picture": {
+                    "data": {
+                      "url": "https://scontent-iev1-1.xx.fbcdn.net/v/t39.2081-6/475530639_9049332541788136_2964011406311032446_n.jpg?stp=c0.0.76.76a_dst-jpg_p75x75_tt6&_nc_cat=104&ccb=1-7&_nc_sid=ed3f67&_nc_ohc=kwgvGP-yTgMQ7kNvgEByUtJ&_nc_zt=14&_nc_ht=scontent-iev1-1.xx&_nc_gid=AIj2BzeXm638Cu7CmuH_gVZ&oh=00_AYAT8GfCua_Ji46nXI9OWRkbVeV1ijwGM4YfHVMk3Y49zg&oe=67A628C7",
+                      "is_silhouette": false
+                    }
+                  },
+                  "object_store_urls": {
+                    "google_play": "http://play.google.com/store/apps/details?id=com.margelo.rewards",
+                    "instant_game": "http://www.facebook.com/gaming/play/8588041834583878/"
+                  },
+                  "supported_platforms": [
+                    "ANDROID"
+                  ]
+                }
+              ],
+              "business_country_code": null,
+              "try_hold_again": false,
+              "tax_id": null,
+              "account_status": 1,
+              "disable_reason": 0,
+              "is_certified": null,
+              "is_main_act": false,
+              "need_phone_verification": true,
+              "is_new_advertiser": true,
+              "is_user_allowed_to_advertise": true,
+              "requested_billing_threshold": null,
+              "spend_limit": null,
+              "created_time": "2025-02-03",
+              "timezone_name": "Europe/Sofia",
+              "timezone_offset_hours_utc": 2.0,
+              "balance": 0.0,
+              "account_currency_ratio_to_usd": 1.0,
+              "adtrust_dsl": 50,
+              "next_bill_date": "2025-02-03T00:00:00+02:00",
+              "is_prepay_account": false,
+              "funding_sources": "[]",
+              "restriction_status": null,
+              "is_notifications_enabled": true,
+              "time_added": "2025-02-03T04:13:53.365050+02:00",
+              "time_updated": "2025-02-03 07:47",
+              "threshold_amount": null,
+              "billing_status": null,
+              "amount_spent": 0.0,
+              "campaigns": 0,
+              "ads": null,
+              "transactions": null,
+              "linked_profile": null
+            }
+          ],
+          "pages": [],
+          "business_id": "612308988115159",
+          "payment_account_id": "627101029696621",
+          "owner_id": null,
+          "bm_name": "hecezo2025",
+          "funding_sources": null,
+          "email_verified": null,
+          "can_use_extended_credit": true,
+          "can_create_ad_account": false,
+          "is_disabled_for_integrity_reasons": false,
+          "business_users": [
+            {
+              "id": "61567142985130",
+              "role": "ADMIN",
+              "email": "nadshivanie4319@mailonon.online",
+              "business": {
+                "id": "612308988115159",
+                "name": "hecezo2025"
+              }
+            }
+          ],
+          "pending_users": null,
+          "owned_whatsapp_business_accounts": null,
+          "filled_info": false,
+          "shared_link": [],
+          "verification_status": "not_verified",
+          "time_added": "2025-02-03T03:59:52.413670+02:00",
+          "time_updated": "2025-02-03T07:47:41.076801+02:00"
+        },
+        {
+          "id": 11399530,
+          "primary_page": null,
+          "created_time": "2025-02-01 09:52",
+          "acts": [
+            {
+              "id": 27802078,
+              "act_id": "1157705159362387",
+              "tax_exempt": false,
+              "adrules_library": null,
+              "is_tier_0": false,
+              "is_tier_1": true,
+              "is_tier_0_full": false,
+              "is_tier_restricted": false,
+              "profile": null,
+              "act_name": "shovelboard Djekxa uncrest",
+              "pixel": null,
+              "currency": "USD",
+              "appeal_sent": null,
+              "linked_apps": [
+                {
+                  "id": "8588041834583878",
+                  "name": "Crazy Time Rewards",
+                  "picture": {
+                    "data": {
+                      "url": "https://scontent-iev1-1.xx.fbcdn.net/v/t39.2081-6/475530639_9049332541788136_2964011406311032446_n.jpg?stp=c0.0.76.76a_dst-jpg_p75x75_tt6&_nc_cat=104&ccb=1-7&_nc_sid=ed3f67&_nc_ohc=kwgvGP-yTgMQ7kNvgEByUtJ&_nc_zt=14&_nc_ht=scontent-iev1-1.xx&_nc_gid=AIj2BzeXm638Cu7CmuH_gVZ&oh=00_AYAT8GfCua_Ji46nXI9OWRkbVeV1ijwGM4YfHVMk3Y49zg&oe=67A628C7",
+                      "is_silhouette": false
+                    }
+                  },
+                  "object_store_urls": {
+                    "google_play": "http://play.google.com/store/apps/details?id=com.margelo.rewards",
+                    "instant_game": "http://www.facebook.com/gaming/play/8588041834583878/"
+                  },
+                  "supported_platforms": [
+                    "ANDROID"
+                  ]
+                }
+              ],
+              "business_country_code": null,
+              "try_hold_again": false,
+              "tax_id": null,
+              "account_status": 1,
+              "disable_reason": 0,
+              "is_certified": null,
+              "is_main_act": false,
+              "need_phone_verification": true,
+              "is_new_advertiser": true,
+              "is_user_allowed_to_advertise": true,
+              "requested_billing_threshold": null,
+              "spend_limit": null,
+              "created_time": "2025-02-03",
+              "timezone_name": "Europe/Sofia",
+              "timezone_offset_hours_utc": 2.0,
+              "balance": 0.0,
+              "account_currency_ratio_to_usd": 1.0,
+              "adtrust_dsl": 100,
+              "next_bill_date": "2025-02-03T00:00:00+02:00",
+              "is_prepay_account": false,
+              "funding_sources": "[]",
+              "restriction_status": null,
+              "is_notifications_enabled": true,
+              "time_added": "2025-02-03T04:13:54.963960+02:00",
+              "time_updated": "2025-02-03 07:47",
+              "threshold_amount": null,
+              "billing_status": null,
+              "amount_spent": 0.0,
+              "campaigns": 0,
+              "ads": null,
+              "transactions": null,
+              "linked_profile": null
+            }
+          ],
+          "pages": [],
+          "business_id": "599814959356678",
+          "payment_account_id": "9555009191198917",
+          "owner_id": null,
+          "bm_name": "gurtorerdi",
+          "funding_sources": null,
+          "email_verified": null,
+          "can_use_extended_credit": true,
+          "can_create_ad_account": false,
+          "is_disabled_for_integrity_reasons": false,
+          "business_users": [
+            {
+              "id": "61567309419043",
+              "role": "ADMIN",
+              "email": "hilliesaksonec@mailonon.online",
+              "business": {
+                "id": "599814959356678",
+                "name": "gurtorerdi"
+              }
+            }
+          ],
+          "pending_users": null,
+          "owned_whatsapp_business_accounts": null,
+          "filled_info": false,
+          "shared_link": [],
+          "verification_status": "not_verified",
+          "time_added": "2025-02-03T03:59:52.419091+02:00",
+          "time_updated": "2025-02-03T07:47:41.082189+02:00"
+        },
+        {
+          "id": 11399531,
+          "primary_page": null,
+          "created_time": "2025-02-01 09:51",
+          "acts": [
+            {
+              "id": 27802079,
+              "act_id": "1572387033480295",
+              "tax_exempt": false,
+              "adrules_library": null,
+              "is_tier_0": false,
+              "is_tier_1": true,
+              "is_tier_0_full": false,
+              "is_tier_restricted": false,
+              "profile": null,
+              "act_name": "jass Djekxa foretelling",
+              "pixel": null,
+              "currency": "USD",
+              "appeal_sent": null,
+              "linked_apps": [
+                {
+                  "id": "8588041834583878",
+                  "name": "Crazy Time Rewards",
+                  "picture": {
+                    "data": {
+                      "url": "https://scontent-iev1-1.xx.fbcdn.net/v/t39.2081-6/475530639_9049332541788136_2964011406311032446_n.jpg?stp=c0.0.76.76a_dst-jpg_p75x75_tt6&_nc_cat=104&ccb=1-7&_nc_sid=ed3f67&_nc_ohc=kwgvGP-yTgMQ7kNvgEByUtJ&_nc_zt=14&_nc_ht=scontent-iev1-1.xx&_nc_gid=AIj2BzeXm638Cu7CmuH_gVZ&oh=00_AYAT8GfCua_Ji46nXI9OWRkbVeV1ijwGM4YfHVMk3Y49zg&oe=67A628C7",
+                      "is_silhouette": false
+                    }
+                  },
+                  "object_store_urls": {
+                    "google_play": "http://play.google.com/store/apps/details?id=com.margelo.rewards",
+                    "instant_game": "http://www.facebook.com/gaming/play/8588041834583878/"
+                  },
+                  "supported_platforms": [
+                    "ANDROID"
+                  ]
+                }
+              ],
+              "business_country_code": null,
+              "try_hold_again": false,
+              "tax_id": null,
+              "account_status": 1,
+              "disable_reason": 0,
+              "is_certified": null,
+              "is_main_act": false,
+              "need_phone_verification": true,
+              "is_new_advertiser": true,
+              "is_user_allowed_to_advertise": true,
+              "requested_billing_threshold": null,
+              "spend_limit": null,
+              "created_time": "2025-02-03",
+              "timezone_name": "Europe/Sofia",
+              "timezone_offset_hours_utc": 2.0,
+              "balance": 0.0,
+              "account_currency_ratio_to_usd": 1.0,
+              "adtrust_dsl": 100,
+              "next_bill_date": "2025-02-03T00:00:00+02:00",
+              "is_prepay_account": false,
+              "funding_sources": "[]",
+              "restriction_status": null,
+              "is_notifications_enabled": true,
+              "time_added": "2025-02-03T04:13:56.737037+02:00",
+              "time_updated": "2025-02-03 07:47",
+              "threshold_amount": null,
+              "billing_status": null,
+              "amount_spent": 0.0,
+              "campaigns": 0,
+              "ads": null,
+              "transactions": null,
+              "linked_profile": null
+            }
+          ],
+          "pages": [],
+          "business_id": "585305844317355",
+          "payment_account_id": "939459128364168",
+          "owner_id": null,
+          "bm_name": "goknokelma",
+          "funding_sources": null,
+          "email_verified": null,
+          "can_use_extended_credit": true,
+          "can_create_ad_account": false,
+          "is_disabled_for_integrity_reasons": false,
+          "business_users": [
+            {
+              "id": "61567785356421",
+              "role": "ADMIN",
+              "email": "jytunisi@mailonon.online",
+              "business": {
+                "id": "585305844317355",
+                "name": "goknokelma"
+              }
+            }
+          ],
+          "pending_users": null,
+          "owned_whatsapp_business_accounts": null,
+          "filled_info": false,
+          "shared_link": [],
+          "verification_status": "not_verified",
+          "time_added": "2025-02-03T03:59:52.424528+02:00",
+          "time_updated": "2025-02-03T07:47:41.087561+02:00"
+        },
+        {
+          "id": 11399532,
+          "primary_page": null,
+          "created_time": "2025-02-01 09:56",
+          "acts": [
+            {
+              "id": 27802080,
+              "act_id": "1151886823139367",
+              "tax_exempt": false,
+              "adrules_library": null,
+              "is_tier_0": false,
+              "is_tier_1": true,
+              "is_tier_0_full": false,
+              "is_tier_restricted": false,
+              "profile": null,
+              "act_name": "sordidly Djekxa nutsy",
+              "pixel": null,
+              "currency": "USD",
+              "appeal_sent": null,
+              "linked_apps": [
+                {
+                  "id": "8588041834583878",
+                  "name": "Crazy Time Rewards",
+                  "picture": {
+                    "data": {
+                      "url": "https://scontent-iev1-1.xx.fbcdn.net/v/t39.2081-6/475530639_9049332541788136_2964011406311032446_n.jpg?stp=c0.0.76.76a_dst-jpg_p75x75_tt6&_nc_cat=104&ccb=1-7&_nc_sid=ed3f67&_nc_ohc=kwgvGP-yTgMQ7kNvgEByUtJ&_nc_zt=14&_nc_ht=scontent-iev1-1.xx&_nc_gid=Anj6VIJ56BfS5P_GU8TEk3N&oh=00_AYA4V2anXGFi5mCuCh95JXrrAEgIOcb5spLK9XBq16doWA&oe=67A628C7",
+                      "is_silhouette": false
+                    }
+                  },
+                  "object_store_urls": {
+                    "google_play": "http://play.google.com/store/apps/details?id=com.margelo.rewards",
+                    "instant_game": "http://www.facebook.com/gaming/play/8588041834583878/"
+                  },
+                  "supported_platforms": [
+                    "ANDROID"
+                  ]
+                }
+              ],
+              "business_country_code": null,
+              "try_hold_again": false,
+              "tax_id": null,
+              "account_status": 1,
+              "disable_reason": 0,
+              "is_certified": null,
+              "is_main_act": false,
+              "need_phone_verification": true,
+              "is_new_advertiser": true,
+              "is_user_allowed_to_advertise": true,
+              "requested_billing_threshold": null,
+              "spend_limit": null,
+              "created_time": "2025-02-03",
+              "timezone_name": "Europe/Sofia",
+              "timezone_offset_hours_utc": 2.0,
+              "balance": 0.0,
+              "account_currency_ratio_to_usd": 1.0,
+              "adtrust_dsl": 100,
+              "next_bill_date": "2025-02-03T00:00:00+02:00",
+              "is_prepay_account": false,
+              "funding_sources": "[]",
+              "restriction_status": null,
+              "is_notifications_enabled": true,
+              "time_added": "2025-02-03T04:13:57.968094+02:00",
+              "time_updated": "2025-02-03 07:47",
+              "threshold_amount": null,
+              "billing_status": null,
+              "amount_spent": 0.0,
+              "campaigns": 0,
+              "ads": null,
+              "transactions": null,
+              "linked_profile": null
+            }
+          ],
+          "pages": [],
+          "business_id": "568218066209020",
+          "payment_account_id": "2012918609189824",
+          "owner_id": null,
+          "bm_name": "hapsakopse",
+          "funding_sources": null,
+          "email_verified": null,
+          "can_use_extended_credit": true,
+          "can_create_ad_account": false,
+          "is_disabled_for_integrity_reasons": false,
+          "business_users": [
+            {
+              "id": "61567475884597",
+              "role": "ADMIN",
+              "email": "savrackaja2006@mailonon.online",
+              "business": {
+                "id": "568218066209020",
+                "name": "hapsakopse"
+              }
+            }
+          ],
+          "pending_users": null,
+          "owned_whatsapp_business_accounts": null,
+          "filled_info": false,
+          "shared_link": [],
+          "verification_status": "not_verified",
+          "time_added": "2025-02-03T03:59:52.429998+02:00",
+          "time_updated": "2025-02-03T07:47:41.092965+02:00"
+        }
+      ],
+      "acts": [
+        {
+          "id": 27791599,
+          "act_id": "885980166817173",
+          "tax_exempt": false,
+          "adrules_library": null,
+          "is_tier_0": false,
+          "is_tier_1": true,
+          "is_tier_0_full": false,
+          "is_tier_restricted": false,
+          "profile": null,
+          "act_name": "mochras Djekxa thresherman",
+          "pixel": [
+            {
+              "id": "936110168611350",
+              "name": "Pixel_cf4046"
+            }
+          ],
+          "currency": "USD",
+          "appeal_sent": null,
+          "linked_apps": [
+            {
+              "id": "8588041834583878",
+              "name": "Crazy Time Rewards",
+              "picture": {
+                "data": {
+                  "url": "https://scontent-iev1-1.xx.fbcdn.net/v/t39.2081-6/475530639_9049332541788136_2964011406311032446_n.jpg?stp=c0.0.76.76a_dst-jpg_p75x75_tt6&_nc_cat=104&ccb=1-7&_nc_sid=ed3f67&_nc_ohc=kwgvGP-yTgMQ7kNvgEByUtJ&_nc_zt=14&_nc_ht=scontent-iev1-1.xx&_nc_gid=AIj2BzeXm638Cu7CmuH_gVZ&oh=00_AYAT8GfCua_Ji46nXI9OWRkbVeV1ijwGM4YfHVMk3Y49zg&oe=67A628C7",
+                  "is_silhouette": false
+                }
+              },
+              "object_store_urls": {
+                "google_play": "http://play.google.com/store/apps/details?id=com.margelo.rewards",
+                "instant_game": "http://www.facebook.com/gaming/play/8588041834583878/"
+              },
+              "supported_platforms": [
+                "ANDROID"
+              ]
+            }
+          ],
+          "business_country_code": "UA",
+          "try_hold_again": false,
+          "tax_id": null,
+          "account_status": 1,
+          "disable_reason": 0,
+          "is_certified": null,
+          "is_main_act": false,
+          "need_phone_verification": null,
+          "is_new_advertiser": true,
+          "is_user_allowed_to_advertise": true,
+          "requested_billing_threshold": null,
+          "spend_limit": null,
+          "created_time": "2025-02-02",
+          "timezone_name": "Europe/Sofia",
+          "timezone_offset_hours_utc": 2.0,
+          "balance": 0.0,
+          "account_currency_ratio_to_usd": 1.0,
+          "adtrust_dsl": 50,
+          "next_bill_date": "2025-02-03T00:00:00+02:00",
+          "is_prepay_account": false,
+          "funding_sources": "[{\"is_primary\": true, \"usability\": \"USABLE\", \"credential_id\": \"9243261049120873\", \"needs_verification\": false, \"full_str\": \"Visa *7557\"}]",
+          "restriction_status": null,
+          "is_notifications_enabled": true,
+          "time_added": "2025-02-02T22:13:34.083675+02:00",
+          "time_updated": "2025-02-03 07:47",
+          "threshold_amount": 2.0,
+          "billing_status": null,
+          "amount_spent": 0.0,
+          "campaigns": 1,
+          "ads": null,
+          "transactions": null,
+          "linked_profile": []
+        },
+        {
+          "id": 27796643,
+          "act_id": "1329301478409745",
+          "tax_exempt": false,
+          "adrules_library": null,
+          "is_tier_0": false,
+          "is_tier_1": true,
+          "is_tier_0_full": false,
+          "is_tier_restricted": false,
+          "profile": null,
+          "act_name": "autofrettage Djekxa liman",
+          "pixel": [
+            {
+              "id": "585677474454939",
+              "name": "Pixel_406f58"
+            }
+          ],
+          "currency": "USD",
+          "appeal_sent": null,
+          "linked_apps": [
+            {
+              "id": "8588041834583878",
+              "name": "Crazy Time Rewards",
+              "picture": {
+                "data": {
+                  "url": "https://scontent-iev1-1.xx.fbcdn.net/v/t39.2081-6/475530639_9049332541788136_2964011406311032446_n.jpg?stp=c0.0.76.76a_dst-jpg_p75x75_tt6&_nc_cat=104&ccb=1-7&_nc_sid=ed3f67&_nc_ohc=kwgvGP-yTgMQ7kNvgEByUtJ&_nc_zt=14&_nc_ht=scontent-iev1-1.xx&_nc_gid=AIj2BzeXm638Cu7CmuH_gVZ&oh=00_AYAT8GfCua_Ji46nXI9OWRkbVeV1ijwGM4YfHVMk3Y49zg&oe=67A628C7",
+                  "is_silhouette": false
+                }
+              },
+              "object_store_urls": {
+                "google_play": "http://play.google.com/store/apps/details?id=com.margelo.rewards",
+                "instant_game": "http://www.facebook.com/gaming/play/8588041834583878/"
+              },
+              "supported_platforms": [
+                "ANDROID"
+              ]
+            }
+          ],
+          "business_country_code": "UA",
+          "try_hold_again": false,
+          "tax_id": null,
+          "account_status": 1,
+          "disable_reason": 0,
+          "is_certified": null,
+          "is_main_act": false,
+          "need_phone_verification": null,
+          "is_new_advertiser": true,
+          "is_user_allowed_to_advertise": true,
+          "requested_billing_threshold": null,
+          "spend_limit": null,
+          "created_time": "2025-02-02",
+          "timezone_name": "Europe/Sofia",
+          "timezone_offset_hours_utc": 2.0,
+          "balance": 0.0,
+          "account_currency_ratio_to_usd": 1.0,
+          "adtrust_dsl": 100,
+          "next_bill_date": "2025-02-03T00:00:00+02:00",
+          "is_prepay_account": false,
+          "funding_sources": "[{\"is_primary\": true, \"usability\": \"USABLE\", \"credential_id\": \"8946469388797764\", \"needs_verification\": false, \"full_str\": \"Visa *5667\"}]",
+          "restriction_status": null,
+          "is_notifications_enabled": true,
+          "time_added": "2025-02-02T23:31:16.992090+02:00",
+          "time_updated": "2025-02-03 07:47",
+          "threshold_amount": 2.0,
+          "billing_status": null,
+          "amount_spent": 0.0,
+          "campaigns": 1,
+          "ads": null,
+          "transactions": null,
+          "linked_profile": []
+        },
+        {
+          "id": 27758857,
+          "act_id": "1981122932389493",
+          "tax_exempt": false,
+          "adrules_library": null,
+          "is_tier_0": false,
+          "is_tier_1": true,
+          "is_tier_0_full": false,
+          "is_tier_restricted": false,
+          "profile": null,
+          "act_name": "Melody Evans",
+          "pixel": null,
+          "currency": "USD",
+          "appeal_sent": null,
+          "linked_apps": [
+            {
+              "id": "8588041834583878",
+              "name": "Crazy Time Rewards",
+              "picture": {
+                "data": {
+                  "url": "https://scontent-iev1-1.xx.fbcdn.net/v/t39.2081-6/475530639_9049332541788136_2964011406311032446_n.jpg?stp=c0.0.76.76a_dst-jpg_p75x75_tt6&_nc_cat=104&ccb=1-7&_nc_sid=ed3f67&_nc_ohc=kwgvGP-yTgMQ7kNvgEByUtJ&_nc_zt=14&_nc_ht=scontent-iev1-1.xx&_nc_gid=AIj2BzeXm638Cu7CmuH_gVZ&oh=00_AYAT8GfCua_Ji46nXI9OWRkbVeV1ijwGM4YfHVMk3Y49zg&oe=67A628C7",
+                  "is_silhouette": false
+                }
+              },
+              "object_store_urls": {
+                "google_play": "http://play.google.com/store/apps/details?id=com.margelo.rewards",
+                "instant_game": "http://www.facebook.com/gaming/play/8588041834583878/"
+              },
+              "supported_platforms": [
+                "ANDROID"
+              ]
+            }
+          ],
+          "business_country_code": null,
+          "try_hold_again": false,
+          "tax_id": null,
+          "account_status": 1,
+          "disable_reason": 0,
+          "is_certified": true,
+          "is_main_act": true,
+          "need_phone_verification": true,
+          "is_new_advertiser": false,
+          "is_user_allowed_to_advertise": true,
+          "requested_billing_threshold": null,
+          "spend_limit": null,
+          "created_time": "2024-10-27",
+          "timezone_name": "Europe/Kiev",
+          "timezone_offset_hours_utc": 2.0,
+          "balance": 0.0,
+          "account_currency_ratio_to_usd": 1.0,
+          "adtrust_dsl": 100,
+          "next_bill_date": "2025-02-03T00:00:00+02:00",
+          "is_prepay_account": false,
+          "funding_sources": "[]",
+          "restriction_status": null,
+          "is_notifications_enabled": true,
+          "time_added": "2025-02-02T03:22:43.517758+02:00",
+          "time_updated": "2025-02-03 07:47",
+          "threshold_amount": null,
+          "billing_status": null,
+          "amount_spent": 0.0,
+          "campaigns": 0,
+          "ads": null,
+          "transactions": null,
+          "linked_profile": []
+        },
+        {
+          "id": 27801943,
+          "act_id": "580673864988416",
+          "tax_exempt": false,
+          "adrules_library": null,
+          "is_tier_0": false,
+          "is_tier_1": true,
+          "is_tier_0_full": false,
+          "is_tier_restricted": false,
+          "profile": null,
+          "act_name": "btl Djekxa nonprescriptive",
+          "pixel": null,
+          "currency": "USD",
+          "appeal_sent": null,
+          "linked_apps": [
+            {
+              "id": "8588041834583878",
+              "name": "Crazy Time Rewards",
+              "picture": {
+                "data": {
+                  "url": "https://scontent-iev1-1.xx.fbcdn.net/v/t39.2081-6/475530639_9049332541788136_2964011406311032446_n.jpg?stp=c0.0.76.76a_dst-jpg_p75x75_tt6&_nc_cat=104&ccb=1-7&_nc_sid=ed3f67&_nc_ohc=kwgvGP-yTgMQ7kNvgEByUtJ&_nc_zt=14&_nc_ht=scontent-iev1-1.xx&_nc_gid=AIj2BzeXm638Cu7CmuH_gVZ&oh=00_AYAT8GfCua_Ji46nXI9OWRkbVeV1ijwGM4YfHVMk3Y49zg&oe=67A628C7",
+                  "is_silhouette": false
+                }
+              },
+              "object_store_urls": {
+                "google_play": "http://play.google.com/store/apps/details?id=com.margelo.rewards",
+                "instant_game": "http://www.facebook.com/gaming/play/8588041834583878/"
+              },
+              "supported_platforms": [
+                "ANDROID"
+              ]
+            }
+          ],
+          "business_country_code": null,
+          "try_hold_again": false,
+          "tax_id": null,
+          "account_status": 1,
+          "disable_reason": 0,
+          "is_certified": null,
+          "is_main_act": false,
+          "need_phone_verification": false,
+          "is_new_advertiser": true,
+          "is_user_allowed_to_advertise": true,
+          "requested_billing_threshold": null,
+          "spend_limit": null,
+          "created_time": "2025-02-03",
+          "timezone_name": "Europe/Sofia",
+          "timezone_offset_hours_utc": 2.0,
+          "balance": 0.0,
+          "account_currency_ratio_to_usd": 1.0,
+          "adtrust_dsl": 100,
+          "next_bill_date": "2025-02-03T00:00:00+02:00",
+          "is_prepay_account": false,
+          "funding_sources": "[]",
+          "restriction_status": null,
+          "is_notifications_enabled": true,
+          "time_added": "2025-02-03T04:02:08.467599+02:00",
+          "time_updated": "2025-02-03 07:47",
+          "threshold_amount": null,
+          "billing_status": null,
+          "amount_spent": 0.0,
+          "campaigns": 0,
+          "ads": null,
+          "transactions": null,
+          "linked_profile": []
+        },
+        {
+          "id": 27801942,
+          "act_id": "2720154018374506",
+          "tax_exempt": false,
+          "adrules_library": null,
+          "is_tier_0": false,
+          "is_tier_1": true,
+          "is_tier_0_full": false,
+          "is_tier_restricted": false,
+          "profile": null,
+          "act_name": "oblongitude Djekxa rippermen",
+          "pixel": null,
+          "currency": "USD",
+          "appeal_sent": null,
+          "linked_apps": [
+            {
+              "id": "8588041834583878",
+              "name": "Crazy Time Rewards",
+              "picture": {
+                "data": {
+                  "url": "https://scontent-iev1-1.xx.fbcdn.net/v/t39.2081-6/475530639_9049332541788136_2964011406311032446_n.jpg?stp=c0.0.76.76a_dst-jpg_p75x75_tt6&_nc_cat=104&ccb=1-7&_nc_sid=ed3f67&_nc_ohc=kwgvGP-yTgMQ7kNvgEByUtJ&_nc_zt=14&_nc_ht=scontent-iev1-1.xx&_nc_gid=AIj2BzeXm638Cu7CmuH_gVZ&oh=00_AYAT8GfCua_Ji46nXI9OWRkbVeV1ijwGM4YfHVMk3Y49zg&oe=67A628C7",
+                  "is_silhouette": false
+                }
+              },
+              "object_store_urls": {
+                "google_play": "http://play.google.com/store/apps/details?id=com.margelo.rewards",
+                "instant_game": "http://www.facebook.com/gaming/play/8588041834583878/"
+              },
+              "supported_platforms": [
+                "ANDROID"
+              ]
+            }
+          ],
+          "business_country_code": "UA",
+          "try_hold_again": false,
+          "tax_id": null,
+          "account_status": 2,
+          "disable_reason": 3,
+          "is_certified": null,
+          "is_main_act": false,
+          "need_phone_verification": true,
+          "is_new_advertiser": true,
+          "is_user_allowed_to_advertise": true,
+          "requested_billing_threshold": null,
+          "spend_limit": null,
+          "created_time": "2025-02-03",
+          "timezone_name": "Europe/Sofia",
+          "timezone_offset_hours_utc": 2.0,
+          "balance": 0.0,
+          "account_currency_ratio_to_usd": 1.0,
+          "adtrust_dsl": 100,
+          "next_bill_date": "2025-02-03T00:00:00+02:00",
+          "is_prepay_account": false,
+          "funding_sources": "[]",
+          "restriction_status": null,
+          "is_notifications_enabled": true,
+          "time_added": "2025-02-03T04:02:07.457829+02:00",
+          "time_updated": "2025-02-03 07:47",
+          "threshold_amount": null,
+          "billing_status": null,
+          "amount_spent": 0.0,
+          "campaigns": 0,
+          "ads": null,
+          "transactions": null,
+          "linked_profile": []
+        },
+        {
+          "id": 27801945,
+          "act_id": "656400926734233",
+          "tax_exempt": false,
+          "adrules_library": null,
+          "is_tier_0": false,
+          "is_tier_1": true,
+          "is_tier_0_full": false,
+          "is_tier_restricted": false,
+          "profile": null,
+          "act_name": "mitoses Djekxa revealer",
+          "pixel": null,
+          "currency": "USD",
+          "appeal_sent": null,
+          "linked_apps": [
+            {
+              "id": "8588041834583878",
+              "name": "Crazy Time Rewards",
+              "picture": {
+                "data": {
+                  "url": "https://scontent-iev1-1.xx.fbcdn.net/v/t39.2081-6/475530639_9049332541788136_2964011406311032446_n.jpg?stp=c0.0.76.76a_dst-jpg_p75x75_tt6&_nc_cat=104&ccb=1-7&_nc_sid=ed3f67&_nc_ohc=kwgvGP-yTgMQ7kNvgEByUtJ&_nc_zt=14&_nc_ht=scontent-iev1-1.xx&_nc_gid=AIj2BzeXm638Cu7CmuH_gVZ&oh=00_AYAT8GfCua_Ji46nXI9OWRkbVeV1ijwGM4YfHVMk3Y49zg&oe=67A628C7",
+                  "is_silhouette": false
+                }
+              },
+              "object_store_urls": {
+                "google_play": "http://play.google.com/store/apps/details?id=com.margelo.rewards",
+                "instant_game": "http://www.facebook.com/gaming/play/8588041834583878/"
+              },
+              "supported_platforms": [
+                "ANDROID"
+              ]
+            }
+          ],
+          "business_country_code": null,
+          "try_hold_again": false,
+          "tax_id": null,
+          "account_status": 1,
+          "disable_reason": 0,
+          "is_certified": null,
+          "is_main_act": false,
+          "need_phone_verification": true,
+          "is_new_advertiser": true,
+          "is_user_allowed_to_advertise": true,
+          "requested_billing_threshold": null,
+          "spend_limit": null,
+          "created_time": "2025-02-03",
+          "timezone_name": "Europe/Sofia",
+          "timezone_offset_hours_utc": 2.0,
+          "balance": 0.0,
+          "account_currency_ratio_to_usd": 1.0,
+          "adtrust_dsl": 100,
+          "next_bill_date": "2025-02-03T00:00:00+02:00",
+          "is_prepay_account": false,
+          "funding_sources": "[]",
+          "restriction_status": null,
+          "is_notifications_enabled": true,
+          "time_added": "2025-02-03T04:02:11.240159+02:00",
+          "time_updated": "2025-02-03 07:47",
+          "threshold_amount": null,
+          "billing_status": null,
+          "amount_spent": 0.0,
+          "campaigns": 0,
+          "ads": null,
+          "transactions": null,
+          "linked_profile": []
+        },
+        {
+          "id": 27801946,
+          "act_id": "1523493291652883",
+          "tax_exempt": false,
+          "adrules_library": null,
+          "is_tier_0": false,
+          "is_tier_1": true,
+          "is_tier_0_full": false,
+          "is_tier_restricted": false,
+          "profile": null,
+          "act_name": "rediffuse Djekxa gluttonish",
+          "pixel": null,
+          "currency": "USD",
+          "appeal_sent": null,
+          "linked_apps": [
+            {
+              "id": "8588041834583878",
+              "name": "Crazy Time Rewards",
+              "picture": {
+                "data": {
+                  "url": "https://scontent-iev1-1.xx.fbcdn.net/v/t39.2081-6/475530639_9049332541788136_2964011406311032446_n.jpg?stp=c0.0.76.76a_dst-jpg_p75x75_tt6&_nc_cat=104&ccb=1-7&_nc_sid=ed3f67&_nc_ohc=kwgvGP-yTgMQ7kNvgEByUtJ&_nc_zt=14&_nc_ht=scontent-iev1-1.xx&_nc_gid=AIj2BzeXm638Cu7CmuH_gVZ&oh=00_AYAT8GfCua_Ji46nXI9OWRkbVeV1ijwGM4YfHVMk3Y49zg&oe=67A628C7",
+                  "is_silhouette": false
+                }
+              },
+              "object_store_urls": {
+                "google_play": "http://play.google.com/store/apps/details?id=com.margelo.rewards",
+                "instant_game": "http://www.facebook.com/gaming/play/8588041834583878/"
+              },
+              "supported_platforms": [
+                "ANDROID"
+              ]
+            }
+          ],
+          "business_country_code": null,
+          "try_hold_again": false,
+          "tax_id": null,
+          "account_status": 1,
+          "disable_reason": 0,
+          "is_certified": null,
+          "is_main_act": false,
+          "need_phone_verification": false,
+          "is_new_advertiser": true,
+          "is_user_allowed_to_advertise": true,
+          "requested_billing_threshold": null,
+          "spend_limit": null,
+          "created_time": "2025-02-03",
+          "timezone_name": "Europe/Sofia",
+          "timezone_offset_hours_utc": 2.0,
+          "balance": 0.0,
+          "account_currency_ratio_to_usd": 1.0,
+          "adtrust_dsl": 100,
+          "next_bill_date": "2025-02-03T00:00:00+02:00",
+          "is_prepay_account": false,
+          "funding_sources": "[]",
+          "restriction_status": null,
+          "is_notifications_enabled": true,
+          "time_added": "2025-02-03T04:02:12.583602+02:00",
+          "time_updated": "2025-02-03 07:47",
+          "threshold_amount": null,
+          "billing_status": null,
+          "amount_spent": 0.0,
+          "campaigns": 0,
+          "ads": null,
+          "transactions": null,
+          "linked_profile": []
+        },
+        {
+          "id": 27801944,
+          "act_id": "586224424180478",
+          "tax_exempt": false,
+          "adrules_library": null,
+          "is_tier_0": false,
+          "is_tier_1": true,
+          "is_tier_0_full": false,
+          "is_tier_restricted": false,
+          "profile": null,
+          "act_name": "settsman Djekxa excern",
+          "pixel": null,
+          "currency": "USD",
+          "appeal_sent": null,
+          "linked_apps": [
+            {
+              "id": "8588041834583878",
+              "name": "Crazy Time Rewards",
+              "picture": {
+                "data": {
+                  "url": "https://scontent-iev1-1.xx.fbcdn.net/v/t39.2081-6/475530639_9049332541788136_2964011406311032446_n.jpg?stp=c0.0.76.76a_dst-jpg_p75x75_tt6&_nc_cat=104&ccb=1-7&_nc_sid=ed3f67&_nc_ohc=kwgvGP-yTgMQ7kNvgEByUtJ&_nc_zt=14&_nc_ht=scontent-iev1-1.xx&_nc_gid=AIj2BzeXm638Cu7CmuH_gVZ&oh=00_AYAT8GfCua_Ji46nXI9OWRkbVeV1ijwGM4YfHVMk3Y49zg&oe=67A628C7",
+                  "is_silhouette": false
+                }
+              },
+              "object_store_urls": {
+                "google_play": "http://play.google.com/store/apps/details?id=com.margelo.rewards",
+                "instant_game": "http://www.facebook.com/gaming/play/8588041834583878/"
+              },
+              "supported_platforms": [
+                "ANDROID"
+              ]
+            }
+          ],
+          "business_country_code": null,
+          "try_hold_again": false,
+          "tax_id": null,
+          "account_status": 1,
+          "disable_reason": 0,
+          "is_certified": null,
+          "is_main_act": false,
+          "need_phone_verification": true,
+          "is_new_advertiser": true,
+          "is_user_allowed_to_advertise": true,
+          "requested_billing_threshold": null,
+          "spend_limit": null,
+          "created_time": "2025-02-03",
+          "timezone_name": "Europe/Sofia",
+          "timezone_offset_hours_utc": 2.0,
+          "balance": 0.0,
+          "account_currency_ratio_to_usd": 1.0,
+          "adtrust_dsl": 100,
+          "next_bill_date": "2025-02-03T00:00:00+02:00",
+          "is_prepay_account": false,
+          "funding_sources": "[]",
+          "restriction_status": null,
+          "is_notifications_enabled": true,
+          "time_added": "2025-02-03T04:02:09.681801+02:00",
+          "time_updated": "2025-02-03 07:47",
+          "threshold_amount": null,
+          "billing_status": null,
+          "amount_spent": 0.0,
+          "campaigns": 0,
+          "ads": null,
+          "transactions": null,
+          "linked_profile": []
+        },
+        {
+          "id": 27802068,
+          "act_id": "2114982038938719",
+          "tax_exempt": false,
+          "adrules_library": null,
+          "is_tier_0": false,
+          "is_tier_1": true,
+          "is_tier_0_full": false,
+          "is_tier_restricted": false,
+          "profile": null,
+          "act_name": "showjumping Djekxa dartle",
+          "pixel": null,
+          "currency": "USD",
+          "appeal_sent": null,
+          "linked_apps": [
+            {
+              "id": "8588041834583878",
+              "name": "Crazy Time Rewards",
+              "picture": {
+                "data": {
+                  "url": "https://scontent-iev1-1.xx.fbcdn.net/v/t39.2081-6/475530639_9049332541788136_2964011406311032446_n.jpg?stp=c0.0.76.76a_dst-jpg_p75x75_tt6&_nc_cat=104&ccb=1-7&_nc_sid=ed3f67&_nc_ohc=kwgvGP-yTgMQ7kNvgEByUtJ&_nc_zt=14&_nc_ht=scontent-iev1-1.xx&_nc_gid=AIj2BzeXm638Cu7CmuH_gVZ&oh=00_AYAT8GfCua_Ji46nXI9OWRkbVeV1ijwGM4YfHVMk3Y49zg&oe=67A628C7",
+                  "is_silhouette": false
+                }
+              },
+              "object_store_urls": {
+                "google_play": "http://play.google.com/store/apps/details?id=com.margelo.rewards",
+                "instant_game": "http://www.facebook.com/gaming/play/8588041834583878/"
+              },
+              "supported_platforms": [
+                "ANDROID"
+              ]
+            }
+          ],
+          "business_country_code": null,
+          "try_hold_again": false,
+          "tax_id": null,
+          "account_status": 1,
+          "disable_reason": 0,
+          "is_certified": null,
+          "is_main_act": false,
+          "need_phone_verification": true,
+          "is_new_advertiser": true,
+          "is_user_allowed_to_advertise": true,
+          "requested_billing_threshold": null,
+          "spend_limit": null,
+          "created_time": "2025-02-03",
+          "timezone_name": "Europe/Sofia",
+          "timezone_offset_hours_utc": 2.0,
+          "balance": 0.0,
+          "account_currency_ratio_to_usd": 1.0,
+          "adtrust_dsl": 100,
+          "next_bill_date": "2025-02-03T00:00:00+02:00",
+          "is_prepay_account": false,
+          "funding_sources": "[]",
+          "restriction_status": null,
+          "is_notifications_enabled": true,
+          "time_added": "2025-02-03T04:13:38.268029+02:00",
+          "time_updated": "2025-02-03 07:47",
+          "threshold_amount": null,
+          "billing_status": null,
+          "amount_spent": 0.0,
+          "campaigns": 0,
+          "ads": null,
+          "transactions": null,
+          "linked_profile": []
+        },
+        {
+          "id": 27802069,
+          "act_id": "1613439642879444",
+          "tax_exempt": false,
+          "adrules_library": null,
+          "is_tier_0": false,
+          "is_tier_1": true,
+          "is_tier_0_full": false,
+          "is_tier_restricted": false,
+          "profile": null,
+          "act_name": "sussexite Djekxa coronations",
+          "pixel": null,
+          "currency": "USD",
+          "appeal_sent": null,
+          "linked_apps": [
+            {
+              "id": "8588041834583878",
+              "name": "Crazy Time Rewards",
+              "picture": {
+                "data": {
+                  "url": "https://scontent-iev1-1.xx.fbcdn.net/v/t39.2081-6/475530639_9049332541788136_2964011406311032446_n.jpg?stp=c0.0.76.76a_dst-jpg_p75x75_tt6&_nc_cat=104&ccb=1-7&_nc_sid=ed3f67&_nc_ohc=kwgvGP-yTgMQ7kNvgEByUtJ&_nc_zt=14&_nc_ht=scontent-iev1-1.xx&_nc_gid=AIj2BzeXm638Cu7CmuH_gVZ&oh=00_AYAT8GfCua_Ji46nXI9OWRkbVeV1ijwGM4YfHVMk3Y49zg&oe=67A628C7",
+                  "is_silhouette": false
+                }
+              },
+              "object_store_urls": {
+                "google_play": "http://play.google.com/store/apps/details?id=com.margelo.rewards",
+                "instant_game": "http://www.facebook.com/gaming/play/8588041834583878/"
+              },
+              "supported_platforms": [
+                "ANDROID"
+              ]
+            }
+          ],
+          "business_country_code": null,
+          "try_hold_again": false,
+          "tax_id": null,
+          "account_status": 1,
+          "disable_reason": 0,
+          "is_certified": null,
+          "is_main_act": false,
+          "need_phone_verification": true,
+          "is_new_advertiser": true,
+          "is_user_allowed_to_advertise": true,
+          "requested_billing_threshold": null,
+          "spend_limit": null,
+          "created_time": "2025-02-03",
+          "timezone_name": "Europe/Sofia",
+          "timezone_offset_hours_utc": 2.0,
+          "balance": 0.0,
+          "account_currency_ratio_to_usd": 1.0,
+          "adtrust_dsl": 100,
+          "next_bill_date": "2025-02-03T00:00:00+02:00",
+          "is_prepay_account": false,
+          "funding_sources": "[]",
+          "restriction_status": null,
+          "is_notifications_enabled": true,
+          "time_added": "2025-02-03T04:13:40.017383+02:00",
+          "time_updated": "2025-02-03 07:47",
+          "threshold_amount": null,
+          "billing_status": null,
+          "amount_spent": 0.0,
+          "campaigns": 0,
+          "ads": null,
+          "transactions": null,
+          "linked_profile": []
+        },
+        {
+          "id": 27802071,
+          "act_id": "931404252517645",
+          "tax_exempt": false,
+          "adrules_library": null,
+          "is_tier_0": false,
+          "is_tier_1": true,
+          "is_tier_0_full": false,
+          "is_tier_restricted": false,
+          "profile": null,
+          "act_name": "goen Djekxa macrocentrinae",
+          "pixel": null,
+          "currency": "USD",
+          "appeal_sent": null,
+          "linked_apps": [
+            {
+              "id": "8588041834583878",
+              "name": "Crazy Time Rewards",
+              "picture": {
+                "data": {
+                  "url": "https://scontent-iev1-1.xx.fbcdn.net/v/t39.2081-6/475530639_9049332541788136_2964011406311032446_n.jpg?stp=c0.0.76.76a_dst-jpg_p75x75_tt6&_nc_cat=104&ccb=1-7&_nc_sid=ed3f67&_nc_ohc=kwgvGP-yTgMQ7kNvgEByUtJ&_nc_zt=14&_nc_ht=scontent-iev1-1.xx&_nc_gid=AIj2BzeXm638Cu7CmuH_gVZ&oh=00_AYAT8GfCua_Ji46nXI9OWRkbVeV1ijwGM4YfHVMk3Y49zg&oe=67A628C7",
+                  "is_silhouette": false
+                }
+              },
+              "object_store_urls": {
+                "google_play": "http://play.google.com/store/apps/details?id=com.margelo.rewards",
+                "instant_game": "http://www.facebook.com/gaming/play/8588041834583878/"
+              },
+              "supported_platforms": [
+                "ANDROID"
+              ]
+            }
+          ],
+          "business_country_code": null,
+          "try_hold_again": false,
+          "tax_id": null,
+          "account_status": 1,
+          "disable_reason": 0,
+          "is_certified": null,
+          "is_main_act": false,
+          "need_phone_verification": true,
+          "is_new_advertiser": true,
+          "is_user_allowed_to_advertise": true,
+          "requested_billing_threshold": null,
+          "spend_limit": null,
+          "created_time": "2025-02-03",
+          "timezone_name": "Europe/Sofia",
+          "timezone_offset_hours_utc": 2.0,
+          "balance": 0.0,
+          "account_currency_ratio_to_usd": 1.0,
+          "adtrust_dsl": 50,
+          "next_bill_date": "2025-02-03T00:00:00+02:00",
+          "is_prepay_account": false,
+          "funding_sources": "[]",
+          "restriction_status": null,
+          "is_notifications_enabled": true,
+          "time_added": "2025-02-03T04:13:43.582122+02:00",
+          "time_updated": "2025-02-03 07:47",
+          "threshold_amount": null,
+          "billing_status": null,
+          "amount_spent": 0.0,
+          "campaigns": 0,
+          "ads": null,
+          "transactions": null,
+          "linked_profile": []
+        },
+        {
+          "id": 27802072,
+          "act_id": "460642690313961",
+          "tax_exempt": false,
+          "adrules_library": null,
+          "is_tier_0": false,
+          "is_tier_1": true,
+          "is_tier_0_full": false,
+          "is_tier_restricted": false,
+          "profile": null,
+          "act_name": "aotus Djekxa regarrison",
+          "pixel": null,
+          "currency": "USD",
+          "appeal_sent": null,
+          "linked_apps": [
+            {
+              "id": "8588041834583878",
+              "name": "Crazy Time Rewards",
+              "picture": {
+                "data": {
+                  "url": "https://scontent-iev1-1.xx.fbcdn.net/v/t39.2081-6/475530639_9049332541788136_2964011406311032446_n.jpg?stp=c0.0.76.76a_dst-jpg_p75x75_tt6&_nc_cat=104&ccb=1-7&_nc_sid=ed3f67&_nc_ohc=kwgvGP-yTgMQ7kNvgEByUtJ&_nc_zt=14&_nc_ht=scontent-iev1-1.xx&_nc_gid=AIj2BzeXm638Cu7CmuH_gVZ&oh=00_AYAT8GfCua_Ji46nXI9OWRkbVeV1ijwGM4YfHVMk3Y49zg&oe=67A628C7",
+                  "is_silhouette": false
+                }
+              },
+              "object_store_urls": {
+                "google_play": "http://play.google.com/store/apps/details?id=com.margelo.rewards",
+                "instant_game": "http://www.facebook.com/gaming/play/8588041834583878/"
+              },
+              "supported_platforms": [
+                "ANDROID"
+              ]
+            }
+          ],
+          "business_country_code": null,
+          "try_hold_again": false,
+          "tax_id": null,
+          "account_status": 1,
+          "disable_reason": 0,
+          "is_certified": null,
+          "is_main_act": false,
+          "need_phone_verification": true,
+          "is_new_advertiser": true,
+          "is_user_allowed_to_advertise": true,
+          "requested_billing_threshold": null,
+          "spend_limit": null,
+          "created_time": "2025-02-03",
+          "timezone_name": "Europe/Sofia",
+          "timezone_offset_hours_utc": 2.0,
+          "balance": 0.0,
+          "account_currency_ratio_to_usd": 1.0,
+          "adtrust_dsl": 100,
+          "next_bill_date": "2025-02-03T00:00:00+02:00",
+          "is_prepay_account": false,
+          "funding_sources": "[]",
+          "restriction_status": null,
+          "is_notifications_enabled": true,
+          "time_added": "2025-02-03T04:13:45.096449+02:00",
+          "time_updated": "2025-02-03 07:47",
+          "threshold_amount": null,
+          "billing_status": null,
+          "amount_spent": 0.0,
+          "campaigns": 0,
+          "ads": null,
+          "transactions": null,
+          "linked_profile": []
+        },
+        {
+          "id": 27802075,
+          "act_id": "1690012325280005",
+          "tax_exempt": false,
+          "adrules_library": null,
+          "is_tier_0": false,
+          "is_tier_1": true,
+          "is_tier_0_full": false,
+          "is_tier_restricted": false,
+          "profile": null,
+          "act_name": "sucuri Djekxa sportsman",
+          "pixel": null,
+          "currency": "USD",
+          "appeal_sent": null,
+          "linked_apps": [
+            {
+              "id": "8588041834583878",
+              "name": "Crazy Time Rewards",
+              "picture": {
+                "data": {
+                  "url": "https://scontent-iev1-1.xx.fbcdn.net/v/t39.2081-6/475530639_9049332541788136_2964011406311032446_n.jpg?stp=c0.0.76.76a_dst-jpg_p75x75_tt6&_nc_cat=104&ccb=1-7&_nc_sid=ed3f67&_nc_ohc=kwgvGP-yTgMQ7kNvgEByUtJ&_nc_zt=14&_nc_ht=scontent-iev1-1.xx&_nc_gid=AIj2BzeXm638Cu7CmuH_gVZ&oh=00_AYAT8GfCua_Ji46nXI9OWRkbVeV1ijwGM4YfHVMk3Y49zg&oe=67A628C7",
+                  "is_silhouette": false
+                }
+              },
+              "object_store_urls": {
+                "google_play": "http://play.google.com/store/apps/details?id=com.margelo.rewards",
+                "instant_game": "http://www.facebook.com/gaming/play/8588041834583878/"
+              },
+              "supported_platforms": [
+                "ANDROID"
+              ]
+            }
+          ],
+          "business_country_code": null,
+          "try_hold_again": false,
+          "tax_id": null,
+          "account_status": 1,
+          "disable_reason": 0,
+          "is_certified": null,
+          "is_main_act": false,
+          "need_phone_verification": true,
+          "is_new_advertiser": true,
+          "is_user_allowed_to_advertise": true,
+          "requested_billing_threshold": null,
+          "spend_limit": null,
+          "created_time": "2025-02-03",
+          "timezone_name": "Europe/Sofia",
+          "timezone_offset_hours_utc": 2.0,
+          "balance": 0.0,
+          "account_currency_ratio_to_usd": 1.0,
+          "adtrust_dsl": 100,
+          "next_bill_date": "2025-02-03T00:00:00+02:00",
+          "is_prepay_account": false,
+          "funding_sources": "[]",
+          "restriction_status": null,
+          "is_notifications_enabled": true,
+          "time_added": "2025-02-03T04:13:50.271168+02:00",
+          "time_updated": "2025-02-03 07:47",
+          "threshold_amount": null,
+          "billing_status": null,
+          "amount_spent": 0.0,
+          "campaigns": 0,
+          "ads": null,
+          "transactions": null,
+          "linked_profile": []
+        },
+        {
+          "id": 27802076,
+          "act_id": "1340247360730175",
+          "tax_exempt": false,
+          "adrules_library": null,
+          "is_tier_0": false,
+          "is_tier_1": true,
+          "is_tier_0_full": false,
+          "is_tier_restricted": false,
+          "profile": null,
+          "act_name": "pearter Djekxa lophotriaene",
+          "pixel": null,
+          "currency": "USD",
+          "appeal_sent": null,
+          "linked_apps": [
+            {
+              "id": "8588041834583878",
+              "name": "Crazy Time Rewards",
+              "picture": {
+                "data": {
+                  "url": "https://scontent-iev1-1.xx.fbcdn.net/v/t39.2081-6/475530639_9049332541788136_2964011406311032446_n.jpg?stp=c0.0.76.76a_dst-jpg_p75x75_tt6&_nc_cat=104&ccb=1-7&_nc_sid=ed3f67&_nc_ohc=kwgvGP-yTgMQ7kNvgEByUtJ&_nc_zt=14&_nc_ht=scontent-iev1-1.xx&_nc_gid=AIj2BzeXm638Cu7CmuH_gVZ&oh=00_AYAT8GfCua_Ji46nXI9OWRkbVeV1ijwGM4YfHVMk3Y49zg&oe=67A628C7",
+                  "is_silhouette": false
+                }
+              },
+              "object_store_urls": {
+                "google_play": "http://play.google.com/store/apps/details?id=com.margelo.rewards",
+                "instant_game": "http://www.facebook.com/gaming/play/8588041834583878/"
+              },
+              "supported_platforms": [
+                "ANDROID"
+              ]
+            }
+          ],
+          "business_country_code": null,
+          "try_hold_again": false,
+          "tax_id": null,
+          "account_status": 1,
+          "disable_reason": 0,
+          "is_certified": null,
+          "is_main_act": false,
+          "need_phone_verification": true,
+          "is_new_advertiser": true,
+          "is_user_allowed_to_advertise": true,
+          "requested_billing_threshold": null,
+          "spend_limit": null,
+          "created_time": "2025-02-03",
+          "timezone_name": "Europe/Sofia",
+          "timezone_offset_hours_utc": 2.0,
+          "balance": 0.0,
+          "account_currency_ratio_to_usd": 1.0,
+          "adtrust_dsl": 100,
+          "next_bill_date": "2025-02-03T00:00:00+02:00",
+          "is_prepay_account": false,
+          "funding_sources": "[]",
+          "restriction_status": null,
+          "is_notifications_enabled": true,
+          "time_added": "2025-02-03T04:13:51.848318+02:00",
+          "time_updated": "2025-02-03 07:47",
+          "threshold_amount": null,
+          "billing_status": null,
+          "amount_spent": 0.0,
+          "campaigns": 0,
+          "ads": null,
+          "transactions": null,
+          "linked_profile": []
+        },
+        {
+          "id": 27802077,
+          "act_id": "4037750709879173",
+          "tax_exempt": false,
+          "adrules_library": null,
+          "is_tier_0": false,
+          "is_tier_1": true,
+          "is_tier_0_full": false,
+          "is_tier_restricted": false,
+          "profile": null,
+          "act_name": "zoanthid Djekxa tonsure",
+          "pixel": null,
+          "currency": "USD",
+          "appeal_sent": null,
+          "linked_apps": [
+            {
+              "id": "8588041834583878",
+              "name": "Crazy Time Rewards",
+              "picture": {
+                "data": {
+                  "url": "https://scontent-iev1-1.xx.fbcdn.net/v/t39.2081-6/475530639_9049332541788136_2964011406311032446_n.jpg?stp=c0.0.76.76a_dst-jpg_p75x75_tt6&_nc_cat=104&ccb=1-7&_nc_sid=ed3f67&_nc_ohc=kwgvGP-yTgMQ7kNvgEByUtJ&_nc_zt=14&_nc_ht=scontent-iev1-1.xx&_nc_gid=AIj2BzeXm638Cu7CmuH_gVZ&oh=00_AYAT8GfCua_Ji46nXI9OWRkbVeV1ijwGM4YfHVMk3Y49zg&oe=67A628C7",
+                  "is_silhouette": false
+                }
+              },
+              "object_store_urls": {
+                "google_play": "http://play.google.com/store/apps/details?id=com.margelo.rewards",
+                "instant_game": "http://www.facebook.com/gaming/play/8588041834583878/"
+              },
+              "supported_platforms": [
+                "ANDROID"
+              ]
+            }
+          ],
+          "business_country_code": null,
+          "try_hold_again": false,
+          "tax_id": null,
+          "account_status": 1,
+          "disable_reason": 0,
+          "is_certified": null,
+          "is_main_act": false,
+          "need_phone_verification": true,
+          "is_new_advertiser": true,
+          "is_user_allowed_to_advertise": true,
+          "requested_billing_threshold": null,
+          "spend_limit": null,
+          "created_time": "2025-02-03",
+          "timezone_name": "Europe/Sofia",
+          "timezone_offset_hours_utc": 2.0,
+          "balance": 0.0,
+          "account_currency_ratio_to_usd": 1.0,
+          "adtrust_dsl": 50,
+          "next_bill_date": "2025-02-03T00:00:00+02:00",
+          "is_prepay_account": false,
+          "funding_sources": "[]",
+          "restriction_status": null,
+          "is_notifications_enabled": true,
+          "time_added": "2025-02-03T04:13:53.365050+02:00",
+          "time_updated": "2025-02-03 07:47",
+          "threshold_amount": null,
+          "billing_status": null,
+          "amount_spent": 0.0,
+          "campaigns": 0,
+          "ads": null,
+          "transactions": null,
+          "linked_profile": []
+        },
+        {
+          "id": 27802079,
+          "act_id": "1572387033480295",
+          "tax_exempt": false,
+          "adrules_library": null,
+          "is_tier_0": false,
+          "is_tier_1": true,
+          "is_tier_0_full": false,
+          "is_tier_restricted": false,
+          "profile": null,
+          "act_name": "jass Djekxa foretelling",
+          "pixel": null,
+          "currency": "USD",
+          "appeal_sent": null,
+          "linked_apps": [
+            {
+              "id": "8588041834583878",
+              "name": "Crazy Time Rewards",
+              "picture": {
+                "data": {
+                  "url": "https://scontent-iev1-1.xx.fbcdn.net/v/t39.2081-6/475530639_9049332541788136_2964011406311032446_n.jpg?stp=c0.0.76.76a_dst-jpg_p75x75_tt6&_nc_cat=104&ccb=1-7&_nc_sid=ed3f67&_nc_ohc=kwgvGP-yTgMQ7kNvgEByUtJ&_nc_zt=14&_nc_ht=scontent-iev1-1.xx&_nc_gid=AIj2BzeXm638Cu7CmuH_gVZ&oh=00_AYAT8GfCua_Ji46nXI9OWRkbVeV1ijwGM4YfHVMk3Y49zg&oe=67A628C7",
+                  "is_silhouette": false
+                }
+              },
+              "object_store_urls": {
+                "google_play": "http://play.google.com/store/apps/details?id=com.margelo.rewards",
+                "instant_game": "http://www.facebook.com/gaming/play/8588041834583878/"
+              },
+              "supported_platforms": [
+                "ANDROID"
+              ]
+            }
+          ],
+          "business_country_code": null,
+          "try_hold_again": false,
+          "tax_id": null,
+          "account_status": 1,
+          "disable_reason": 0,
+          "is_certified": null,
+          "is_main_act": false,
+          "need_phone_verification": true,
+          "is_new_advertiser": true,
+          "is_user_allowed_to_advertise": true,
+          "requested_billing_threshold": null,
+          "spend_limit": null,
+          "created_time": "2025-02-03",
+          "timezone_name": "Europe/Sofia",
+          "timezone_offset_hours_utc": 2.0,
+          "balance": 0.0,
+          "account_currency_ratio_to_usd": 1.0,
+          "adtrust_dsl": 100,
+          "next_bill_date": "2025-02-03T00:00:00+02:00",
+          "is_prepay_account": false,
+          "funding_sources": "[]",
+          "restriction_status": null,
+          "is_notifications_enabled": true,
+          "time_added": "2025-02-03T04:13:56.737037+02:00",
+          "time_updated": "2025-02-03 07:47",
+          "threshold_amount": null,
+          "billing_status": null,
+          "amount_spent": 0.0,
+          "campaigns": 0,
+          "ads": null,
+          "transactions": null,
+          "linked_profile": []
+        },
+        {
+          "id": 27802080,
+          "act_id": "1151886823139367",
+          "tax_exempt": false,
+          "adrules_library": null,
+          "is_tier_0": false,
+          "is_tier_1": true,
+          "is_tier_0_full": false,
+          "is_tier_restricted": false,
+          "profile": null,
+          "act_name": "sordidly Djekxa nutsy",
+          "pixel": null,
+          "currency": "USD",
+          "appeal_sent": null,
+          "linked_apps": [
+            {
+              "id": "8588041834583878",
+              "name": "Crazy Time Rewards",
+              "picture": {
+                "data": {
+                  "url": "https://scontent-iev1-1.xx.fbcdn.net/v/t39.2081-6/475530639_9049332541788136_2964011406311032446_n.jpg?stp=c0.0.76.76a_dst-jpg_p75x75_tt6&_nc_cat=104&ccb=1-7&_nc_sid=ed3f67&_nc_ohc=kwgvGP-yTgMQ7kNvgEByUtJ&_nc_zt=14&_nc_ht=scontent-iev1-1.xx&_nc_gid=Anj6VIJ56BfS5P_GU8TEk3N&oh=00_AYA4V2anXGFi5mCuCh95JXrrAEgIOcb5spLK9XBq16doWA&oe=67A628C7",
+                  "is_silhouette": false
+                }
+              },
+              "object_store_urls": {
+                "google_play": "http://play.google.com/store/apps/details?id=com.margelo.rewards",
+                "instant_game": "http://www.facebook.com/gaming/play/8588041834583878/"
+              },
+              "supported_platforms": [
+                "ANDROID"
+              ]
+            }
+          ],
+          "business_country_code": null,
+          "try_hold_again": false,
+          "tax_id": null,
+          "account_status": 1,
+          "disable_reason": 0,
+          "is_certified": null,
+          "is_main_act": false,
+          "need_phone_verification": true,
+          "is_new_advertiser": true,
+          "is_user_allowed_to_advertise": true,
+          "requested_billing_threshold": null,
+          "spend_limit": null,
+          "created_time": "2025-02-03",
+          "timezone_name": "Europe/Sofia",
+          "timezone_offset_hours_utc": 2.0,
+          "balance": 0.0,
+          "account_currency_ratio_to_usd": 1.0,
+          "adtrust_dsl": 100,
+          "next_bill_date": "2025-02-03T00:00:00+02:00",
+          "is_prepay_account": false,
+          "funding_sources": "[]",
+          "restriction_status": null,
+          "is_notifications_enabled": true,
+          "time_added": "2025-02-03T04:13:57.968094+02:00",
+          "time_updated": "2025-02-03 07:47",
+          "threshold_amount": null,
+          "billing_status": null,
+          "amount_spent": 0.0,
+          "campaigns": 0,
+          "ads": null,
+          "transactions": null,
+          "linked_profile": []
+        },
+        {
+          "id": 27802070,
+          "act_id": "1403281354374816",
+          "tax_exempt": false,
+          "adrules_library": null,
+          "is_tier_0": true,
+          "is_tier_1": false,
+          "is_tier_0_full": true,
+          "is_tier_restricted": false,
+          "profile": null,
+          "act_name": "romero Djekxa reduccion",
+          "pixel": null,
+          "currency": "USD",
+          "appeal_sent": null,
+          "linked_apps": [
+            {
+              "id": "8588041834583878",
+              "name": "Crazy Time Rewards",
+              "picture": {
+                "data": {
+                  "url": "https://scontent-iev1-1.xx.fbcdn.net/v/t39.2081-6/475530639_9049332541788136_2964011406311032446_n.jpg?stp=c0.0.76.76a_dst-jpg_p75x75_tt6&_nc_cat=104&ccb=1-7&_nc_sid=ed3f67&_nc_ohc=kwgvGP-yTgMQ7kNvgEByUtJ&_nc_zt=14&_nc_ht=scontent-iev1-1.xx&_nc_gid=AIj2BzeXm638Cu7CmuH_gVZ&oh=00_AYAT8GfCua_Ji46nXI9OWRkbVeV1ijwGM4YfHVMk3Y49zg&oe=67A628C7",
+                  "is_silhouette": false
+                }
+              },
+              "object_store_urls": {
+                "google_play": "http://play.google.com/store/apps/details?id=com.margelo.rewards",
+                "instant_game": "http://www.facebook.com/gaming/play/8588041834583878/"
+              },
+              "supported_platforms": [
+                "ANDROID"
+              ]
+            }
+          ],
+          "business_country_code": null,
+          "try_hold_again": false,
+          "tax_id": null,
+          "account_status": 1,
+          "disable_reason": 0,
+          "is_certified": null,
+          "is_main_act": false,
+          "need_phone_verification": true,
+          "is_new_advertiser": true,
+          "is_user_allowed_to_advertise": true,
+          "requested_billing_threshold": null,
+          "spend_limit": null,
+          "created_time": "2025-02-03",
+          "timezone_name": "Europe/Sofia",
+          "timezone_offset_hours_utc": 2.0,
+          "balance": 0.0,
+          "account_currency_ratio_to_usd": 1.0,
+          "adtrust_dsl": 100,
+          "next_bill_date": "2025-02-03T00:00:00+02:00",
+          "is_prepay_account": false,
+          "funding_sources": "[]",
+          "restriction_status": null,
+          "is_notifications_enabled": true,
+          "time_added": "2025-02-03T04:13:41.971349+02:00",
+          "time_updated": "2025-02-03 07:47",
+          "threshold_amount": null,
+          "billing_status": null,
+          "amount_spent": 0.0,
+          "campaigns": 0,
+          "ads": null,
+          "transactions": null,
+          "linked_profile": []
+        },
+        {
+          "id": 27802073,
+          "act_id": "1299823361313983",
+          "tax_exempt": false,
+          "adrules_library": null,
+          "is_tier_0": false,
+          "is_tier_1": true,
+          "is_tier_0_full": false,
+          "is_tier_restricted": false,
+          "profile": null,
+          "act_name": "uploads Djekxa asmoke",
+          "pixel": null,
+          "currency": "USD",
+          "appeal_sent": null,
+          "linked_apps": [
+            {
+              "id": "8588041834583878",
+              "name": "Crazy Time Rewards",
+              "picture": {
+                "data": {
+                  "url": "https://scontent-iev1-1.xx.fbcdn.net/v/t39.2081-6/475530639_9049332541788136_2964011406311032446_n.jpg?stp=c0.0.76.76a_dst-jpg_p75x75_tt6&_nc_cat=104&ccb=1-7&_nc_sid=ed3f67&_nc_ohc=kwgvGP-yTgMQ7kNvgEByUtJ&_nc_zt=14&_nc_ht=scontent-iev1-1.xx&_nc_gid=AIj2BzeXm638Cu7CmuH_gVZ&oh=00_AYAT8GfCua_Ji46nXI9OWRkbVeV1ijwGM4YfHVMk3Y49zg&oe=67A628C7",
+                  "is_silhouette": false
+                }
+              },
+              "object_store_urls": {
+                "google_play": "http://play.google.com/store/apps/details?id=com.margelo.rewards",
+                "instant_game": "http://www.facebook.com/gaming/play/8588041834583878/"
+              },
+              "supported_platforms": [
+                "ANDROID"
+              ]
+            }
+          ],
+          "business_country_code": null,
+          "try_hold_again": false,
+          "tax_id": null,
+          "account_status": 1,
+          "disable_reason": 0,
+          "is_certified": null,
+          "is_main_act": false,
+          "need_phone_verification": true,
+          "is_new_advertiser": true,
+          "is_user_allowed_to_advertise": true,
+          "requested_billing_threshold": null,
+          "spend_limit": null,
+          "created_time": "2025-02-03",
+          "timezone_name": "Europe/Sofia",
+          "timezone_offset_hours_utc": 2.0,
+          "balance": 0.0,
+          "account_currency_ratio_to_usd": 1.0,
+          "adtrust_dsl": 50,
+          "next_bill_date": "2025-02-03T00:00:00+02:00",
+          "is_prepay_account": false,
+          "funding_sources": "[]",
+          "restriction_status": null,
+          "is_notifications_enabled": true,
+          "time_added": "2025-02-03T04:13:46.539211+02:00",
+          "time_updated": "2025-02-03 07:47",
+          "threshold_amount": null,
+          "billing_status": null,
+          "amount_spent": 0.0,
+          "campaigns": 0,
+          "ads": null,
+          "transactions": null,
+          "linked_profile": []
+        },
+        {
+          "id": 27802074,
+          "act_id": "1154725942991275",
+          "tax_exempt": false,
+          "adrules_library": null,
+          "is_tier_0": false,
+          "is_tier_1": true,
+          "is_tier_0_full": false,
+          "is_tier_restricted": false,
+          "profile": null,
+          "act_name": "preadmit Djekxa reassurances",
+          "pixel": null,
+          "currency": "USD",
+          "appeal_sent": null,
+          "linked_apps": [
+            {
+              "id": "8588041834583878",
+              "name": "Crazy Time Rewards",
+              "picture": {
+                "data": {
+                  "url": "https://scontent-iev1-1.xx.fbcdn.net/v/t39.2081-6/475530639_9049332541788136_2964011406311032446_n.jpg?stp=c0.0.76.76a_dst-jpg_p75x75_tt6&_nc_cat=104&ccb=1-7&_nc_sid=ed3f67&_nc_ohc=kwgvGP-yTgMQ7kNvgEByUtJ&_nc_zt=14&_nc_ht=scontent-iev1-1.xx&_nc_gid=AIj2BzeXm638Cu7CmuH_gVZ&oh=00_AYAT8GfCua_Ji46nXI9OWRkbVeV1ijwGM4YfHVMk3Y49zg&oe=67A628C7",
+                  "is_silhouette": false
+                }
+              },
+              "object_store_urls": {
+                "google_play": "http://play.google.com/store/apps/details?id=com.margelo.rewards",
+                "instant_game": "http://www.facebook.com/gaming/play/8588041834583878/"
+              },
+              "supported_platforms": [
+                "ANDROID"
+              ]
+            }
+          ],
+          "business_country_code": null,
+          "try_hold_again": false,
+          "tax_id": null,
+          "account_status": 1,
+          "disable_reason": 0,
+          "is_certified": null,
+          "is_main_act": false,
+          "need_phone_verification": true,
+          "is_new_advertiser": true,
+          "is_user_allowed_to_advertise": true,
+          "requested_billing_threshold": null,
+          "spend_limit": null,
+          "created_time": "2025-02-03",
+          "timezone_name": "Europe/Sofia",
+          "timezone_offset_hours_utc": 2.0,
+          "balance": 0.0,
+          "account_currency_ratio_to_usd": 1.0,
+          "adtrust_dsl": 100,
+          "next_bill_date": "2025-02-03T00:00:00+02:00",
+          "is_prepay_account": false,
+          "funding_sources": "[]",
+          "restriction_status": null,
+          "is_notifications_enabled": true,
+          "time_added": "2025-02-03T04:13:48.356298+02:00",
+          "time_updated": "2025-02-03 07:47",
+          "threshold_amount": null,
+          "billing_status": null,
+          "amount_spent": 0.0,
+          "campaigns": 0,
+          "ads": null,
+          "transactions": null,
+          "linked_profile": []
+        },
+        {
+          "id": 27802078,
+          "act_id": "1157705159362387",
+          "tax_exempt": false,
+          "adrules_library": null,
+          "is_tier_0": false,
+          "is_tier_1": true,
+          "is_tier_0_full": false,
+          "is_tier_restricted": false,
+          "profile": null,
+          "act_name": "shovelboard Djekxa uncrest",
+          "pixel": null,
+          "currency": "USD",
+          "appeal_sent": null,
+          "linked_apps": [
+            {
+              "id": "8588041834583878",
+              "name": "Crazy Time Rewards",
+              "picture": {
+                "data": {
+                  "url": "https://scontent-iev1-1.xx.fbcdn.net/v/t39.2081-6/475530639_9049332541788136_2964011406311032446_n.jpg?stp=c0.0.76.76a_dst-jpg_p75x75_tt6&_nc_cat=104&ccb=1-7&_nc_sid=ed3f67&_nc_ohc=kwgvGP-yTgMQ7kNvgEByUtJ&_nc_zt=14&_nc_ht=scontent-iev1-1.xx&_nc_gid=AIj2BzeXm638Cu7CmuH_gVZ&oh=00_AYAT8GfCua_Ji46nXI9OWRkbVeV1ijwGM4YfHVMk3Y49zg&oe=67A628C7",
+                  "is_silhouette": false
+                }
+              },
+              "object_store_urls": {
+                "google_play": "http://play.google.com/store/apps/details?id=com.margelo.rewards",
+                "instant_game": "http://www.facebook.com/gaming/play/8588041834583878/"
+              },
+              "supported_platforms": [
+                "ANDROID"
+              ]
+            }
+          ],
+          "business_country_code": null,
+          "try_hold_again": false,
+          "tax_id": null,
+          "account_status": 1,
+          "disable_reason": 0,
+          "is_certified": null,
+          "is_main_act": false,
+          "need_phone_verification": true,
+          "is_new_advertiser": true,
+          "is_user_allowed_to_advertise": true,
+          "requested_billing_threshold": null,
+          "spend_limit": null,
+          "created_time": "2025-02-03",
+          "timezone_name": "Europe/Sofia",
+          "timezone_offset_hours_utc": 2.0,
+          "balance": 0.0,
+          "account_currency_ratio_to_usd": 1.0,
+          "adtrust_dsl": 100,
+          "next_bill_date": "2025-02-03T00:00:00+02:00",
+          "is_prepay_account": false,
+          "funding_sources": "[]",
+          "restriction_status": null,
+          "is_notifications_enabled": true,
+          "time_added": "2025-02-03T04:13:54.963960+02:00",
+          "time_updated": "2025-02-03 07:47",
+          "threshold_amount": null,
+          "billing_status": null,
+          "amount_spent": 0.0,
+          "campaigns": 0,
+          "ads": null,
+          "transactions": null,
+          "linked_profile": []
+        }
+      ],
+      "login": "gnyifxde@superocomail.com",
+      "password": "mSc9wi72C13O",
+      "email": "gnyifxde@superocomail.com",
+      "email_password": "qlqkbjlyY!9763",
+      "auth_key": null,
+      "cookies": "[{\"domain\": \".facebook.com\", \"hostOnly\": false, \"httpOnly\": true, \"name\": \"c_user\", \"path\": \"/\", \"sameSite\": \"no_restriction\", \"secure\": true, \"session\": true, \"storeId\": \"0\", \"value\": \"61568155670445\"}, {\"domain\": \".facebook.com\", \"hostOnly\": false, \"httpOnly\": true, \"name\": \"datr\", \"path\": \"/\", \"sameSite\": \"no_restriction\", \"secure\": true, \"session\": true, \"storeId\": \"0\", \"value\": \"MRM_ZzAWdZpSxxOtAtSG331X\"}, {\"domain\": \".facebook.com\", \"hostOnly\": false, \"httpOnly\": true, \"name\": \"dpr\", \"path\": \"/\", \"sameSite\": \"no_restriction\", \"secure\": true, \"session\": true, \"storeId\": \"0\", \"value\": \"1.25\"}, {\"domain\": \".facebook.com\", \"hostOnly\": false, \"httpOnly\": true, \"name\": \"fr\", \"path\": \"/\", \"sameSite\": \"no_restriction\", \"secure\": true, \"session\": true, \"storeId\": \"0\", \"value\": \"1WxZYS7H36T21BpOO.AWXPDjakyR4SsB_AgaTSkQzk5DY.Bng2yE..AAA.0.0.Bng2yg.AWX1pw2J_h0\"}, {\"domain\": \".facebook.com\", \"hostOnly\": false, \"httpOnly\": true, \"name\": \"presence\", \"path\": \"/\", \"sameSite\": \"no_restriction\", \"secure\": true, \"session\": true, \"storeId\": \"0\", \"value\": \"C%7B%22t3%22%3A%5B%5D%2C%22utc3%22%3A1736666278841%2C%22v%22%3A1%7D\"}, {\"domain\": \".facebook.com\", \"hostOnly\": false, \"httpOnly\": true, \"name\": \"ps_l\", \"path\": \"/\", \"sameSite\": \"no_restriction\", \"secure\": true, \"session\": true, \"storeId\": \"0\", \"value\": \"1\"}, {\"domain\": \".facebook.com\", \"hostOnly\": false, \"httpOnly\": true, \"name\": \"ps_n\", \"path\": \"/\", \"sameSite\": \"no_restriction\", \"secure\": true, \"session\": true, \"storeId\": \"0\", \"value\": \"1\"}, {\"domain\": \".facebook.com\", \"hostOnly\": false, \"httpOnly\": true, \"name\": \"sb\", \"path\": \"/\", \"sameSite\": \"no_restriction\", \"secure\": true, \"session\": true, \"storeId\": \"0\", \"value\": \"MRM_ZwJCEGMJOLM3USLGipvY\"}, {\"domain\": \".facebook.com\", \"hostOnly\": false, \"httpOnly\": true, \"name\": \"usida\", \"path\": \"/\", \"sameSite\": \"no_restriction\", \"secure\": true, \"session\": true, \"storeId\": \"0\", \"value\": \"eyJ2ZXIiOjEsImlkIjoiQXNweXJodDFpNXA4NGIiLCJ0aW1lIjoxNzM2NjY1NTMyfQ%3D%3D\"}, {\"domain\": \".facebook.com\", \"hostOnly\": false, \"httpOnly\": true, \"name\": \"wd\", \"path\": \"/\", \"sameSite\": \"no_restriction\", \"secure\": true, \"session\": true, \"storeId\": \"0\", \"value\": \"992x483\"}, {\"domain\": \".facebook.com\", \"hostOnly\": false, \"httpOnly\": true, \"name\": \"xs\", \"path\": \"/\", \"sameSite\": \"no_restriction\", \"secure\": true, \"session\": true, \"storeId\": \"0\", \"value\": \"9%3At0-EsiXJQ-3Mlg%3A2%3A1732186971%3A-1%3A2558%3A%3AAcUrNtSEDrx2XQj6-beIneio4ffcoxe6_6gXQJfn3Us\"}, {\"domain\": \".facebook.com\", \"expirationDate\": 1738543245, \"hostOnly\": false, \"httpOnly\": false, \"name\": \"cppo\", \"path\": \"/\", \"sameSite\": \"unspecified\", \"secure\": true, \"session\": false, \"storeId\": \"0\", \"value\": \"1\"}, {\"domain\": \".facebook.com\", \"expirationDate\": 1738456910.052499, \"hostOnly\": false, \"httpOnly\": false, \"name\": \"alsfid\", \"path\": \"/\", \"sameSite\": \"unspecified\", \"secure\": false, \"session\": false, \"storeId\": \"0\", \"value\": \"{\\\"id\\\":\\\"fb23f1890\\\",\\\"timestamp\\\":1738456850051.3}\"}]",
+      "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36",
+      "access_token": "EAABsbCS1iHgBOyGaXX5P9mT0WIQIuCAFebD8WZC5B0S3xnHqydQez9ZCBe41NhmMrpku3xDMtYPOUnLapuhPKuXscb4Gv6ldOcFaZAgplN03VfGtUkZABdt1LKD8EZA31ZCJGNZAkRlkctnaPEAOUNKZCIgzIZBwjgP72VsU0s5VsllhQm9QjLTwIVS8WtwZDZD",
+      "eaab_access_token": null,
+      "fb_id": "61568155670445",
+      "fb_dtsg": "NAcNriTBoFJbygiqgQfFMYzQ5DTxvRGRsFngNsLSDYJ4U8g-dH0FUag:9:1732186971",
+      "spin_r": "1019777488",
+      "spin_t": "1738561655",
+      "rev": "1019777488",
+      "hsi": "7467065450823667837",
+      "fb_name": "Melody Evans",
+      "language": "en",
+      "avatar": null,
+      "birthday": null,
+      "notes": "<p><br></p>",
+      "status": 1,
+      "error_status": null,
+      "stat_updated": null,
+      "archived": 0,
+      "is_prof": null,
+      "check_updates": false,
+      "started_check_updates": false,
+      "clear_comments": false,
+      "started_clear_comments": false,
+      "send_tg_notifications": false,
+      "requests_delay": 3,
+      "user": 9416
+    }
+  ],
+  "log": [
+    {
+      "task_id": "75e43768-d5f0-4931-94e2-c84648947b96",
+      "task": "link_card",
+      "account_id": 18326414,
+      "ids": [
+        []
+      ],
+      "bm_ids": [
+        []
+      ],
+      "act_ids": [
+        {
+          "act_db_id": 27801942,
+          "act_id": "2720154018374506",
+          "automaticBilling": false,
+          "card": "4288030279231114;01;29;790",
+          "country": "UA",
+          "currency": null,
+          "current_timezone": "Europe/Sofia",
+          "delay": "4.30",
+          "delayCard": null,
+          "init_currency": "USD",
+          "legalVat": false,
+          "linkInvalidCard": false,
+          "link_type": "type_1",
+          "makePrimary": false,
+          "needVat": false,
+          "skipDataFill": false,
+          "timezone": "19",
+          "verify3ds": false
+        }
+      ],
+      "result": [
+        "<p><span style=\"color: green;\"><b>[2025-02-03 07:48:02]</b> [Profile:Melody Evans] [Act:2720154018374506] Changed billing info.</span></p>",
+        "<p><span style=\"color: red;\"><b>[2025-02-03 07:48:05]</b> [Profile:Melody Evans] [Act:2720154018374506] [Method:web] Cant link card 4288030279231114;01;29;790. Error: {'data': {'xfb_billing_save_card_credential': None}, 'errors': [{'message': 'A server error field_exception occured. Check server logs for details.', 'severity': 'CRITICAL', 'mids': ['b634f44a726d61d0e9c9705ed49e7ba2'], 'code': 1675030, 'api_error_code': -1, 'summary': 'Query Error', 'description': 'Error performing query.', 'description_raw': 'Error performing query.', 'is_silent': False, 'is_transient': False, 'is_not_critical': False, 'requires_reauth': False, 'allow_user_retry': False, 'debug_info': None, 'query_path': None, 'fbtrace_id': 'Hh/gogI0sbD', 'www_request_id': 'AA7kMqdlZzPNqeDNp7LEaXW', 'path': ['xfb_billing_save_card_credential']}], 'extensions': {'is_final': True}}</span></p>",
+        "<p><span><b>[2025-02-03 07:48:06]</b> [Profile:Melody Evans] [Act:2720154018374506] Wait 4 seconds ...</span></p>"
+      ]
+    }
+  ]
+}
+==================================================

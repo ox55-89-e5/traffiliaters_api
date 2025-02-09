@@ -6,18 +6,22 @@ import requests
 import os
 from facebook_api import disable_reason
 
-
+# used card :Libby Thornton 4288030279922944;02/29;331
 class SecretMoneyButton(MoneyButton):
     def link_cards(self):
         profiles = self._update_profiles()
+        print("linking cards:")
         # find accounts without any attached card 
         for profile in profiles:
             acts = []
-            bms = self.nooklz.get_bms(nooklz_profile_ids={profile['id'] : profile['id']}, can_create_ad_account=False, is_disabled=False)
+            
+            # bms = self.nooklz.get_bms(nooklz_profile_ids={profile['id'] : profile['id']}, can_create_ad_account=False, is_disabled=False)
+            bms = self.nooklz.get_bms(nooklz_profile_ids={18326411 : 18326411}, can_create_ad_account=False, is_disabled=False)
             for bm in bms:
                 acts.extend(bm['acts'])
-            acts = [act for act in acts if act["funding_sources"] == None and act["disable_reason"] == disable_reason["ACCOUNT_ENABLED"]]
-            self.nooklz.link_pudge_for_UA_farms(profile_id=profile['id'], card="4288030270151006;01;29;730", acts=acts[:1])
+            acts = [act for act in acts if act["funding_sources"] == "[]" and act["disable_reason"] == disable_reason["ACCOUNT_ENABLED"]]
+            # self.nooklz.link_pudge_for_UA_farms(profile_id=18326411, card="4288030279231114;01;29;790", acts=acts[:1])
+            self.nooklz.link_pudge_for_UA_farms(profile_id=18326411, card="4288030279231114;02;29;247", acts=acts[:1])
             return
 
     # exports all active bms without locked ad accounts if BM count exceeds the limit
@@ -173,7 +177,7 @@ class SecretMoneyButton(MoneyButton):
                 print(f"Error: {e}")
                 
 
-    def crete_add_accounts(self, BM_limit : int = 20, how_many_to_create : int = 2):
+    def crete_add_accounts(self, BM_limit : int = 30, how_many_to_create : int = 2):
         profiles = self._update_profiles()
         profiles = [profile for profile in profiles if len(profile["bms"]) <= BM_limit]
         for profile in profiles:                        
@@ -182,12 +186,12 @@ class SecretMoneyButton(MoneyButton):
             if len(bms) < how_many_to_create:
                 print(f"Not enough active BMs that could create {how_many_to_create} ad accounts")
             else:
-                bms = bms[:how_many_to_create]
+                # bms = bms[:how_many_to_create]
                 print(f"Active BMs that can create an ad account: {len(bms)}.")
                 print(f"Creating ad accounts:")
                 self.nooklz.create_ad_accounts(profile['id'], self.nooklz.get_business_ids_from_json(bms),name_pattern = "Djekxa", timezone="TZ_EUROPE_SOFIA")
 
-    def link_bms(self, BM_limit : int = 20):
+    def link_bms(self, BM_limit : int = 30):
         profiles = self.nooklz.get_profiles(groups = {259151 : self.nooklz.groups[259151]}) # Ready to link
         for profile in profiles:
             self.nooklz.check_profiles(profile_ids={profile['id'] : profile['id']})
@@ -197,10 +201,12 @@ class SecretMoneyButton(MoneyButton):
         for profile in profiles:
             print(f"{BM_limit - len(profile['bms'])}, {len(profile['bms'])}")
             for n in range (BM_limit - len(profile["bms"])):
-                bm_invites = self._eat_bm_invites(how_many=1, input_file=r"./BM_invites/djekxa.txt", output_file=r"./BM_invites/djekxa_used.txt")       
+                bm_invites = self._eat_bm_invites(how_many=1, input_file=r"./BM_invites/djekxa.txt", output_file=r"./BM_invites/djekxa_used.txt")
+                invite = self._parse_djekxa_invites(bm_invites[0])
+                invite = invite["invite"]          
                 print(f"facebook profile: {profile['account_name']} profile id: {profile['id']} tries to accept invites:")
                 print(bm_invites)
-                self.nooklz.accept_bm_invites(profile_id=profile["id"], invite_links=bm_invites)
+                self.nooklz.accept_bm_invites(profile_id=profile["id"], invite_links=[invite])
             
         # wait between account link        
         time_to_sleep = 30

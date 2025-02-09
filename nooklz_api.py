@@ -10,6 +10,11 @@ import random
 
 T = TypeVar("T")  # Generic type  
 
+def log_params(func):
+    def wrapper(*args, **kwargs):
+        print(f"Calling {func.__name__} with args: {args}, kwargs: {kwargs}")
+        return func(*args, **kwargs)
+    return wrapper
 
 class NooklzInterface:          
     def __init__(self, nooklz_api_key : str):
@@ -45,6 +50,7 @@ class NooklzInterface:
         return response
     
     # card format: e.g "4288030270151006;01;29;730"
+    # @log_params
     def link_pudge_for_UA_farms(self, profile_id : int, acts: Collection[T],
                                 card : str):
         response = self.link_card(profile_id=profile_id, acts=acts, card = card,
@@ -58,7 +64,7 @@ class NooklzInterface:
                   current_timezone : str,#e.g. "Europe/Sofia"
                   timezone : str, # e.g TZ_AMERICA_LOS_ANGELES
                   automaticBilling : bool = False,
-                  currency : str = None,
+                  currency : str = None,#"USD"
                   delay : float = None,
                   delayCard : float = None,
                   init_currency : str = "USD",
@@ -315,3 +321,9 @@ def make_post_request(url, json=None, headers=None):
 def make_get_request(url, json=None, headers=None):
     response = requests.get(url, json=json, headers=headers)
     return response
+
+def write_debug_jsons(json_code, file_path : str = "output.json"):
+    # Write JSON data to a file with UTF-8 encoding
+    with open(file_path, "w", encoding="utf-8") as file:
+        json.dump(json_code, file, indent=4, ensure_ascii=False)
+

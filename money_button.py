@@ -128,6 +128,5 @@ class MoneyButton:
     def _update_profiles(self, group_id : int = 259151): # 259151 Ready to link
         profiles = self.nooklz.get_profiles(groups = {group_id : self.nooklz.groups[group_id]})
         print("Updating profiles:")
-        for profile in profiles:
-            self.nooklz.check_profiles(profile_ids={profile['id'] : profile['id']})
+        self.nooklz.check_profiles(profile_ids=self.nooklz.get_ids_from_json(profiles))
         return profiles
