@@ -4,7 +4,7 @@ from typing import Collection, TypeVar
 from typing import List, Optional
 import time
 from functools import wraps
-from facebook_api import facebook_timezones
+from .facebook_api import facebook_timezones
 from random_word import RandomWords
 import random
 
@@ -261,11 +261,13 @@ class NooklzInterface:
 
     def update_groups(self):
         self.groups = {None : {"id" : "None", "label_name" : "None", "account_ids" : []}}
+        self.groups_list = []
         # Process each account in the JSON data
         for account in self.accounts:
             if account["label"] is not None:
                 if account["label"]["id"] not in self.groups:
                     self.groups[account["label"]["id"]] = account["label"]
+                    self.groups_list.append(account["label"])
                     self.groups[account["label"]["id"]]["account_ids"] = []
                 self.groups[account["label"]["id"]]["account_ids"].append(account["id"])
 

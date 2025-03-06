@@ -1,5 +1,5 @@
 import json
-from nooklz_api import NooklzInterface
+from .nooklz_api import NooklzInterface
 import re
 
 class MoneyButton:
