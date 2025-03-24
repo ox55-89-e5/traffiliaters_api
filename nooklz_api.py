@@ -7,6 +7,7 @@ from functools import wraps
 from .facebook_api import facebook_timezones
 from random_word import RandomWords
 import random
+from frontend.log_window import Printer
 
 T = TypeVar("T")  # Generic type  
 
@@ -17,7 +18,8 @@ def log_params(func):
     return wrapper
 
 class NooklzInterface:          
-    def __init__(self, nooklz_api_key : str):
+    def __init__(self, nooklz_api_key : str, printer : Printer = Printer()):
+        self.printer = printer
         self.headers = {
             "Authorization": f"Token {nooklz_api_key}"
         }
@@ -40,13 +42,13 @@ class NooklzInterface:
             attempts += 1
             # Check for timeout
             if time.time() - start_time > timeout:
-                print(f"Timeout reached. Exiting loop. Attempts:{attempts}")
+                self.printer.print(f"Timeout reached. Exiting loop. Attempts:{attempts}")
                 return response
             response = make_post_request(url, json=json_payload, headers=self.headers).json()
             time.sleep(3)
             
         for task in response["log"]:
-            print(task["result"])
+            self.printer.print(task["result"])
         return response
     
     # card format: e.g "4288030270151006;01;29;730"
@@ -250,13 +252,13 @@ class NooklzInterface:
                 }
             response = requests.get(url, json=self.request_data, headers=self.headers)
             if response.status_code != 200:
-                print(f"An error occured, status code {response.status_code}")
+                self.printer.print(f"An error occured, status code {response.status_code}")
             # Parse the JSON string into a Python list
             self.accounts = response.json()
             # Create dictionary to store labels
                    
         except requests.RequestException as e:
-            print(f"An error occurred while requesting profiles: {e}")
+            self.printer.print(f"An error occurred while requesting profiles: {e}")
         pass
 
     def update_groups(self):
@@ -274,7 +276,7 @@ class NooklzInterface:
     def check_groups(self):
         for group_ in self.groups:
             group = self.groups[group_]
-            print(f"Name: {group['label_name']:<25} Id:{group['id']:<10} Accounts: {len(group['account_ids'])}")
+            self.printer.print(f"Name: {group['label_name']:<25} Id:{group['id']:<10} Accounts: {len(group['account_ids'])}")
 
 
 def log_requests(log_file="requests_log.txt"):
